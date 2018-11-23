@@ -3,3 +3,4 @@
 /.vagrant
 /vendor
 /node_modules
+/web/cpresources
