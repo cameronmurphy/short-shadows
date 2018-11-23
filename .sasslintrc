@@ -1,0 +1,10 @@
+{
+  "files": {
+    "include": "*/**/*.scss",
+    "ignore": [
+      "node_modules/**/*.*",
+      "vendor/**/*.*",
+      "web/**/*.*"
+    ]
+  }
+}

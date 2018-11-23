@@ -1,0 +1,21 @@
+{% set firstImage = props.images.one %}
+
+<div class="slider-image-gallery{% if props.responsive %} responsive{% endif %}" id="slider-image-gallery-{{ props.id }}"
+     style="height: {{ firstImage.height }}px; width: {{ firstImage.width }}px;">
+  <div data-u="loading" class="loading" style="">
+    <img src="/static/images/jssor/double-tail-spin.svg" />
+  </div>
+  <div class="slide-container" data-u="slides"
+       style="height: {{ firstImage.height }}px; width: {{ firstImage.width }}px; overflow: hidden;">
+    {% for image in props.images.all %}
+      <div><img data-u="image" src="{{ image.url }}" /></div>
+    {% endfor %}
+  </div>
+  <div data-u="navigator" class="bullet-navigator">
+    <div data-u="prototype" class="bullet-prototype">
+      <svg viewbox="0 0 16000 16000">
+        <circle class="bullet" cx="8000" cy="8000" r="5800"></circle>
+      </svg>
+    </div>
+  </div>
+</div>

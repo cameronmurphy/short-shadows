@@ -1,0 +1,5 @@
+{% extends '_layout' %}
+
+{% block content %}
+  {% include '_components/content-matrix' with { props: { matrix: entry.contentMatrix } } only %}
+{% endblock %}

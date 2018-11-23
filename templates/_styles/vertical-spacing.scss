@@ -1,0 +1,21 @@
+html {
+  font-size: $root-font-size-base;
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: $root-font-size-tablet;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  html {
+    font-size: $root-font-size-desktop;
+  }
+}
+
+@include media-breakpoint-up(xxl) {
+  html {
+    font-size: $root-font-size-large-desktop;
+  }
+}

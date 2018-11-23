@@ -1,0 +1,12 @@
+<a href="{{ props.href }}" target="_blank">
+  {% switch props.platform %}
+    {% case 'facebook' %}
+      <i class="fab fa-facebook-f"></i>
+    {% case 'linkedin' %}
+      <i class="fab fa-linkedin-in"></i>
+    {% case 'instagram' %}
+      <i class="fab fa-instagram"></i>
+    {% case 'email' %}
+      <i class="fas fa-envelope"></i>
+  {% endswitch %}
+</a>

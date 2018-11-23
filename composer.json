@@ -1,0 +1,46 @@
+{
+    "name": "short-shadows/website",
+    "description": "Craft 3 website for Short Shadows",
+    "keywords": [
+        "craft",
+        "cms",
+        "short",
+        "shadows"
+    ],
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "php": "^7.0.0",
+        "ext-pcre": "*",
+        "ext-PDO": "*",
+        "ext-pdo_pgsql": "*",
+        "ext-imagick": "*",
+        "ext-openssl": "*",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "ext-curl": "*",
+        "ext-Reflection": "*",
+        "ext-SPL": "*",
+        "ext-zip": "*",
+        "craftcms/cms": "^3.0.0",
+        "vlucas/phpdotenv": "^2.4.0",
+        "clubstudioltd/craft-asset-rev": "^6.0.0",
+        "vaersaagod/dospaces": "^1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\": "modules/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "7.2"
+        }
+    },
+    "scripts": {
+        "compile": [
+            "./node_modules/.bin/encore production"
+        ]
+    }
+}

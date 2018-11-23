@@ -1,0 +1,10 @@
+{% for block in props.matrix.all %}
+  {% if block.status == 'enabled' %}
+    {% switch block.type %}
+      {% case 'galleryHeroBlock' %}
+        {% include '_components/gallery-hero-block' with { props: block } only %}
+      {% case 'contentImageBlock' %}
+        {% include '_components/content-image-block' with { props: block } only %}
+    {% endswitch %}
+  {% endif %}
+{% endfor %}

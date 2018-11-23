@@ -1,0 +1,5 @@
+/.env
+/scripts/.env.sh
+/.vagrant
+/vendor
+/node_modules

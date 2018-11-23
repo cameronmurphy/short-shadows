@@ -1,0 +1,13 @@
+<section id="gallery-hero-block-{{ props.id }}" class="gallery-hero-block container-fluid">
+  {% include '_components/slider-image-gallery' with { props: {
+    id: props.id,
+    images: props.images,
+    responsive: true
+  } } only %}
+  <div class="logo-wrapper">
+    <img class="logo" src="/static/images/hero-logo.svg" />
+  </div>
+  <div class="scroll-down-hump-wrapper">
+    <img class="scroll-down-hump d-none d-md-block" src="/static/images/scroll-down-hump.svg" />
+  </div>
+</section>
