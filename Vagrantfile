@@ -22,18 +22,15 @@ Vagrant.configure("2") do |config|
     # Use dhcp on eth1
     sed -i -z "s,addresses\:.*,dhcp4: true\n,g" /etc/netplan/99-vagrant.yaml
     # Renew eth1 IP
-    dhclient -r eth1 && dhclient eth1
-
-    echo "Installing Heroku CLI, this will take a minute or two..."
-    snap install heroku --classic
+    ip addr flush dev eth1 && dhclient eth1
 
     # Add repositories to get PostgreSQL 10
     echo "deb http://apt.postgresql.org/pub/repos/apt/ zesty-pgdg main" >> /etc/apt/sources.list.d/pgdg.list
     wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
 
-    # Install php-soap, swap to fish shell, install postgresql-10
+    # Swap to fish shell, install postgresql-10
     apt-get update
-    apt-get install -y jq postgresql-10 fish 2> /dev/null
+    apt-get install -y jq fish postgresql-10 2> /dev/null
     # Swap to fish shell
     sed -i -z "s,\/home\/vagrant:\/bin\/bash,/home/vagrant:/usr/bin/fish,g" /etc/passwd
 
@@ -82,8 +79,6 @@ Vagrant.configure("2") do |config|
 
     # Configure fish shell: clear default greeting, always show full path in prompt
     fish -c 'set -U fish_greeting; and set -U fish_prompt_pwd_dir_length 0'
-    # Put snap binaries on PATH
-    fish -c 'echo set -gx PATH \$PATH /snap/bin >> ~/.config/fish/config.fish'
 
     # Install fish nvm wrapper
     fish -c 'fisher add FabioAntunes/fish-nvm'
