@@ -4,27 +4,13 @@ html {
 }
 
 body {
-  @include media-breakpoint-up(md) {
-    padding: 1rem;
-  }
-
   background-color: $color-black;
+  padding: 1rem;
 }
 
 .container-fluid {
   max-width: map-get($container-max-widths, xl);
   padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h6 {
-  font-family: 'IntroBlackInline', $font-family-sans-serif;
-  font-weight: normal;
 }
 
 h1,
