@@ -66,10 +66,6 @@ Vagrant.configure("2") do |config|
   # Run hostmanager plugin again as the VM's IP will have changed
   config.vm.provision :hostmanager
 
-  # Add local SSH key to authorised keys on box
-  ssh_pub_key = File.readlines("#{Dir.home}/.ssh/id_rsa.pub").first.strip
-  config.vm.provision "shell", inline: "echo #{ssh_pub_key} >> /home/vagrant/.ssh/authorized_keys", privileged: false
-
   config.vm.provision "shell", keep_color: true, privileged: false, inline: <<-'SHELL'
     # Get latest nvm
     cd ~/.nvm; git fetch origin v0.33.11; git fetch; git checkout v0.33.11
@@ -89,4 +85,9 @@ Vagrant.configure("2") do |config|
     # Install npm and npm-check
     fish -c "npm install -g npm@(jq -r '.engines.npm' /var/www/package.json) npm-check"
   SHELL
+
+  # Copy across public and private keys
+  ssh_pub_key = File.readlines("#{Dir.home}/.ssh/id_rsa.pub").first.strip
+  config.vm.provision "shell", inline: "echo #{ssh_pub_key} >> /home/vagrant/.ssh/authorized_keys", privileged: false
+  config.vm.provision "file", source: "~/.ssh/id_rsa", destination: ".ssh/id_rsa"
 end
