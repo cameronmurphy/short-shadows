@@ -12,11 +12,8 @@ body {
 }
 
 .container-fluid {
-  @include media-breakpoint-up(md) {
-    padding: 0;
-  }
-
-  max-width: map-get($container-max-widths, xxxl);
+  max-width: map-get($container-max-widths, xl);
+  padding: 0;
 }
 
 h1,
