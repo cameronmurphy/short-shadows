@@ -1,3 +1,13 @@
+.cover-image-col {
+  text-align: center;
+}
+
 .cover-image-col img {
+  height: calc(100vh - 2rem);
+  width: auto;
+}
+
+.cover-image-col.thin img {
+  height: auto;
   width: 100%;
 }
