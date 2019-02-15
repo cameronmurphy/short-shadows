@@ -3,8 +3,7 @@ const Encore = require('@symfony/webpack-encore');
 
 Encore.setOutputPath('web/dist/')
   .setPublicPath('/dist')
-  .addEntry('scripts', './templates/_scripts/main.js')
-  .addStyleEntry('styles', './templates/_styles/main.scss')
+  .addEntry('main', './templates/_scripts/main.js')
   .enableSourceMaps(!Encore.isProduction())
   .enableSingleRuntimeChunk()
   .autoProvidejQuery()
