@@ -4,27 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04e5f59c9c84ead9cd35a0ad878d9b6d",
+    "content-hash": "b47ecc684f79d5101b81847a2d6f9c58",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.82.0",
+            "version": "3.87.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "651557da601b70d5bbcc6a9c371e8f8b6314f679"
+                "reference": "0f2cfafe6e635319cb2104b6bb0c15dd35cebf25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/651557da601b70d5bbcc6a9c371e8f8b6314f679",
-                "reference": "651557da601b70d5bbcc6a9c371e8f8b6314f679",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0f2cfafe6e635319cb2104b6bb0c15dd35cebf25",
+                "reference": "0f2cfafe6e635319cb2104b6bb0c15dd35cebf25",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-simplexml": "*",
-                "ext-spl": "*",
                 "guzzlehttp/guzzle": "^5.3.3|^6.2.1",
                 "guzzlehttp/promises": "~1.0",
                 "guzzlehttp/psr7": "^1.4.1",
@@ -87,7 +86,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2018-12-18T23:04:30+00:00"
+            "time": "2019-02-14T19:13:09+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -198,16 +197,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660"
+                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/8afa52cd417f4ec417b4bfe86b68106538a87660",
-                "reference": "8afa52cd417f4ec417b4bfe86b68106538a87660",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
+                "reference": "558f321c52faeb4828c03e7dc0cfe39a09e09a2d",
                 "shasum": ""
             },
             "require": {
@@ -250,7 +249,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2018-10-18T06:09:13+00:00"
+            "time": "2019-01-28T09:30:10+00:00"
         },
         {
             "name": "composer/composer",
@@ -454,16 +453,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.36",
+            "version": "3.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "76b9d7b854a725771028d3bee928b56e6039325c"
+                "reference": "9378d5f9951f81ee361a7e19c03dc1bc69d78a5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/76b9d7b854a725771028d3bee928b56e6039325c",
-                "reference": "76b9d7b854a725771028d3bee928b56e6039325c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/9378d5f9951f81ee361a7e19c03dc1bc69d78a5e",
+                "reference": "9378d5f9951f81ee361a7e19c03dc1bc69d78a5e",
                 "shasum": ""
             },
             "require": {
@@ -490,8 +489,10 @@
                 "php": ">=7.0.0",
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "^1.0.3",
+                "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
                 "twig/twig": "^2.5.0",
+                "yii2tech/ar-softdelete": "^1.0.2",
                 "yiisoft/yii2": "~2.0.15.1",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
@@ -536,7 +537,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-12-18T20:33:23+00:00"
+            "time": "2019-02-14T18:31:32+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -632,16 +633,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "309d2952842c7f96b36dea00c0944a606624feaf"
+                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/309d2952842c7f96b36dea00c0944a606624feaf",
-                "reference": "309d2952842c7f96b36dea00c0944a606624feaf",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
+                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
                 "shasum": ""
             },
             "type": "library",
@@ -662,7 +663,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2018-08-17T23:47:59+00:00"
+            "time": "2019-01-31T19:59:15+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1178,23 +1179,23 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.7",
+            "version": "5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "8560d4314577199ba51bf2032f02cd1315587c23"
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/8560d4314577199ba51bf2032f02cd1315587c23",
-                "reference": "8560d4314577199ba51bf2032f02cd1315587c23",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1",
+                "friendsofphp/php-cs-fixer": "~2.2.20",
                 "json-schema/json-schema-test-suite": "1.2.0",
                 "phpunit/phpunit": "^4.8.35"
             },
@@ -1240,20 +1241,20 @@
                 "json",
                 "schema"
             ],
-            "time": "2018-02-14T22:26:30+00:00"
+            "time": "2019-01-14T23:55:14+00:00"
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.49",
+            "version": "1.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "a63cc83d8a931b271be45148fa39ba7156782ffd"
+                "reference": "dab4e7624efa543a943be978008f439c333f2249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a63cc83d8a931b271be45148fa39ba7156782ffd",
-                "reference": "a63cc83d8a931b271be45148fa39ba7156782ffd",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/dab4e7624efa543a943be978008f439c333f2249",
+                "reference": "dab4e7624efa543a943be978008f439c333f2249",
                 "shasum": ""
             },
             "require": {
@@ -1324,20 +1325,20 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-11-23T23:41:29+00:00"
+            "time": "2019-02-01T08:50:36+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.21",
+            "version": "1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "43523fec10a831ea48bedb3277e3f3fa218f4e49"
+                "reference": "883b02c80ca9cd68cf58a9b4b2185beef24b836b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/43523fec10a831ea48bedb3277e3f3fa218f4e49",
-                "reference": "43523fec10a831ea48bedb3277e3f3fa218f4e49",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/883b02c80ca9cd68cf58a9b4b2185beef24b836b",
+                "reference": "883b02c80ca9cd68cf58a9b4b2185beef24b836b",
                 "shasum": ""
             },
             "require": {
@@ -1371,7 +1372,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2018-10-08T07:53:55+00:00"
+            "time": "2019-01-31T15:07:25+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -1972,45 +1973,45 @@
         },
         {
             "name": "symfony/console",
-            "version": "v4.2.1",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0"
+                "reference": "b0878233cb5c4391347e5495089c7af11b8e6201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/4dff24e5d01e713818805c1862d2e3f901ee7dd0",
-                "reference": "4dff24e5d01e713818805c1862d2e3f901ee7dd0",
+                "url": "https://api.github.com/repos/symfony/console/zipball/b0878233cb5c4391347e5495089c7af11b8e6201",
+                "reference": "b0878233cb5c4391347e5495089c7af11b8e6201",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
-                "symfony/contracts": "^1.0",
+                "php": ">=5.5.9",
+                "symfony/debug": "~2.8|~3.0",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.4",
-                "symfony/process": "<3.3"
+                "symfony/dependency-injection": "<3.3"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~3.4|~4.0",
-                "symfony/dependency-injection": "~3.4|~4.0",
-                "symfony/event-dispatcher": "~3.4|~4.0",
-                "symfony/lock": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0"
+                "symfony/config": "~3.3",
+                "symfony/dependency-injection": "~3.3",
+                "symfony/event-dispatcher": "~2.8|~3.0",
+                "symfony/filesystem": "~2.8|~3.0",
+                "symfony/http-kernel": "~2.8|~3.0",
+                "symfony/process": "~2.8|~3.0"
             },
             "suggest": {
-                "psr/log-implementation": "For using the console logger",
+                "psr/log": "For using the console logger",
                 "symfony/event-dispatcher": "",
-                "symfony/lock": "",
+                "symfony/filesystem": "",
                 "symfony/process": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -2037,48 +2038,44 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-27T07:40:44+00:00"
+            "time": "2017-07-29T21:27:59+00:00"
         },
         {
-            "name": "symfony/contracts",
-            "version": "v1.0.2",
+            "name": "symfony/debug",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/contracts.git",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "7c13ae8ce1e2adbbd574fc39de7be498e1284e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/7c13ae8ce1e2adbbd574fc39de7be498e1284e13",
+                "reference": "7c13ae8ce1e2adbbd574fc39de7be498e1284e13",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.5.9",
+                "psr/log": "~1.0"
+            },
+            "conflict": {
+                "symfony/http-kernel": ">=2.3,<2.3.24|~2.4.0|>=2.5,<2.5.9|>=2.6,<2.6.2"
             },
             "require-dev": {
-                "psr/cache": "^1.0",
-                "psr/container": "^1.0"
-            },
-            "suggest": {
-                "psr/cache": "When using the Cache contracts",
-                "psr/container": "When using the Service contracts",
-                "symfony/cache-contracts-implementation": "",
-                "symfony/service-contracts-implementation": "",
-                "symfony/translation-contracts-implementation": ""
+                "symfony/http-kernel": "~2.8|~3.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Symfony\\Contracts\\": ""
+                    "Symfony\\Component\\Debug\\": ""
                 },
                 "exclude-from-classmap": [
-                    "**/Tests/"
+                    "/Tests/"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2087,48 +2084,39 @@
             ],
             "authors": [
                 {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
                 },
                 {
                     "name": "Symfony Community",
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "A set of abstractions extracted out of the Symfony components",
+            "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "keywords": [
-                "abstractions",
-                "contracts",
-                "decoupling",
-                "interfaces",
-                "interoperability",
-                "standards"
-            ],
-            "time": "2018-12-05T08:06:11+00:00"
+            "time": "2017-07-28T15:27:31+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.2.1",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "2f4c8b999b3b7cadb2a69390b01af70886753710"
+                "reference": "427987eb4eed764c3b6e38d52a0f87989e010676"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2f4c8b999b3b7cadb2a69390b01af70886753710",
-                "reference": "2f4c8b999b3b7cadb2a69390b01af70886753710",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/427987eb4eed764c3b6e38d52a0f87989e010676",
+                "reference": "427987eb4eed764c3b6e38d52a0f87989e010676",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-ctype": "~1.8"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -2155,29 +2143,29 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:52:12+00:00"
+            "time": "2017-07-11T07:17:58+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.2.1",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d"
+                "reference": "baea7f66d30854ad32988c11a09d7ffd485810c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
-                "reference": "e53d477d7b5c4982d0e1bfd2298dbee63d01441d",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/baea7f66d30854ad32988c11a09d7ffd485810c4",
+                "reference": "baea7f66d30854ad32988c11a09d7ffd485810c4",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -2204,7 +2192,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-11T19:52:12+00:00"
+            "time": "2017-06-01T21:01:25+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2325,25 +2313,25 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.2.1",
+            "version": "v3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0"
+                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/2b341009ccec76837a7f46f59641b431e4d4c2b0",
-                "reference": "2b341009ccec76837a7f46f59641b431e4d4c2b0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/07432804942b9f6dd7b7377faf9920af5f95d70a",
+                "reference": "07432804942b9f6dd7b7377faf9920af5f95d70a",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": ">=5.5.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -2370,7 +2358,62 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-20T16:22:05+00:00"
+            "time": "2017-07-13T13:05:09+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/ddc23324e6cfe066f3dd34a37ff494fa80b617ed",
+                "reference": "ddc23324e6cfe066f3dd34a37ff494fa80b617ed",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-23T12:43:26+00:00"
         },
         {
             "name": "true/punycode",
@@ -2420,16 +2463,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.6.0",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1"
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a11dd39f5b6589e14f0ff3b36675d06047c589b1",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
                 "shasum": ""
             },
             "require": {
@@ -2483,24 +2526,24 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-12-16T10:36:48+00:00"
+            "time": "2019-01-14T15:00:48+00:00"
         },
         {
             "name": "vaersaagod/dospaces",
-            "version": "v1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaersaagod/dospaces.git",
-                "reference": "967c56c6d83d2aedbdec634a0a0c9a84222d37d2"
+                "reference": "ed85f5381eaec467a07ca92ae464845c24bae166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/967c56c6d83d2aedbdec634a0a0c9a84222d37d2",
-                "reference": "967c56c6d83d2aedbdec634a0a0c9a84222d37d2",
+                "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/ed85f5381eaec467a07ca92ae464845c24bae166",
+                "reference": "ed85f5381eaec467a07ca92ae464845c24bae166",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.1.0",
                 "league/flysystem-aws-s3-v3": "^1.0.13"
             },
             "type": "craft-plugin",
@@ -2515,6 +2558,7 @@
                     "vaersaagod\\dospaces\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2526,38 +2570,33 @@
             ],
             "description": "DigitalOcean Spaces integration for Craft CMS",
             "keywords": [
+                "Flysystem",
                 "aws",
                 "cms",
                 "craftcms",
                 "digitalocean",
-                "flysystem",
                 "spaces",
                 "yii2"
             ],
-            "support": {
-                "issues": "https://github.com/vaersaagod/dospaces/issues?state=open",
-                "source": "https://github.com/vaersaagod/dospaces",
-                "docs": "https://github.com/vaersaagod/dospaces",
-                "rss": "https://github.com/vaersaagod/dospaces/commits/master.atom"
-            },
-            "time": "2018-06-15T17:40:42+00:00"
+            "time": "2019-02-02T15:05:45+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.1",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.0"
@@ -2565,7 +2604,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -2590,7 +2629,57 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-29T20:33:41+00:00"
+            "time": "2019-01-29T11:11:52+00:00"
+        },
+        {
+            "name": "yii2tech/ar-softdelete",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/ar-softdelete.git",
+                "reference": "3e29cb1865a7df66de42f6f888b99d2797a80204"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/ar-softdelete/zipball/3e29cb1865a7df66de42f6f888b99d2797a80204",
+                "reference": "3e29cb1865a7df66de42f6f888b99d2797a80204",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\ar\\softdelete\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Provides support for ActiveRecord soft delete in Yii2",
+            "keywords": [
+                "active",
+                "delete",
+                "integrity",
+                "record",
+                "smart",
+                "soft",
+                "yii2"
+            ],
+            "time": "2019-01-25T15:57:39+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -2694,20 +2783,20 @@
         },
         {
             "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "3f49c47924bb9fa5363c3fc7b073d954168cf438"
+                "reference": "4677951dda712dd99d5bf2a127eaee118dfea860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/3f49c47924bb9fa5363c3fc7b073d954168cf438",
-                "reference": "3f49c47924bb9fa5363c3fc7b073d954168cf438",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/4677951dda712dd99d5bf2a127eaee118dfea860",
+                "reference": "4677951dda712dd99d5bf2a127eaee118dfea860",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+                "bower-asset/bootstrap": "3.4.* | 3.3.* | 3.2.* | 3.1.*",
                 "yiisoft/yii2": "~2.0.6"
             },
             "type": "yii2-extension",
@@ -2750,7 +2839,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2018-02-16T10:41:52+00:00"
+            "time": "2019-01-29T21:39:45+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -3034,22 +3123,24 @@
         },
         {
             "name": "zendframework/zend-feed",
-            "version": "2.10.3",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-feed.git",
-                "reference": "6641f4cf3f4586c63f83fd70b6d19966025c8888"
+                "reference": "5248e9fffa760e5c36092aeff02c3797e4a8a690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/6641f4cf3f4586c63f83fd70b6d19966025c8888",
-                "reference": "6641f4cf3f4586c63f83fd70b6d19966025c8888",
+                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/5248e9fffa760e5c36092aeff02c3797e4a8a690",
+                "reference": "5248e9fffa760e5c36092aeff02c3797e4a8a690",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-escaper": "^2.5.2",
-                "zendframework/zend-stdlib": "^2.7.7 || ^3.1"
+                "zendframework/zend-stdlib": "^3.2.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7.23 || ^6.4.3",
@@ -3072,8 +3163,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.10.x-dev",
-                    "dev-develop": "2.11.x-dev"
+                    "dev-master": "2.11.x-dev",
+                    "dev-develop": "2.12.x-dev"
                 }
             },
             "autoload": {
@@ -3091,7 +3182,7 @@
                 "feed",
                 "zf"
             ],
-            "time": "2018-08-01T13:53:20+00:00"
+            "time": "2019-01-29T21:37:15+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
@@ -3151,6 +3242,6 @@
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.2"
+        "php": "7.0"
     }
 }
