@@ -1,0 +1,113 @@
+dateModified: 1550738644
+email:
+  fromEmail: camurphy@gmail.com
+  fromName: 'Short Shadows'
+  template: null
+  transportSettings: null
+  transportType: craft\mail\transportadapters\Sendmail
+fieldGroups:
+  dbce0d1c-c316-40e6-8467-548d9479c8d3:
+    name: Common
+fields:
+  dac733ba-e739-40fa-a060-acbf9d13e8a4:
+    contentColumnType: string
+    fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
+    handle: coverImage
+    instructions: ''
+    name: 'Cover Image'
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      targetSiteId: null
+      useSingleFolder: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+plugins:
+  assetrev:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  dospaces:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+sections:
+  49f87acd-c335-4a0e-9893-36a2f495e2aa:
+    enableVersioning: true
+    entryTypes:
+      13ca40cd-6fb9-4e19-a394-9cb05ad37081:
+        handle: page
+        hasTitleField: true
+        name: Page
+        sortOrder: 1
+        titleFormat: null
+        titleLabel: Title
+    handle: page
+    name: Page
+    propagateEntries: true
+    siteSettings:
+      fab58f40-3fab-499a-846e-a1e4e2aa14c5:
+        enabledByDefault: true
+        hasUrls: true
+        template: _page
+        uriFormat: '{slug}'
+    structure:
+      maxLevels: null
+      uid: 27e1e5d7-2d9f-4bfb-a10d-9521067dd70e
+    type: structure
+siteGroups:
+  6eb4e5a1-5ee3-4a0c-a804-f76302f14c23:
+    name: 'Short Shadows'
+sites:
+  fab58f40-3fab-499a-846e-a1e4e2aa14c5:
+    baseUrl: '@web/'
+    handle: default
+    hasUrls: true
+    language: en
+    name: 'Short Shadows'
+    primary: true
+    siteGroup: 6eb4e5a1-5ee3-4a0c-a804-f76302f14c23
+    sortOrder: 1
+system:
+  edition: solo
+  live: true
+  name: 'Short Shadows'
+  schemaVersion: 3.1.25
+  timeZone: Australia/Melbourne
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: ''
+  photoVolumeUid: null
+  requireEmailVerification: true
+volumes:
+  6b543568-4def-4735-bc26-59cf01f481c9:
+    handle: images
+    hasUrls: true
+    name: Images
+    settings:
+      bucket: $ASSET_BUCKET
+      endpoint: $ASSET_ENDPOINT
+      expires: ''
+      keyId: $ASSET_ACCESS_KEY_ID
+      region: $ASSET_REGION
+      secret: $ASSET_SECRET_ACCESS_KEY
+      subfolder: $ASSET_SUBFOLDER
+    sortOrder: 1
+    type: vaersaagod\dospaces\Volume
+    url: $ASSET_BASE_URL
