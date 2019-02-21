@@ -8,7 +8,10 @@ Encore.setOutputPath('web/static/assets')
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableVersioning()
-  .enableSassLoader()
+  .enableSassLoader(() => {}, {
+    // https://github.com/symfony/webpack-encore/issues/253
+    resolveUrlLoader: false,
+  })
   .enablePostCssLoader();
 
 const config = Encore.getWebpackConfig();
