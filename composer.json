@@ -31,6 +31,9 @@
     "scripts": {
         "compile": [
             "./node_modules/.bin/encore production"
+        ],
+        "deploy-assets": [
+            "source /etc/environment && ./scripts/deploy-assets.php"
         ]
     }
 }
