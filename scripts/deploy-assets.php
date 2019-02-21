@@ -68,7 +68,7 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
       $config = [];
 
       if (preg_match('/.(js|css)$/', $entry)) {
-        $config['Content-Encoding'] = 'gzip';
+        $config['ContentEncoding'] = 'gzip';
       }
 
       echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
