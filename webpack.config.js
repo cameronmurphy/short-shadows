@@ -16,9 +16,11 @@ Encore.setOutputPath('web/static/assets')
   .enablePostCssLoader();
 
 if (Encore.isProduction()) {
-  Encore.addPlugin(new CompressionPlugin({
-    filename: '[path][query]'
-  }));
+  Encore.addPlugin(
+    new CompressionPlugin({
+      filename: '[path][query]',
+    })
+  );
 }
 
 const config = Encore.getWebpackConfig();
