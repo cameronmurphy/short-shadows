@@ -1,4 +1,4 @@
-dateModified: 1550741410
+dateModified: 1550744046
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -162,13 +162,13 @@ volumes:
     hasUrls: true
     name: Images
     settings:
-      bucket: $ASSET_BUCKET
-      endpoint: $ASSET_ENDPOINT
+      bucket: '@assetBucket'
+      endpoint: '@assetEndpoint'
       expires: ''
-      keyId: $ASSET_ACCESS_KEY_ID
-      region: $ASSET_REGION
-      secret: $ASSET_SECRET_ACCESS_KEY
-      subfolder: $ASSET_SUBFOLDER
+      keyId: '@assetAccessKeyId'
+      region: '@assetRegion'
+      secret: '@assetSecretAccessKey'
+      subfolder: '@assetSubfolder'
     sortOrder: 1
     type: vaersaagod\dospaces\Volume
-    url: $ASSET_BASE_URL
+    url: '@assetBaseUrl'

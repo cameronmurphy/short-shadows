@@ -26,6 +26,16 @@ return [
         // Whether to save the project config out to config/project.yaml
         // (see https://docs.craftcms.com/v3/project-config.html)
         'useProjectConfigFile' => true,
+
+        'aliases' => [
+            '@assetBaseUrl' => getenv('ASSET_BASE_URL'),
+            '@assetAccessKeyId' => getenv('ASSET_ACCESS_KEY_ID'),
+            '@assetSecretAccessKey' => getenv('ASSET_SECRET_ACCESS_KEY'),
+            '@assetEndpoint' => getenv('ASSET_ENDPOINT'),
+            '@assetRegion' => getenv('ASSET_REGION'),
+            '@assetBucket' => getenv('ASSET_BUCKET'),
+            '@assetSubfolder' => getenv('ASSET_SUBFOLDER'),
+        ],
     ],
 
     // Dev environment settings
