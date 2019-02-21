@@ -9,9 +9,7 @@ Encore.setOutputPath('web/dist/')
   .cleanupOutputBeforeBuild()
   .enableVersioning()
   .enableSassLoader()
-  .enablePostCssLoader(options => {
-    _.set(options, 'config.path', 'config/postcss.config.js');
-  });
+  .enablePostCssLoader();
 
 const config = Encore.getWebpackConfig();
 _.set(config, 'watchOptions', { poll: true, ignored: /node_modules/ });
