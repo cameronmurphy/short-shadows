@@ -2,7 +2,7 @@
 
 return [
     '*' => [
-        'manifestPath' => 'web/dist/manifest.json',
-        'assetsBasePath' => 'web/dist/',
+        'manifestPath' => 'web/static/assets/manifest.json',
+        'assetsBasePath' => 'web/static/assets/',
     ],
 ];

@@ -29,10 +29,10 @@
       {% include '_components/header' %}
       {% block content %}{% endblock %}
     </div>
-    <script defer src="{{ rev('dist/runtime.js') }}"></script>
-    <script defer src="{{ rev('dist/main.js') }}"></script>
+    <script defer src="{{ rev('static/assets/runtime.js') }}"></script>
+    <script defer src="{{ rev('static/assets/main.js') }}"></script>
     <noscript id="deferred-styles">
-      <link rel="stylesheet" href="{{ rev('dist/main.css') }}">
+      <link rel="stylesheet" href="{{ rev('static/assets/main.css') }}">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One">
     </noscript>
     <script>

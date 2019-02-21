@@ -1,8 +1,8 @@
 const _ = require('lodash');
 const Encore = require('@symfony/webpack-encore');
 
-Encore.setOutputPath('web/dist/')
-  .setPublicPath('/dist')
+Encore.setOutputPath('web/static/assets')
+  .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
   .enableSourceMaps(!Encore.isProduction())
   .enableSingleRuntimeChunk()
