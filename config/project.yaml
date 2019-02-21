@@ -1,4 +1,4 @@
-dateModified: 1550740012
+dateModified: 1550741410
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -24,6 +24,68 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+matrixBlockTypes:
+  1f9fb9e4-14d5-4e99-9678-6db10cc835b4:
+    field: 9ad7232b-940b-4762-85a7-0d9081a79992
+    fieldLayouts:
+      ba21b6a2-77e6-4bae-a91e-15a9c3e05b55:
+        tabs:
+          -
+            fields:
+              c10f7170-1f71-4096-936b-b22a683cd855:
+                required: false
+                sortOrder: 1
+              e19422c8-5020-43cb-9211-44f3746419bb:
+                required: true
+                sortOrder: 2
+            name: Content
+            sortOrder: 1
+    fields:
+      c10f7170-1f71-4096-936b-b22a683cd855:
+        contentColumnType: string
+        fieldGroup: null
+        handle: image
+        instructions: ''
+        name: Image
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources: '*'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: large
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      e19422c8-5020-43cb-9211-44f3746419bb:
+        contentColumnType: text
+        fieldGroup: null
+        handle: altText
+        instructions: ''
+        name: 'Alt Text'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: imageBlock
+    name: 'Image Block'
+    sortOrder: 1
 plugins:
   assetrev:
     enabled: true

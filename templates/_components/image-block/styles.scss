@@ -1,0 +1,17 @@
+.image-block {
+  .col {
+    text-align: center;
+  }
+
+  img {
+    height: calc(100vh - 8rem);
+    width: auto;
+  }
+
+  &.thin {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+}

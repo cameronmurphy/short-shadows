@@ -2,9 +2,11 @@
 
 .header {
   color: $color-white;
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-bottom: 1rem;
 
   .brand-col {
-    font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
   }
 }

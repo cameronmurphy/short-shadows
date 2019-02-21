@@ -25,14 +25,15 @@
     <title>Short Shadows</title>
   </head>
   <body id="top">
-    {% include '_components/header' %}
     <div class="content">
+      {% include '_components/header' %}
       {% block content %}{% endblock %}
     </div>
     <script defer src="{{ rev('dist/runtime.js') }}"></script>
     <script defer src="{{ rev('dist/main.js') }}"></script>
     <noscript id="deferred-styles">
       <link rel="stylesheet" href="{{ rev('dist/main.css') }}">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One">
     </noscript>
     <script>
       var loadDeferredStyles = function() {
