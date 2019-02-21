@@ -4,6 +4,26 @@ $root-font-size-tablet: 16px;
 $root-font-size-desktop: 18px;
 $root-font-size-large-desktop: 24px;
 
+// Grid config
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1450px,
+  xxxl: 1600px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1350px,
+  xxxl: 1520px
+);
+
 // Colors
 $color-black: #000;
 $color-white: #fff;

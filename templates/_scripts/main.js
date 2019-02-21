@@ -1,3 +1,3 @@
 import '../_styles/main.scss';
 
-import '../_components/homepage';
+import '../_components/header';

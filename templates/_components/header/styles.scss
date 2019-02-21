@@ -1,0 +1,10 @@
+@import '../../_styles/variables';
+
+.header {
+  color: $color-white;
+
+  .brand-col {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}

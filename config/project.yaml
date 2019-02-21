@@ -1,4 +1,4 @@
-dateModified: 1550738644
+dateModified: 1550740012
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -9,32 +9,21 @@ fieldGroups:
   dbce0d1c-c316-40e6-8467-548d9479c8d3:
     name: Common
 fields:
-  dac733ba-e739-40fa-a060-acbf9d13e8a4:
+  9ad7232b-940b-4762-85a7-0d9081a79992:
     contentColumnType: string
     fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
-    handle: coverImage
+    handle: contentMatrix
     instructions: ''
-    name: 'Cover Image'
+    name: 'Content Matrix'
     searchable: true
     settings:
-      allowedKinds: null
-      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
-      defaultUploadLocationSubpath: ''
-      limit: '1'
-      localizeRelations: false
-      restrictFiles: ''
-      selectionLabel: ''
-      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
-      singleUploadLocationSubpath: ''
-      source: null
-      sources:
-        - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
-      targetSiteId: null
-      useSingleFolder: ''
-      viewMode: large
+      contentTable: '{{%matrixcontent_contentmatrix}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
     translationKeyFormat: null
     translationMethod: site
-    type: craft\fields\Assets
+    type: craft\fields\Matrix
 plugins:
   assetrev:
     enabled: true
@@ -51,11 +40,21 @@ sections:
     enableVersioning: true
     entryTypes:
       13ca40cd-6fb9-4e19-a394-9cb05ad37081:
+        fieldLayouts:
+          47b3e57d-1333-434c-b657-9822c1ce23d7:
+            tabs:
+              -
+                fields:
+                  9ad7232b-940b-4762-85a7-0d9081a79992:
+                    required: false
+                    sortOrder: 1
+                name: Content
+                sortOrder: 1
         handle: page
         hasTitleField: true
         name: Page
         sortOrder: 1
-        titleFormat: null
+        titleFormat: ''
         titleLabel: Title
     handle: page
     name: Page
