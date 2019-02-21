@@ -30,3 +30,19 @@ Code standards
 --------------
 The tools `eslint` and `sass-lint` are used to ensure `*.js` and `*.scss` files meet the code standards. Use the
 commands `npm run lint-js` and `npm run lint-scss` to lint the codebase. 
+
+Database sync
+-------------
+```bash
+$ cp scripts/.env.sh.example scripts/.env.sh
+# Populate variables in scripts/.env.sh
+$ npm run sync-database
+```
+
+Production asset deployment
+---------------------------
+This relies on the the `ASSET_*` environment variables being exported in `/etc/environment`.
+```bash
+$ npm run build-prod
+$ composer deploy-assets
+```
