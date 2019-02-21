@@ -65,8 +65,14 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
         $remoteFs->delete($entryRelativePath);
       }
 
+      $config = [];
+
+      if (preg_match('/.(js|css)$/', $entry)) {
+        $config['Content-Encoding'] = 'gzip';
+      }
+
       echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
-      $remoteFs->put($entryRelativePath, file_get_contents($entryAbsolutePath));
+      $remoteFs->put($entryRelativePath, file_get_contents($entryAbsolutePath), $config);
     }
   }
 }
