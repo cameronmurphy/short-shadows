@@ -6,9 +6,9 @@ Encore.setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
   .enableSourceMaps(!Encore.isProduction())
+  .enableVersioning(Encore.isProduction())
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
-  .enableVersioning()
   .enableSassLoader(() => {}, {
     // https://github.com/symfony/webpack-encore/issues/253
     resolveUrlLoader: false,
