@@ -1,5 +1,6 @@
 const _ = require('lodash');
 const Encore = require('@symfony/webpack-encore');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 Encore.setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
@@ -13,6 +14,12 @@ Encore.setOutputPath('web/static/assets')
     resolveUrlLoader: false,
   })
   .enablePostCssLoader();
+
+if (Encore.isProduction()) {
+  Encore.addPlugin(new CompressionPlugin({
+    filename: '[path][query]'
+  }));
+}
 
 const config = Encore.getWebpackConfig();
 _.set(config, 'watchOptions', { poll: true, ignored: /node_modules/ });

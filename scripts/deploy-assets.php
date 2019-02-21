@@ -19,6 +19,7 @@ if (getenv('ENVIRONMENT') == 'dev') {
 }
 
 use Aws\S3\S3Client;
+use League\Flysystem\AdapterInterface;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
 use League\Flysystem\FileNotFoundException;
 use League\Flysystem\Filesystem;
@@ -34,7 +35,9 @@ $client = new S3Client([
 ]);
 
 $adapter = new AwsS3Adapter($client, getenv('ASSET_BUCKET'), 'static');
-$remoteFs = new Filesystem($adapter);
+$remoteFs = new Filesystem($adapter, [
+  'visibility' => AdapterInterface::VISIBILITY_PUBLIC
+]);
 
 /**
  * @param Filesystem $remoteFs
@@ -63,9 +66,7 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
       }
 
       echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
-      $remoteFs->put($entryRelativePath, file_get_contents($entryAbsolutePath), [
-        'visibility' => 'public',
-      ]);
+      $remoteFs->put($entryRelativePath, file_get_contents($entryAbsolutePath));
     }
   }
 }
