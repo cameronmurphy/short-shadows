@@ -71,7 +71,7 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
         $config['ContentEncoding'] = 'gzip';
 
         $contentType = $matches[1] === 'js' ? 'javascript' : $matches[1];
-        $config['ContentType'] = 'application/' . $contentType;
+        $config['ContentType'] = 'text/' . $contentType;
       }
 
       echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
