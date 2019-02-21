@@ -23,6 +23,7 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
     <title>Short Shadows</title>
+    <link rel="stylesheet" type="text/css" href="{{ rev('static/assets/main.css') }}">
   </head>
   <body id="top">
     <div class="content">
@@ -31,21 +32,5 @@
     </div>
     <script defer src="{{ rev('static/assets/runtime.js') }}"></script>
     <script defer src="{{ rev('static/assets/main.js') }}"></script>
-    <noscript id="deferred-styles">
-      <link rel="stylesheet" href="{{ rev('static/assets/main.css') }}">
-    </noscript>
-    <script>
-      var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById('deferred-styles');
-        var replacement = document.createElement('div');
-        replacement.innerHTML = addStylesNode.textContent;
-        document.body.appendChild(replacement);
-        addStylesNode.parentElement.removeChild(addStylesNode);
-      };
-      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
-        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
-      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener('load', loadDeferredStyles);
-    </script>
   </body>
 </html>
