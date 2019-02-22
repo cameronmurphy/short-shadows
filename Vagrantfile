@@ -28,4 +28,6 @@ Vagrant.configure("2") do |config|
     sed -i "s,/var/www/public,/var/www/web,g" /etc/httpd/conf.d/000-default.conf
     systemctl restart httpd.service
   SHELL
+
+  config.vm.provision "shell", keep_color: true, privileged: false, inline: "npm install -g npm-check"
 end
