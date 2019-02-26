@@ -1,0 +1,25 @@
+@import '../../_styles/variables';
+
+.mobile-menu {
+  color: white;
+
+  ul {
+    font-family: 'Sierra Nevada Road', serif;
+    list-style: none;
+    padding: 0;
+
+    li {
+      font-size: 200%;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+
+      a {
+        color: $color-white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

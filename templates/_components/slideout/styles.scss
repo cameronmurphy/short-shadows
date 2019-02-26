@@ -1,0 +1,42 @@
+@import '../../_styles/variables';
+
+.slideout-menu {
+  bottom: 0;
+  display: none;
+  min-height: 100vh;
+  overflow-y: scroll;
+  position: fixed;
+  top: 1rem;
+  width: 256px;
+  z-index: 0;
+}
+
+.slideout-menu-left {
+  left: 0;
+}
+
+.slideout-menu-right {
+  right: 0;
+}
+
+.slideout-panel {
+  min-height: 100vh;
+  position: relative;
+  will-change: transform;
+  z-index: 1;
+}
+
+.slideout-open,
+.slideout-panel {
+  overflow: hidden;
+}
+
+.slideout-open {
+  body {
+    overflow: hidden;
+  }
+
+  .slideout-menu {
+    display: block;
+  }
+}

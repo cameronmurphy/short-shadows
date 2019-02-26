@@ -1,0 +1,6 @@
+{% for link in menuLinks.menuLinkMatrix.all %}
+  {% set href = link.page.count > 0 ? link.page.one.url : link.href %}
+  <li>
+    <a href="{{ href }}">{{ link.text }}</a>
+  </li>
+{% endfor %}

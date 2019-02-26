@@ -4,13 +4,9 @@
       <a href="/" class="brand h3">Short Shadows</a>
       <div class="right">
         <ul class="menu d-none d-sm-flex">
-          {% for link in menuLinks.menuLinkMatrix.all %}
-            {% set href = link.page.count > 0 ? link.page.one.url : link.href %}
-            <li>
-              <a href="{{ href }}">{{ link.text }}</a>
-            </li>
-          {% endfor %}
+          {% include '_components/menu-links' %}
         </ul>
+        {% include '_components/hamburger' %}
       </div>
     </div>
   </div>

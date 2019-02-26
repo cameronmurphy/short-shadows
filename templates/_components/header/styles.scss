@@ -1,3 +1,4 @@
+@import '../hamburger/styles';
 @import '../../_styles/variables';
 
 .header {
@@ -7,7 +8,6 @@
   .col {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
   }
 
   .brand {
@@ -21,6 +21,7 @@
   }
 
   .right {
+    align-items: center;
     display: flex;
     flex: 1;
     justify-content: flex-end;
@@ -28,17 +29,13 @@
   }
 
   .menu {
-    font-family: 'Sierra Nevada Road', serif;
     flex: 1;
-    max-width: 500px;
-  }
-
-  ul {
-    display: flex;
+    font-family: 'Sierra Nevada Road', serif;
     font-size: 150%;
     justify-content: space-between;
     list-style: none;
     margin-bottom: 0;
+    max-width: 500px;
 
     a {
       color: $color-white;

@@ -8,6 +8,10 @@ body {
   padding: 1rem;
 }
 
+.content {
+  background-color: $color-black;
+}
+
 .container-fluid {
   max-width: map-get($container-max-widths, xxxl);
   padding: 0;
