@@ -2,11 +2,51 @@
 
 .header {
   color: $color-white;
-  font-family: 'Stormfaze', sans-serif;
   margin-bottom: 1rem;
 
-  .brand-col {
-    text-align: center;
+  .col {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .brand {
+    color: $color-white;
+    font-family: 'Stormfaze', sans-serif;
     text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .menu {
+    font-family: 'Sierra Nevada Road', serif;
+    flex: 1;
+    max-width: 500px;
+  }
+
+  ul {
+    display: flex;
+    font-size: 150%;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+
+    a {
+      color: $color-white;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }

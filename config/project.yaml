@@ -1,4 +1,4 @@
-dateModified: 1550744046
+dateModified: 1551167209
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -6,9 +6,26 @@ email:
   transportSettings: null
   transportType: craft\mail\transportadapters\Sendmail
 fieldGroups:
+  144fa778-58f8-4c3e-8e6b-44568f8edc88:
+    name: Menu
   dbce0d1c-c316-40e6-8467-548d9479c8d3:
     name: Common
 fields:
+  7ff23fb3-f048-4304-a224-ca8dc68a9059:
+    contentColumnType: string
+    fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
+    handle: menuLinkMatrix
+    instructions: ''
+    name: 'Menu Link Matrix'
+    searchable: true
+    settings:
+      contentTable: '{{%matrixcontent_menulinkmatrix}}'
+      localizeBlocks: false
+      maxBlocks: ''
+      minBlocks: ''
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Matrix
   9ad7232b-940b-4762-85a7-0d9081a79992:
     contentColumnType: string
     fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
@@ -24,6 +41,20 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+globalSets:
+  2139ab1e-fe91-45ec-bd0a-1d655c22a775:
+    fieldLayouts:
+      2f5b4165-800b-4e7d-a7b4-982aef999b46:
+        tabs:
+          -
+            fields:
+              7ff23fb3-f048-4304-a224-ca8dc68a9059:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    handle: menuLinks
+    name: 'Menu Links'
 matrixBlockTypes:
   1f9fb9e4-14d5-4e99-9678-6db10cc835b4:
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
@@ -85,6 +116,81 @@ matrixBlockTypes:
         type: craft\fields\PlainText
     handle: imageBlock
     name: 'Image Block'
+    sortOrder: 1
+  5581957b-41f3-4607-abac-7887dfda3f84:
+    field: 7ff23fb3-f048-4304-a224-ca8dc68a9059
+    fieldLayouts:
+      3b46dc73-6df0-4509-9314-23dd2f59daf1:
+        tabs:
+          -
+            fields:
+              15c0650f-bb55-4417-8cff-1fc858828dd5:
+                required: false
+                sortOrder: 2
+              44c7da66-ab2d-4206-b5c0-84dee379f920:
+                required: true
+                sortOrder: 3
+              821fbfea-e5af-4fa8-b6b1-fb5e394dfdfc:
+                required: false
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      15c0650f-bb55-4417-8cff-1fc858828dd5:
+        contentColumnType: text
+        fieldGroup: null
+        handle: href
+        instructions: ''
+        name: Href
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      44c7da66-ab2d-4206-b5c0-84dee379f920:
+        contentColumnType: text
+        fieldGroup: null
+        handle: text
+        instructions: ''
+        name: Text
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      821fbfea-e5af-4fa8-b6b1-fb5e394dfdfc:
+        contentColumnType: string
+        fieldGroup: null
+        handle: page
+        instructions: ''
+        name: Page
+        searchable: true
+        settings:
+          limit: '1'
+          localizeRelations: false
+          selectionLabel: ''
+          source: null
+          sources:
+            - 'section:49f87acd-c335-4a0e-9893-36a2f495e2aa'
+          targetSiteId: null
+          viewMode: null
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Entries
+    handle: link
+    name: Link
     sortOrder: 1
 plugins:
   assetrev:
