@@ -1,5 +1,6 @@
-import Slideout from 'slideout';
 import './styles.scss';
+
+import Slideout from 'slideout';
 
 const init = (panelSelector, menuSelector, toggleSelector, options) => {
   const slideout = new Slideout({

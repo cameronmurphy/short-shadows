@@ -1,5 +1,6 @@
-import $ from 'jquery';
 import './styles.scss';
+
+import $ from 'jquery';
 import init from '../slideout';
 
 $(() => {
