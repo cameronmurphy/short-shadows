@@ -1,4 +1,4 @@
-dateModified: 1551167209
+dateModified: 1551477397
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -63,46 +63,57 @@ matrixBlockTypes:
         tabs:
           -
             fields:
+              187285b4-7ec3-4d66-9857-a8f854a73120:
+                required: false
+                sortOrder: 2
               c10f7170-1f71-4096-936b-b22a683cd855:
                 required: false
                 sortOrder: 1
-              e19422c8-5020-43cb-9211-44f3746419bb:
-                required: true
-                sortOrder: 2
             name: Content
             sortOrder: 1
     fields:
-      c10f7170-1f71-4096-936b-b22a683cd855:
+      187285b4-7ec3-4d66-9857-a8f854a73120:
         contentColumnType: string
         fieldGroup: null
-        handle: image
+        handle: size
         instructions: ''
-        name: Image
+        name: Size
         searchable: true
         settings:
-          allowedKinds: null
-          defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
-          defaultUploadLocationSubpath: ''
-          limit: '1'
-          localizeRelations: false
-          restrictFiles: ''
-          selectionLabel: ''
-          singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
-          singleUploadLocationSubpath: ''
-          source: null
-          sources: '*'
-          targetSiteId: null
-          useSingleFolder: ''
-          viewMode: large
+          options:
+            -
+              default: '1'
+              label: H1
+              value: h1
+            -
+              default: ''
+              label: H2
+              value: h2
+            -
+              default: ''
+              label: H3
+              value: h3
+            -
+              default: ''
+              label: H4
+              value: h4
+            -
+              default: ''
+              label: H5
+              value: h5
+            -
+              default: ''
+              label: H6
+              value: h6
         translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Assets
-      e19422c8-5020-43cb-9211-44f3746419bb:
+        translationMethod: none
+        type: craft\fields\Dropdown
+      c10f7170-1f71-4096-936b-b22a683cd855:
         contentColumnType: text
         fieldGroup: null
-        handle: altText
+        handle: text
         instructions: ''
-        name: 'Alt Text'
+        name: Text
         searchable: true
         settings:
           charLimit: ''
@@ -114,8 +125,8 @@ matrixBlockTypes:
         translationKeyFormat: null
         translationMethod: none
         type: craft\fields\PlainText
-    handle: imageBlock
-    name: 'Image Block'
+    handle: headingBlock
+    name: 'Heading Block'
     sortOrder: 1
   5581957b-41f3-4607-abac-7887dfda3f84:
     field: 7ff23fb3-f048-4304-a224-ca8dc68a9059
