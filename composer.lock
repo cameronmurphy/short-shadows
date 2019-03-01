@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.87.18",
+            "version": "3.87.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fbb29745f8f67be4ba6505c83c0be2c3760fad75"
+                "reference": "266641679eea15075ea13c088f9737460351f7ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fbb29745f8f67be4ba6505c83c0be2c3760fad75",
-                "reference": "fbb29745f8f67be4ba6505c83c0be2c3760fad75",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/266641679eea15075ea13c088f9737460351f7ab",
+                "reference": "266641679eea15075ea13c088f9737460351f7ab",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-02-25T19:10:35+00:00"
+            "time": "2019-02-28T20:02:04+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -453,16 +453,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.14",
+            "version": "3.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c917b9dab1e79911d82ed5933f89058bdc9ffc76"
+                "reference": "81e712ccf8f1a9b0a65426c70769229f20dc6b26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c917b9dab1e79911d82ed5933f89058bdc9ffc76",
-                "reference": "c917b9dab1e79911d82ed5933f89058bdc9ffc76",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/81e712ccf8f1a9b0a65426c70769229f20dc6b26",
+                "reference": "81e712ccf8f1a9b0a65426c70769229f20dc6b26",
                 "shasum": ""
             },
             "require": {
@@ -537,7 +537,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-02-21T23:18:32+00:00"
+            "time": "2019-02-26T20:13:43+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2530,16 +2530,16 @@
         },
         {
             "name": "vaersaagod/dospaces",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vaersaagod/dospaces.git",
-                "reference": "ed85f5381eaec467a07ca92ae464845c24bae166"
+                "reference": "fbcc72eec6fbb56e7dcd8b27ffe6f0deead2ebb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/ed85f5381eaec467a07ca92ae464845c24bae166",
-                "reference": "ed85f5381eaec467a07ca92ae464845c24bae166",
+                "url": "https://api.github.com/repos/vaersaagod/dospaces/zipball/fbcc72eec6fbb56e7dcd8b27ffe6f0deead2ebb0",
+                "reference": "fbcc72eec6fbb56e7dcd8b27ffe6f0deead2ebb0",
                 "shasum": ""
             },
             "require": {
@@ -2578,7 +2578,7 @@
                 "spaces",
                 "yii2"
             ],
-            "time": "2019-02-02T15:05:45+00:00"
+            "time": "2019-02-26T14:56:42+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -2683,16 +2683,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.16",
+            "version": "2.0.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399"
+                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/789de9783d41e6ca10fffc3644a43a764f79b399",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/089198cced57c4b8c9545ddc56001a1bd114b2dd",
+                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd",
                 "shasum": ""
             },
             "require": {
@@ -2779,7 +2779,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-30T23:54:16+00:00"
+            "time": "2019-02-28T07:03:06+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
