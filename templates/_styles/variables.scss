@@ -1,12 +1,14 @@
 // Vertical spacing
-$root-font-size-base: 12px;
+$root-font-size-mobile: 10px;
+$root-font-size-small-tablet: 12px;
 $root-font-size-tablet: 16px;
 $root-font-size-desktop: 18px;
 $root-font-size-large-desktop: 24px;
 
 // Grid config
 $grid-breakpoints: (
-  xs: 0,
+  xxs: 0,
+  xs: 380px,
   sm: 576px,
   md: 768px,
   lg: 992px,

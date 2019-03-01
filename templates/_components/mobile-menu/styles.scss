@@ -10,13 +10,13 @@
   }
 
   li {
-    font-size: 200%;
     margin-bottom: 1rem;
     text-transform: uppercase;
   }
 
   a {
     color: $color-white;
+    font-size: 3rem;
 
     &:hover {
       text-decoration: none;

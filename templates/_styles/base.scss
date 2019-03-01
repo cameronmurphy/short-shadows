@@ -19,32 +19,64 @@ body {
 
 h1,
 .h1 {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 h2,
 .h2 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 h3,
 .h3 {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 h4,
 .h4 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 h5,
 .h5 {
-  font-size: 20px;
+  font-size: 28px;
 }
 
 h6,
 .h6 {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@include media-breakpoint-up(xs) {
+  h1,
+  .h1 {
+    font-size: 48px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 36px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 30px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 24px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 20px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
 }
 
 @include media-breakpoint-up(md) {

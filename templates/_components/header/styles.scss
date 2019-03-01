@@ -1,4 +1,4 @@
-@import '../hamburger/styles';
+@import '~bootstrap/scss/mixins/breakpoints';
 @import '../../_styles/variables';
 
 .header {
@@ -45,5 +45,10 @@
         text-decoration: none;
       }
     }
+  }
+
+  // Lines it up better with the text
+  .hamburger {
+    margin-top: 2px;
   }
 }

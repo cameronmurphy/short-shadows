@@ -1,3 +1,4 @@
+import '../hamburger';
 import './styles.scss';
 
 import $ from 'jquery';
