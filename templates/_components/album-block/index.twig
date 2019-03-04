@@ -53,6 +53,14 @@
             </a>
           </div>
         {% endif %}
+
+        {% if props.youTubeMusicLink %}
+          <div class="col-6 link-col" title="Listen on YouTube Music">
+            <a href="{{ props.youTubeMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-youtube-logo.png') }}" alt="Listen on YouTube Music" />
+            </a>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
