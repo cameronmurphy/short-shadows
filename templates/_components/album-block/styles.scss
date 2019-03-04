@@ -1,0 +1,47 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '../../_styles/variables';
+
+.album-block {
+  img {
+    width: 100%;
+  }
+
+  .album-title {
+    // Hack to prevent wrap
+    @include media-breakpoint-up(md) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 50px;
+    }
+  }
+
+  .image-col {
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .track-listing-col {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+
+  .link-row {
+    margin-bottom: -1rem;
+
+    .link-col {
+      margin-bottom: 1rem;
+    }
+  }
+}

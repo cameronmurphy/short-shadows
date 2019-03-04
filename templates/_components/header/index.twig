@@ -1,7 +1,17 @@
+{% set hasMenuItems = menuLinks.menuLinkMatrix.all|length > 0 %}
+
 <div class="container-fluid header">
   <div class="row">
-    <div class="col brand-col h3">
-      Short Shadows
+    <div class="col{{ hasMenuItems ? ' has-menu-items' : '' }}">
+      <a href="/" class="brand h3">Short Shadows</a>
+      {% if hasMenuItems %}
+        <div class="right">
+          <ul class="menu d-none d-sm-flex">
+            {% include '_components/menu-links' %}
+          </ul>
+          {% include '_components/hamburger' %}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>

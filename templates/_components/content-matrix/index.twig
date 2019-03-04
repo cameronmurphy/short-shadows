@@ -1,8 +1,10 @@
 {% for block in props.matrix.all %}
   {% if block.status == 'enabled' %}
     {% switch block.type %}
-      {% case 'imageBlock' %}
-        {% include '_components/image-block' with { props: block } only %}
+      {% case 'albumBlock' %}
+        {% include '_components/album-block' with { props: block } only %}
+      {% case 'headingBlock' %}
+        {% include '_components/heading-block' with { props: block } only %}
     {% endswitch %}
   {% endif %}
 {% endfor %}

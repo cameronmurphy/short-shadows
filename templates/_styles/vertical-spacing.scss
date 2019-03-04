@@ -1,5 +1,14 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import 'variables';
+
 html {
-  font-size: $root-font-size-base;
+  font-size: $root-font-size-mobile;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: $root-font-size-small-tablet;
+  }
 }
 
 @include media-breakpoint-up(md) {

@@ -1,12 +1,54 @@
+@import '~bootstrap/scss/mixins/breakpoints';
 @import '../../_styles/variables';
 
 .header {
   color: $color-white;
-  font-family: 'Stormfaze', sans-serif;
   margin-bottom: 1rem;
 
-  .brand-col {
-    text-align: center;
+  .col {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .brand {
+    color: $color-white;
+    font-family: 'Stormfaze', sans-serif;
     text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .right {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+  .menu {
+    flex: 1;
+    font-size: 1.75rem;
+    justify-content: space-between;
+    list-style: none;
+    margin-bottom: 0;
+    max-width: 500px;
+
+    a {
+      color: $color-white;
+      text-transform: uppercase;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Lines it up better with the text
+  .hamburger {
+    margin-top: 2px;
   }
 }

@@ -1,0 +1,8 @@
+@import './settings';
+@import '~hamburgers/_sass/hamburgers/hamburgers';
+
+.hamburger {
+  &:focus {
+    outline: 0;
+  }
+}
