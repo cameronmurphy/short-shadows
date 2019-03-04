@@ -1,4 +1,4 @@
-dateModified: 1551479909
+dateModified: 1551731275
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -337,9 +337,9 @@ matrixBlockTypes:
       c29b19f1-f5ee-47cc-a7e1-14b86ae8d930:
         contentColumnType: text
         fieldGroup: null
-        handle: googlePlayLink
+        handle: googlePlayMusicLink
         instructions: ''
-        name: 'Google Play Link'
+        name: 'Google Play Music Link'
         searchable: true
         settings:
           charLimit: ''

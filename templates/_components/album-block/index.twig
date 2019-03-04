@@ -5,11 +5,51 @@
     </div>
     <div class="col-12 col-md-6 track-listing-col">
       <h2 class="h3">{{ props.albumTitle }}</h2>
-      <div class="row">
+      <div class="row link-row">
         {% if props.spotifyLink %}
-          <div class="col-6">
-            <a href="{{ props.spotifyLink }}">
-              <img src="{{ rev('/static/img/spotify-logo.png') }}" alt="Stream on Spotify" />
+          <div class="col-6 link-col" title="Listen on Spotify">
+            <a href="{{ props.spotifyLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-spotify-logo.png') }}" alt="Listen on Spotify" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.googlePlayMusicLink %}
+          <div class="col-6 link-col" title="Listen on Google Play Music">
+            <a href="{{ props.googlePlayMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-google-play-music-logo.png') }}" alt="Listen on Google Play Music" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.appleMusicLink %}
+          <div class="col-6 link-col" title="Listen on Apple Music">
+            <a href="{{ props.appleMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-apple-music-logo.png') }}" alt="Listen on Apple Music" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.tidalLink %}
+          <div class="col-6 link-col" title="Listen on Tidal">
+            <a href="{{ props.tidalLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-tidal-logo.png') }}" alt="Listen on Tidal" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.amazonMusicLink %}
+          <div class="col-6 link-col" title="Listen on Amazon Music">
+            <a href="{{ props.amazonMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/available-on-amazon-music-logo.png') }}" alt="Listen on Amazon Music" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.deezerLink %}
+          <div class="col-6 link-col" title="Listen on Deezer">
+            <a href="{{ props.deezerLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-deezer-logo.png') }}" alt="Listen on Deezer" />
             </a>
           </div>
         {% endif %}
