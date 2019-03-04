@@ -6,7 +6,7 @@ Encore.setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
   .enableSourceMaps(!Encore.isProduction())
-  .enableVersioning()
+  .enableVersioning(Encore.isProduction())
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSassLoader(() => {}, {
