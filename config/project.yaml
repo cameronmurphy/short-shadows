@@ -1,4 +1,4 @@
-dateModified: 1551477397
+dateModified: 1551479909
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -203,6 +203,208 @@ matrixBlockTypes:
     handle: link
     name: Link
     sortOrder: 1
+  d6f64f53-9dde-4367-8952-d862b3103b93:
+    field: 9ad7232b-940b-4762-85a7-0d9081a79992
+    fieldLayouts:
+      f25fa2dd-3347-47ed-aceb-28e9513e2cdd:
+        tabs:
+          -
+            fields:
+              0121b1dc-5593-429e-b6f7-d244d2ab07f0:
+                required: false
+                sortOrder: 3
+              1fe261a4-9f0c-41f3-b1af-b7c348f1610b:
+                required: false
+                sortOrder: 7
+              4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6:
+                required: false
+                sortOrder: 8
+              60bf46a8-2b75-44d5-98f3-c23a7122beed:
+                required: true
+                sortOrder: 2
+              a001db04-1e3e-4a40-92bd-b0b10ff2fa85:
+                required: false
+                sortOrder: 6
+              c29b19f1-f5ee-47cc-a7e1-14b86ae8d930:
+                required: false
+                sortOrder: 4
+              c7edc1ff-7db0-4ec3-a768-8319cb732621:
+                required: false
+                sortOrder: 5
+              d99ba9e3-9ec5-48a3-ba77-850e280c069e:
+                required: true
+                sortOrder: 1
+              e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
+                required: false
+                sortOrder: 9
+            name: Content
+            sortOrder: 1
+    fields:
+      0121b1dc-5593-429e-b6f7-d244d2ab07f0:
+        contentColumnType: text
+        fieldGroup: null
+        handle: spotifyLink
+        instructions: ''
+        name: 'Spotify Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      1fe261a4-9f0c-41f3-b1af-b7c348f1610b:
+        contentColumnType: text
+        fieldGroup: null
+        handle: youTubeMusicLink
+        instructions: ''
+        name: 'YouTube Music Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6:
+        contentColumnType: text
+        fieldGroup: null
+        handle: amazonMusicLink
+        instructions: ''
+        name: 'Amazon Music Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      60bf46a8-2b75-44d5-98f3-c23a7122beed:
+        contentColumnType: string
+        fieldGroup: null
+        handle: cover
+        instructions: ''
+        name: Cover
+        searchable: true
+        settings:
+          allowedKinds: null
+          defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+          defaultUploadLocationSubpath: ''
+          limit: '1'
+          localizeRelations: false
+          restrictFiles: ''
+          selectionLabel: ''
+          singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+          singleUploadLocationSubpath: ''
+          source: null
+          sources:
+            - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+          targetSiteId: null
+          useSingleFolder: ''
+          viewMode: large
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Assets
+      a001db04-1e3e-4a40-92bd-b0b10ff2fa85:
+        contentColumnType: text
+        fieldGroup: null
+        handle: tidalLink
+        instructions: ''
+        name: 'Tidal Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      c29b19f1-f5ee-47cc-a7e1-14b86ae8d930:
+        contentColumnType: text
+        fieldGroup: null
+        handle: googlePlayLink
+        instructions: ''
+        name: 'Google Play Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      c7edc1ff-7db0-4ec3-a768-8319cb732621:
+        contentColumnType: text
+        fieldGroup: null
+        handle: appleMusicLink
+        instructions: ''
+        name: 'Apple Music Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      d99ba9e3-9ec5-48a3-ba77-850e280c069e:
+        contentColumnType: text
+        fieldGroup: null
+        handle: albumTitle
+        instructions: ''
+        name: Title
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+      e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
+        contentColumnType: text
+        fieldGroup: null
+        handle: deezerLink
+        instructions: ''
+        name: 'Deezer Link'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
+    handle: albumBlock
+    name: 'Album Block'
+    sortOrder: 2
 plugins:
   assetrev:
     enabled: true

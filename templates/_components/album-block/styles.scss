@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '../../_styles/variables';
+
+.album-block {
+  img {
+    width: 100%;
+  }
+
+  .image-col {
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  .track-listing-col {
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+}
