@@ -3,7 +3,6 @@
 .slideout-menu {
   bottom: 0;
   display: none;
-  min-height: 100vh;
   overflow-y: scroll;
   position: fixed;
   top: 1rem;
@@ -20,7 +19,6 @@
 }
 
 .slideout-panel {
-  min-height: 100vh;
   position: relative;
   will-change: transform;
   z-index: 1;
