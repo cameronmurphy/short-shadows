@@ -6,6 +6,21 @@
     width: 100%;
   }
 
+  .album-title {
+    // Hack to prevent wrap
+    @include media-breakpoint-up(md) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 36px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 50px;
+    }
+  }
+
   .image-col {
     margin-bottom: 2rem;
 
