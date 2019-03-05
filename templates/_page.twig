@@ -11,12 +11,12 @@
   {% if entry.noIndex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
 
   <meta property="og:title" content="{{ entry.metaTitle }}" />
-  <meta property="og:url" content="{{ craft.request.url }}" />
+  <meta property="og:url" content="{{ craft.app.request.absoluteUrl }}" />
   <meta property="og:site_name" content="{{ siteName }}" />
   <meta property="og:description" content="{{ entry.metaDescription }}" />
 
   <link rel="home" href="{{ siteUrl }}" />
-  <link rel="canonical" href="{{ craft.request.url }}">
+  <link rel="canonical" href="{{ craft.app.request.absoluteUrl }}">
 {% endblock %}
 
 {% block content %}
