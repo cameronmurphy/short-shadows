@@ -1,8 +1,9 @@
 {% set hasMenuItems = menuLinks.menuLinkMatrix.all|length > 0 %}
+{% set hasOnlyOneItem = menuLinks.menuLinkMatrix.all|length == 1 %}
 
 <div class="container-fluid header">
   <div class="row">
-    <div class="col{{ hasMenuItems ? ' has-menu-items' : '' }}">
+    <div class="col{{ hasMenuItems ? ' has-menu-items' : '' }}{{ hasOnlyOneItem ? ' has-only-one-item' : '' }}">
       <a href="/" class="brand h3">Short Shadows</a>
       {% if hasMenuItems %}
         <div class="right">

@@ -5,6 +5,11 @@
   .row {
     border-bottom: 1px solid $color-white;
     padding-bottom: 1rem;
+    padding-top: 1rem;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
 
     @include media-breakpoint-up(md) {
       border-bottom: none;

@@ -47,6 +47,12 @@
     }
   }
 
+  .has-only-one-item {
+    .menu {
+      justify-content: flex-end;
+    }
+  }
+
   // Lines it up better with the text
   .hamburger {
     margin-top: 2px;
