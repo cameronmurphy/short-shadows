@@ -1,4 +1,4 @@
-dateModified: 1551748083
+dateModified: 1551750573
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -10,9 +10,56 @@ fieldGroups:
     name: Menu
   713fa806-5df3-45bb-b7c8-6bebe1439715:
     name: SEO
+  b661e58a-b224-46d6-99e7-b360a11b551c:
+    name: Gigs
   dbce0d1c-c316-40e6-8467-548d9479c8d3:
     name: Common
 fields:
+  08213a91-513a-488e-ba8d-8eb4187908a0:
+    contentColumnType: 'decimal(12,2)'
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: cost
+    instructions: ''
+    name: Cost
+    searchable: true
+    settings:
+      decimals: '2'
+      defaultValue: null
+      max: null
+      min: '0'
+      size: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Number
+  0fcda009-bf92-4f34-9b70-122791d8211c:
+    contentColumnType: text
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: venueName
+    instructions: ''
+    name: 'Venue Name'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  3548494e-7483-4e24-961b-d9eb9d29d042:
+    contentColumnType: string
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: detailsLink
+    instructions: ''
+    name: 'Details Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   4f8b2d72-a3f9-42bb-8647-961c32aba77c:
     contentColumnType: text
     fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
@@ -30,6 +77,20 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
+    contentColumnType: datetime
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: date
+    instructions: ''
+    name: Date
+    searchable: true
+    settings:
+      minuteIncrement: '15'
+      showDate: true
+      showTime: true
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
   7ff23fb3-f048-4304-a224-ca8dc68a9059:
     contentColumnType: string
     fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
@@ -89,6 +150,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
+  d7275a7b-34e1-407a-854b-397a5f51147a:
+    contentColumnType: string
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: ticketsLink
+    instructions: ''
+    name: 'Tickets Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
 globalSets:
   2139ab1e-fe91-45ec-bd0a-1d655c22a775:
     fieldLayouts:
@@ -104,6 +177,41 @@ globalSets:
     handle: menuLinks
     name: 'Menu Links'
 matrixBlockTypes:
+  14a417e9-341b-47be-afb5-5a57ef17601f:
+    field: 9ad7232b-940b-4762-85a7-0d9081a79992
+    fieldLayouts:
+      7e0c7851-8a96-42f3-bf32-83578ce9e432:
+        tabs:
+          -
+            fields:
+              19176f80-a3fe-469e-b87d-9ca004aea297:
+                required: true
+                sortOrder: 1
+            name: Content
+            sortOrder: 1
+    fields:
+      19176f80-a3fe-469e-b87d-9ca004aea297:
+        contentColumnType: string
+        fieldGroup: null
+        handle: gigs
+        instructions: ''
+        name: Gigs
+        searchable: true
+        settings:
+          limit: ''
+          localizeRelations: false
+          selectionLabel: ''
+          source: null
+          sources:
+            - 'section:8ed8686e-cb63-4d47-90d6-06750b461df7'
+          targetSiteId: null
+          viewMode: null
+        translationKeyFormat: null
+        translationMethod: site
+        type: craft\fields\Entries
+    handle: gigsBlock
+    name: 'Gigs Block'
+    sortOrder: 3
   1f9fb9e4-14d5-4e99-9678-6db10cc835b4:
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
@@ -511,6 +619,48 @@ sections:
       maxLevels: null
       uid: 27e1e5d7-2d9f-4bfb-a10d-9521067dd70e
     type: structure
+  8ed8686e-cb63-4d47-90d6-06750b461df7:
+    enableVersioning: true
+    entryTypes:
+      b052ad94-61bc-42c0-a73b-b919524826a7:
+        fieldLayouts:
+          581bd25c-b8c0-43c1-9ce6-7ff8342c1925:
+            tabs:
+              -
+                fields:
+                  08213a91-513a-488e-ba8d-8eb4187908a0:
+                    required: false
+                    sortOrder: 3
+                  0fcda009-bf92-4f34-9b70-122791d8211c:
+                    required: false
+                    sortOrder: 2
+                  3548494e-7483-4e24-961b-d9eb9d29d042:
+                    required: false
+                    sortOrder: 4
+                  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
+                    required: false
+                    sortOrder: 1
+                  d7275a7b-34e1-407a-854b-397a5f51147a:
+                    required: false
+                    sortOrder: 5
+                name: Main
+                sortOrder: 1
+        handle: gigs
+        hasTitleField: true
+        name: Gigs
+        sortOrder: 1
+        titleFormat: ''
+        titleLabel: Title
+    handle: gigs
+    name: Gigs
+    propagateEntries: true
+    siteSettings:
+      fab58f40-3fab-499a-846e-a1e4e2aa14c5:
+        enabledByDefault: true
+        hasUrls: true
+        template: ''
+        uriFormat: 'gigs/{slug}'
+    type: channel
 siteGroups:
   6eb4e5a1-5ee3-4a0c-a804-f76302f14c23:
     name: 'Short Shadows'
@@ -519,7 +669,7 @@ sites:
     baseUrl: '@web/'
     handle: default
     hasUrls: true
-    language: en
+    language: en-AU
     name: 'Short Shadows'
     primary: true
     siteGroup: 6eb4e5a1-5ee3-4a0c-a804-f76302f14c23
