@@ -1,5 +1,24 @@
 {% extends '_layout' %}
 
+{% block meta %}
+  {{ parent() }}
+  <title>
+    {%- if entry.metaTitle %}{{ entry.metaTitle }}{% else %}{{ entry.title }}{% endif -%}
+    {%- if entry.slug != '__home__' %} | {{ siteName }}{% endif -%}
+  </title>
+  <meta name="description" content="{{ entry.metaDescription }}" />
+
+  {% if entry.noIndex %}<meta name="robots" content="noindex, nofollow" />{% endif %}
+
+  <meta property="og:title" content="{{ entry.metaTitle }}" />
+  <meta property="og:url" content="{{ craft.request.url }}" />
+  <meta property="og:site_name" content="{{ siteName }}" />
+  <meta property="og:description" content="{{ entry.metaDescription }}" />
+
+  <link rel="home" href="{{ siteUrl }}" />
+  <link rel="canonical" href="{{ craft.request.url }}">
+{% endblock %}
+
 {% block content %}
   {% include '_components/content-matrix' with { props: { matrix: entry.contentMatrix } } only %}
 {% endblock %}

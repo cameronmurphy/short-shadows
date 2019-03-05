@@ -1,4 +1,4 @@
-dateModified: 1551734908
+dateModified: 1551748083
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -8,9 +8,28 @@ email:
 fieldGroups:
   144fa778-58f8-4c3e-8e6b-44568f8edc88:
     name: Menu
+  713fa806-5df3-45bb-b7c8-6bebe1439715:
+    name: SEO
   dbce0d1c-c316-40e6-8467-548d9479c8d3:
     name: Common
 fields:
+  4f8b2d72-a3f9-42bb-8647-961c32aba77c:
+    contentColumnType: text
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    handle: metaDescription
+    instructions: ''
+    name: 'Meta Description'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   7ff23fb3-f048-4304-a224-ca8dc68a9059:
     contentColumnType: string
     fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
@@ -26,6 +45,23 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+  81753f99-58b5-42f4-9c5a-242515fb1005:
+    contentColumnType: text
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    handle: metaTitle
+    instructions: ''
+    name: 'Meta Title'
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   9ad7232b-940b-4762-85a7-0d9081a79992:
     contentColumnType: string
     fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
@@ -41,6 +77,18 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
+  bb049cda-6a69-4ac4-b36f-0748ae735133:
+    contentColumnType: boolean
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    handle: noIndex
+    instructions: ''
+    name: 'No Index'
+    searchable: true
+    settings:
+      default: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
 globalSets:
   2139ab1e-fe91-45ec-bd0a-1d655c22a775:
     fieldLayouts:
@@ -431,6 +479,19 @@ sections:
                     sortOrder: 1
                 name: Content
                 sortOrder: 1
+              -
+                fields:
+                  4f8b2d72-a3f9-42bb-8647-961c32aba77c:
+                    required: false
+                    sortOrder: 2
+                  81753f99-58b5-42f4-9c5a-242515fb1005:
+                    required: false
+                    sortOrder: 1
+                  bb049cda-6a69-4ac4-b36f-0748ae735133:
+                    required: false
+                    sortOrder: 3
+                name: SEO
+                sortOrder: 2
         handle: page
         hasTitleField: true
         name: Page
