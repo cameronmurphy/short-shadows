@@ -1,7 +1,7 @@
 import '../hamburger';
 import './styles.scss';
 
-import $ from 'jquery';
+import $ from 'jquery/dist/jquery.slim';
 import init from '../slideout';
 
 $(() => {
