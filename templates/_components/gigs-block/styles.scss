@@ -1,0 +1,35 @@
+@import '../../_styles/variables';
+@import '~bootstrap/scss/mixins/breakpoints';
+
+.gigs-block {
+  .row {
+    border-bottom: 1px solid $color-white;
+    padding-bottom: 1rem;
+
+    @include media-breakpoint-up(md) {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  .date-col,
+  .cost-col,
+  .links-col,
+  .time-col,
+  .venue-name-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .links-col {
+    a {
+      &:not(:first-of-type) {
+        margin-left: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+    }
+  }
+}

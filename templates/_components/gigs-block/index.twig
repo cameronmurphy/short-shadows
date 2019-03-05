@@ -1,37 +1,32 @@
 <div class="container-fluid gigs-block">
+  {% for gig in props.gigs.all %}
   <div class="row">
-    <div class="col">
-      <table class="table">
-        <thead>
-        <tr>
-          <th scope="col">Date</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-        </tbody>
-      </table>
-
+    <div class="col-12 col-md-3 h2 date-col">{{ gig.date|date('F j') }}</div>
+    <div class="col-6 col-xs-5 col-md-2 h3 time-col">{{ gig.date|date('g:ia') }}</div>
+    <div class="col-6 col-xs-7 col-md-2 h3 cost-col">
+      {%- if gig.cost > 0 -%}
+        {{ gig.cost|currency('AUD')|replace('.00', null) }}
+      {%- else -%}
+        FREE
+      {%- endif -%}
+    </div>
+    <div class="col-6 col-xs-5 col-md-3 h3 venue-name-col">
+      {%- if gig.venueLink -%}
+        <a href="{{ gig.venueLink }}" title="{{ gig.venueName }}" target="_blank">
+      {%- endif -%}
+      {{ gig.venueName }}
+      {%- if gig.venueLink -%}
+        </a>
+      {%- endif -%}
+    </div>
+    <div class="col-6 col-xs-7 col-md-2 h3 links-col">
+      {%- if gig.detailsLink -%}
+        <a href="{{ gig.detailsLink }}" title="{{ gig.detailsLink }}" target="_blank">Details</a>
+      {%- endif -%}
+      {%- if gig.ticketsLink -%}
+        <a href="{{ gig.ticketsLink }}" title="{{ gig.ticketsLink }}" target="_blank">Tickets</a>
+      {%- endif -%}
     </div>
   </div>
+  {% endfor %}
 </div>

@@ -1,4 +1,4 @@
-dateModified: 1551750573
+dateModified: 1551786360
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -77,6 +77,18 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  74d8ad49-e492-4aad-a837-a214d39341ef:
+    contentColumnType: string
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    handle: venueLink
+    instructions: ''
+    name: 'Venue Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   7f94abae-f40f-4b31-aabd-bce7ad2217cf:
     contentColumnType: datetime
     fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
@@ -629,20 +641,23 @@ sections:
               -
                 fields:
                   08213a91-513a-488e-ba8d-8eb4187908a0:
-                    required: false
-                    sortOrder: 3
+                    required: true
+                    sortOrder: 4
                   0fcda009-bf92-4f34-9b70-122791d8211c:
-                    required: false
+                    required: true
                     sortOrder: 2
                   3548494e-7483-4e24-961b-d9eb9d29d042:
                     required: false
-                    sortOrder: 4
-                  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
+                    sortOrder: 5
+                  74d8ad49-e492-4aad-a837-a214d39341ef:
                     required: false
+                    sortOrder: 3
+                  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
+                    required: true
                     sortOrder: 1
                   d7275a7b-34e1-407a-854b-397a5f51147a:
                     required: false
-                    sortOrder: 5
+                    sortOrder: 6
                 name: Main
                 sortOrder: 1
         handle: gigs
