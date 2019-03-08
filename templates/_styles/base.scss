@@ -50,6 +50,10 @@ h6,
   font-size: 16px;
 }
 
+.text {
+  font-size: 16px;
+}
+
 @include media-breakpoint-up(xs) {
   h1,
   .h1 {
@@ -78,6 +82,10 @@ h6,
 
   h6,
   .h6 {
+    font-size: 18px;
+  }
+
+  .text {
     font-size: 18px;
   }
 }
@@ -112,6 +120,10 @@ h6,
   .h6 {
     font-size: 20px;
   }
+
+  .text {
+    font-size: 20px;
+  }
 }
 
 @include media-breakpoint-up(xl) {
@@ -142,6 +154,10 @@ h6,
 
   h6,
   .h6 {
+    font-size: 24px;
+  }
+
+  .text {
     font-size: 24px;
   }
 }
