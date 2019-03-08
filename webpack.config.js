@@ -16,7 +16,7 @@ Encore.setOutputPath('web/static/assets')
   .enablePostCssLoader()
   .copyFiles({
     from: './node_modules/photoswipe/dist',
-    to: '../img/photoswipe/[path][name].[ext]',
+    to: 'photoswipe/[path][name].[ext]',
     pattern: '/.(png|svg)$/',
   });
 
