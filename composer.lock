@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.89.0",
+            "version": "3.89.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "93784f1b37b350888295cf46d9e53a267d60699a"
+                "reference": "9b085dff6b07eac417caef8cb6d26b471cde9a23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/93784f1b37b350888295cf46d9e53a267d60699a",
-                "reference": "93784f1b37b350888295cf46d9e53a267d60699a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9b085dff6b07eac417caef8cb6d26b471cde9a23",
+                "reference": "9b085dff6b07eac417caef8cb6d26b471cde9a23",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-03-07T19:34:29+00:00"
+            "time": "2019-03-08T19:15:34+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -453,16 +453,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.16",
+            "version": "3.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d76bbb4f0059571240802d29936887615aff5b1c"
+                "reference": "693c1b6120332900c3ce1c807e0d58c110a4e086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d76bbb4f0059571240802d29936887615aff5b1c",
-                "reference": "d76bbb4f0059571240802d29936887615aff5b1c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/693c1b6120332900c3ce1c807e0d58c110a4e086",
+                "reference": "693c1b6120332900c3ce1c807e0d58c110a4e086",
                 "shasum": ""
             },
             "require": {
@@ -493,7 +493,7 @@
                 "true/punycode": "^2.1.0",
                 "twig/twig": "^2.5.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.16.0",
+                "yiisoft/yii2": "~2.0.16.1",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -537,7 +537,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-03-05T18:38:01+00:00"
+            "time": "2019-03-08T19:06:55+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
