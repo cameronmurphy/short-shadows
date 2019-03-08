@@ -74,6 +74,7 @@ function launchPhotoSwipe($galleryElement, animateFromThumbnail, $clickedGallery
     index,
     getThumbBoundsFn,
     closeOnScroll: false,
+    fullscreenEl: false,
     shareEl: false,
     history: false,
   };
