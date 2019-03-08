@@ -17,7 +17,7 @@ Encore.setOutputPath('web/static/assets')
   .copyFiles({
     from: './node_modules/photoswipe/dist/default-skin',
     to: '../img/photoswipe/[path][name].[ext]',
-    pattern: '/.(svg)$/',
+    pattern: '/.(png|svg)$/',
   });
 
 if (Encore.isProduction()) {
