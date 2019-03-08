@@ -1,14 +1,31 @@
 {% import '_components/gallery' as gallery %}
 
 <div class="container-fluid gallery-block" itemscope itemtype="https://schema.org/ImageGallery">
+  {% if props.galleryTitle %}
+    <div class="row title-row">
+      <div class="col">
+        <h2 class="h3">{{ props.galleryTitle }}</h2>
+      </div>
+    </div>
+  {% endif %}
   <div class="row images-row">
-    {% for image in props.images %}
+    {% for image in props.images.all %}
       <div class="col-6 col-md-3 image-col">
         {# TODO - Transforms so that we're not loading full size #}
         {{ gallery.renderImage(image, loop.index0) }}
       </div>
     {% endfor %}
   </div>
+  {% if props.photographerInstagramHandle %}
+    <div class="row credit-row">
+      <div class="col">
+        Photos courtesy of
+        <a href="https://www.instagram.com/{{ props.photographerInstagramHandle }}" target="_blank">
+          📸 @{{ props.photographerInstagramHandle }}
+        </a>
+      </div>
+    </div>
+  {% endif %}
 </div>
 
 {{ gallery.renderDialog() }}

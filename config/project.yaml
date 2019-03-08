@@ -1,4 +1,4 @@
-dateModified: 1552034577
+dateModified: 1552084331
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -378,8 +378,11 @@ matrixBlockTypes:
         tabs:
           -
             fields:
-              57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+              259116cd-e4bc-4d27-8ad6-0e6709d2022a:
                 required: false
+                sortOrder: 3
+              57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+                required: true
                 sortOrder: 2
               f9b7402d-9b4b-42fd-9961-429431a4b17a:
                 required: false
@@ -387,6 +390,23 @@ matrixBlockTypes:
             name: Content
             sortOrder: 1
     fields:
+      259116cd-e4bc-4d27-8ad6-0e6709d2022a:
+        contentColumnType: text
+        fieldGroup: null
+        handle: photographerInstagramHandle
+        instructions: 'Anyone the photos should be attributed to'
+        name: 'Photographer Instagram Handle'
+        searchable: true
+        settings:
+          charLimit: ''
+          code: ''
+          columnType: text
+          initialRows: '4'
+          multiline: ''
+          placeholder: ''
+        translationKeyFormat: null
+        translationMethod: none
+        type: craft\fields\PlainText
       57123ace-d906-4162-b4e2-cd7d21a6a9f0:
         contentColumnType: string
         fieldGroup: null
