@@ -32,10 +32,16 @@
   .menu {
     flex: 1;
     font-size: 1.75rem;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
     margin-bottom: 0;
     max-width: 500px;
+
+    li {
+      &:not(:last-of-type) {
+        margin-right: 3rem;
+      }
+    }
 
     a {
       color: $color-white;
