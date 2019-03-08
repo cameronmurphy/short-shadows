@@ -72,6 +72,8 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
 
         $contentType = $matches[1] === 'js' ? 'javascript' : $matches[1];
         $config['ContentType'] = 'text/' . $contentType;
+      } elseif (preg_match('/\.svg$/', $entry, $matches)) {
+          $config['ContentType'] = 'image/svg+xml';
       }
 
       echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
