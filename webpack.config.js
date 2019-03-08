@@ -13,7 +13,12 @@ Encore.setOutputPath('web/static/assets')
     // https://github.com/symfony/webpack-encore/issues/253
     resolveUrlLoader: false,
   })
-  .enablePostCssLoader();
+  .enablePostCssLoader()
+  .copyFiles({
+    from: './node_modules/photoswipe/dist/default-skin',
+    to: '../img/photoswipe/[path][name].[ext]',
+    pattern: '/.(svg)$/',
+  });
 
 if (Encore.isProduction()) {
   Encore.addPlugin(

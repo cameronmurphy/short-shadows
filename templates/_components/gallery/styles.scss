@@ -1,0 +1,8 @@
+$pswp__assets-path: '/static/img/photoswipe/'; /* stylelint-disable-line */
+
+@import '~photoswipe/src/css/main';
+@import '~photoswipe/src/css/default-skin/default-skin';
+
+.gallery-item {
+  //margin-bottom: 0;
+}

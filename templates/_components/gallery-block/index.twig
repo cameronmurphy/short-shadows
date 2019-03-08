@@ -1,0 +1,14 @@
+{% import '_components/gallery' as gallery %}
+
+<div class="container-fluid gallery-block" itemscope itemtype="https://schema.org/ImageGallery">
+  <div class="row images-row">
+    {% for image in props.images %}
+      <div class="image-col col-6 col-md-3">
+        {# TODO - Transforms so that we're not loading full size #}
+        {{ gallery.renderImage(image, loop.index0) }}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{{ gallery.renderDialog() }}

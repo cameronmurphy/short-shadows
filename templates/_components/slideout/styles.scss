@@ -20,20 +20,10 @@
 
 .slideout-panel {
   position: relative;
-  will-change: transform;
   z-index: 1;
 }
 
-.slideout-open,
-.slideout-panel {
-  overflow: hidden;
-}
-
 .slideout-open {
-  body {
-    overflow: hidden;
-  }
-
   .slideout-menu {
     display: block;
   }
