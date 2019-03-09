@@ -3,12 +3,16 @@
     {% switch block.type %}
       {% case 'albumBlock' %}
         {% include '_components/album-block' with { props: block } only %}
+      {% case 'contactBlock' %}
+        {% include '_components/contact-block' with { props: block } only %}
       {% case 'galleryBlock' %}
         {% include '_components/gallery-block' with { props: block } only %}
       {% case 'gigsBlock' %}
         {% include '_components/gigs-block' with { props: block } only %}
       {% case 'headingBlock' %}
         {% include '_components/heading-block' with { props: block } only %}
+      {% case 'socialLinksBlock' %}
+        {% include '_components/social-links-block' with { props: block } only %}
     {% endswitch %}
   {% endif %}
 {% endfor %}

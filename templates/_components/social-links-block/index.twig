@@ -1,0 +1,15 @@
+<div class="container-fluid social-links-block">
+  <div class="row">
+    <div class="col h1">
+      <ul class="social-links">
+        {% if props.facebookLink %}
+          {% include '_components/social-links-block/social-link.twig' with { props: { type: 'facebook', href: props.facebookLink } } %}
+        {% endif %}
+
+        {% if props.instagramLink %}
+          {% include '_components/social-links-block/social-link.twig' with { props: { type: 'instagram', href: props.instagramLink } } %}
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</div>

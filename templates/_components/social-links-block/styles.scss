@@ -1,0 +1,23 @@
+@import '../../_styles/variables';
+
+.social-links-block {
+  .col {
+    justify-content: flex-end;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .social-link {
+    color: $color-white;
+    display: inline-block;
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+    }
+  }
+}
