@@ -8,11 +8,11 @@
     padding-top: 1rem;
 
     &:last-of-type {
-      border-bottom: none;
+      border-bottom: 0;
     }
 
     @include media-breakpoint-up(md) {
-      border-bottom: none;
+      border-bottom: 0;
       padding-bottom: 0;
     }
   }
@@ -22,8 +22,8 @@
   .links-col,
   .time-col,
   .venue-name-col {
-    display: flex;
     align-items: center;
+    display: flex;
   }
 
   .links-col {

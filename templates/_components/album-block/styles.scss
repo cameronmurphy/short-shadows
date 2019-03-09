@@ -22,19 +22,19 @@
   }
 
   .image-col {
-    margin-bottom: 2rem;
-
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
     }
+
+    margin-bottom: 2rem;
   }
 
   .track-listing-col {
-    text-align: center;
-
     @include media-breakpoint-up(md) {
       text-align: left;
     }
+
+    text-align: center;
   }
 
   .link-row {
