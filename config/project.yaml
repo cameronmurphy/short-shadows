@@ -1,4 +1,4 @@
-dateModified: 1552084331
+dateModified: 1552099092
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -10,6 +10,8 @@ fieldGroups:
     name: Menu
   713fa806-5df3-45bb-b7c8-6bebe1439715:
     name: SEO
+  8f289d04-80ae-4feb-83b1-ccc6ec8afe62:
+    name: Social
   b661e58a-b224-46d6-99e7-b360a11b551c:
     name: Gigs
   dbce0d1c-c316-40e6-8467-548d9479c8d3:
@@ -48,6 +50,30 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
+  14059922-cb03-4904-bca1-f3e3cc438c13:
+    contentColumnType: string
+    fieldGroup: 8f289d04-80ae-4feb-83b1-ccc6ec8afe62
+    handle: instagramLink
+    instructions: ''
+    name: 'Instagram Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  29851573-6fa2-4b04-af22-0c4f09096469:
+    contentColumnType: string
+    fieldGroup: 8f289d04-80ae-4feb-83b1-ccc6ec8afe62
+    handle: facebookLink
+    instructions: ''
+    name: 'Facebook Link'
+    searchable: true
+    settings:
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   3548494e-7483-4e24-961b-d9eb9d29d042:
     contentColumnType: string
     fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
@@ -188,6 +214,22 @@ globalSets:
             sortOrder: 1
     handle: menuLinks
     name: 'Menu Links'
+  411429ce-7d06-49a6-8bdb-fb0f3e6c4da8:
+    fieldLayouts:
+      74840d52-4a0e-42ab-924b-f93f713c853f:
+        tabs:
+          -
+            fields:
+              14059922-cb03-4904-bca1-f3e3cc438c13:
+                required: false
+                sortOrder: 2
+              29851573-6fa2-4b04-af22-0c4f09096469:
+                required: false
+                sortOrder: 1
+            name: Links
+            sortOrder: 1
+    handle: socialLinks
+    name: 'Social Links'
 matrixBlockTypes:
   14a417e9-341b-47be-afb5-5a57ef17601f:
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
