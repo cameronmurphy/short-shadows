@@ -1,7 +1,7 @@
 <div class="container-fluid album-block">
   <div class="row">
     <div class="col-12 col-md-6 image-col">
-      <img src="{{ props.cover.one.url }}" alt="{{ props.albumTitle }} cover art" />
+      <img src="{{ props.cover.one.getUrl('albumCover') }}" alt="{{ props.albumTitle }} cover art" />
     </div>
     <div class="col-12 col-md-6 track-listing-col">
       <h2 class="h3 album-title">{{ props.albumTitle }}</h2>

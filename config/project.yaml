@@ -1,4 +1,4 @@
-dateModified: 1552103569
+dateModified: 1552108214
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -199,6 +199,16 @@ imageTransforms:
     position: center-center
     quality: null
     width: '365'
+  aac5bda6-6c84-4fde-a522-575d971bc1ff:
+    format: null
+    handle: albumCover
+    height: '748'
+    interlace: none
+    mode: crop
+    name: 'Album Cover'
+    position: center-center
+    quality: null
+    width: '748'
 matrixBlockTypes:
   14a417e9-341b-47be-afb5-5a57ef17601f:
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
