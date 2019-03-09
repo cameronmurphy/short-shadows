@@ -22,6 +22,7 @@ $ cp .env.example .env
 
 To bring up the virtual machine, run `vagrant up`. Once the machine is online run these commands.
 ```bash
+$ vagrant ssh
 $ cd /var/www
 $ composer install
 $ ./craft setup/security-key
