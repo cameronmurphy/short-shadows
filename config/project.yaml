@@ -1,4 +1,4 @@
-dateModified: 1552102579
+dateModified: 1552103569
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -188,6 +188,17 @@ globalSets:
             sortOrder: 1
     handle: menuLinks
     name: 'Menu Links'
+imageTransforms:
+  405e1281-59d2-47f9-a809-3e172e2d6304:
+    format: null
+    handle: galleryThumbnail
+    height: '365'
+    interlace: none
+    mode: fit
+    name: 'Gallery Thumbnail'
+    position: center-center
+    quality: null
+    width: '365'
 matrixBlockTypes:
   14a417e9-341b-47be-afb5-5a57ef17601f:
     field: 9ad7232b-940b-4762-85a7-0d9081a79992

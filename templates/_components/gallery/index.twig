@@ -53,8 +53,7 @@
   <figure class="gallery-item" itemprop="associatedMedia" itemscope itemtype="https://schema.org/ImageObject">
     <a href="{{ image.url }}" itemprop="contentUrl">
       {% if renderThumbnail %}
-        {# TODO - Use an image transform so that we're not serving full images for thumbnails #}
-        <img class="image gallery-thumbnail {{ imgClass }}" src="{{ image.url }}" itemprop="thumbnail"
+        <img class="image gallery-thumbnail {{ imgClass }}" src="{{ image.getUrl('galleryThumbnail') }}" itemprop="thumbnail"
             {% if image['alt'] is defined %} alt="{{ image.alt }}{% endif %}">
       {% endif %}
     </a>
