@@ -1,6 +1,6 @@
 Short Shadows
 ===========
-[![Codeship Status for cameronmurphy/short-shadows](https://app.codeship.com/projects/77fbcc10-2458-0137-0f16-0e0a32caa97a/status?branch=master)](https://app.codeship.com/projects/330106)
+[![Codeship Status for cameronmurphy/short-shadows](https://app.codeship.com/projects/184d8d20-2c1c-0137-ed32-62ec0ec7f787/status?branch=master)](https://app.codeship.com/projects/331257)
 
 This is a Craft 3 website.
 
