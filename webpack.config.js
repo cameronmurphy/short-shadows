@@ -18,6 +18,11 @@ Encore.setOutputPath('web/static/assets')
     from: './node_modules/photoswipe/dist',
     to: 'photoswipe/[path][name].[ext]',
     pattern: '/.(png|svg)$/',
+  })
+  .configureBabel(function(babelConfig) {
+    const presetEnvPreset = _.find(babelConfig.presets, element => _.includes(element, '@babel/preset-env'));
+    const presetEnvConfig = _.find(presetEnvPreset, _.isObject);
+    _.set(presetEnvConfig, 'corejs', '3');
   });
 
 if (Encore.isProduction()) {
