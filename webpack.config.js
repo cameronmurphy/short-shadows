@@ -35,7 +35,4 @@ if (Encore.isProduction()) {
   );
 }
 
-const config = Encore.getWebpackConfig();
-_.set(config, 'watchOptions', { poll: true, ignored: /node_modules/ });
-
 module.exports = config;
