@@ -31,8 +31,8 @@
   },
   "homepage": "https://gitlab.com/camurphy/short-shadows#README",
   "engines": {
-    "node": "10.15.2",
-    "npm": "6.8.0"
+    "node": "10.15.3",
+    "npm": "6.9.0"
   },
   "browserslist": [
     "last 2 versions",
