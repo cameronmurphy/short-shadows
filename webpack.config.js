@@ -1,24 +1,25 @@
-const _ = require('lodash');
-const Encore = require('@symfony/webpack-encore');
-const CompressionPlugin = require('compression-webpack-plugin');
+var _ = require('lodash');
+var Encore = require('@symfony/webpack-encore');
+var CompressionPlugin = require('compression-webpack-plugin');
 
-Encore.setOutputPath('web/static/assets')
+Encore
+  .setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
-  .enableSourceMaps(!Encore.isProduction())
-  .enableVersioning()
-  .enableSingleRuntimeChunk()
-  .cleanupOutputBeforeBuild()
-  .enableSassLoader(() => {}, {
-    // https://github.com/symfony/webpack-encore/issues/253
-    resolveUrlLoader: false,
-  })
-  .enablePostCssLoader()
   .copyFiles({
     from: './node_modules/photoswipe/dist',
     to: 'photoswipe/[path][name].[ext]',
     pattern: '/.(png|svg)$/',
   })
+  .enableSingleRuntimeChunk()
+  .cleanupOutputBeforeBuild()
+  .enableSourceMaps(!Encore.isProduction())
+  .enableVersioning()
+  .enableSassLoader(() => {}, {
+    // https://github.com/symfony/webpack-encore/issues/253
+    resolveUrlLoader: false,
+  })
+  .enablePostCssLoader()
   .configureBabel(function(babelConfig) {
     const presetEnvPreset = _.find(babelConfig.presets, element => _.includes(element, '@babel/preset-env'));
     const presetEnvConfig = _.find(presetEnvPreset, _.isObject);
