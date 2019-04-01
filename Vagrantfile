@@ -16,7 +16,6 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", type: "dhcp"
   config.vm.hostname = ENV["HOSTNAME"]
   config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=777"]
-  config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Copy across private key for production sync
   config.vm.provision "file", source: "~/.ssh/id_rsa", destination: ".ssh/id_rsa"
