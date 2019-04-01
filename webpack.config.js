@@ -20,11 +20,7 @@ Encore
     resolveUrlLoader: false,
   })
   .enablePostCssLoader()
-  .configureBabel(function(babelConfig) {
-    const presetEnvPreset = _.find(babelConfig.presets, element => _.includes(element, '@babel/preset-env'));
-    const presetEnvConfig = _.find(presetEnvPreset, _.isObject);
-    _.set(presetEnvConfig, 'corejs', '3');
-  });
+;
 
 if (Encore.isProduction()) {
   Encore.addPlugin(

@@ -39,11 +39,11 @@
     "ie >= 11"
   ],
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.25.0",
+    "@symfony/webpack-encore": "^0.26.0",
     "autoprefixer": "^9.5.0",
     "babel-eslint": "^10.0.1",
     "compression-webpack-plugin": "^2.0.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.16.0",
