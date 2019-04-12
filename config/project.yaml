@@ -1,4 +1,4 @@
-dateModified: 1552108214
+dateModified: 1555032439
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -763,6 +763,10 @@ plugins:
     licenseKey: null
     schemaVersion: 1.0.0
     settings: null
+  logs:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
 sections:
   49f87acd-c335-4a0e-9893-36a2f495e2aa:
     enableVersioning: true
@@ -872,7 +876,7 @@ system:
   edition: solo
   live: true
   name: 'Short Shadows'
-  schemaVersion: 3.1.25
+  schemaVersion: 3.1.26
   timeZone: Australia/Melbourne
 users:
   allowPublicRegistration: false
