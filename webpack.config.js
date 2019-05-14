@@ -2,6 +2,10 @@ var _ = require('lodash');
 var Encore = require('@symfony/webpack-encore');
 var CompressionPlugin = require('compression-webpack-plugin');
 
+if (!Encore.isRuntimeEnvironmentConfigured()) {
+  Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
+}
+
 Encore
   .setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
