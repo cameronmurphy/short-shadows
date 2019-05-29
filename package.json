@@ -13,8 +13,8 @@
     "slideout": "^1.0.1"
   },
   "scripts": {
-    "build": "encore dev",
-    "build-prod": "encore production",
+    "dev": "encore dev",
+    "build": "encore production",
     "watch": "encore dev --watch --watch-poll",
     "lint-js": "eslint .",
     "lint-scss": "sass-lint -v",

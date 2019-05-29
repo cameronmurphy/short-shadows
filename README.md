@@ -46,6 +46,6 @@ Production asset deployment
 ---------------------------
 This relies on the the `ASSET_*` environment variables being exported in `/etc/environment`.
 ```bash
-$ npm run build-prod
+$ npm run build
 $ composer deploy-assets
 ```
