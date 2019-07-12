@@ -1,40 +1,38 @@
 {
-    "name": "short-shadows/website",
-    "description": "Craft 3 website for Short Shadows",
-    "keywords": [
-        "craft",
-        "cms",
-        "short",
-        "shadows"
-    ],
-    "license": "proprietary",
-    "type": "project",
-    "require": {
-        "php": "^7.0.0",
-        "clubstudioltd/craft-asset-rev": "^6.0.0",
-        "craftcms/cms": "^3.1.0",
-        "ether/logs": "3.0.0",
-        "vaersaagod/dospaces": "^1.0.0",
-        "vlucas/phpdotenv": "^2.4.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "modules\\": "modules/"
-        }
-    },
-    "config": {
-        "sort-packages": true,
-        "optimize-autoloader": true,
-        "platform": {
-            "php": "7.0"
-        }
-    },
-    "scripts": {
-        "compile": [
-            "./node_modules/.bin/encore production"
-        ],
-        "deploy-assets": [
-            "source /etc/environment && ./scripts/deploy-assets.php"
-        ]
+  "name": "short-shadows/website",
+  "description": "Craft 3 website for Short Shadows",
+  "license": "proprietary",
+  "keywords": [
+    "craft",
+    "cms",
+    "short",
+    "shadows"
+  ],
+  "type": "project",
+  "require": {
+    "clubstudioltd/craft-asset-rev": "^6.0.0",
+    "craftcms/cms": "^3.0.0",
+    "vaersaagod/dospaces": "^1.0.0",
+    "vlucas/phpdotenv": "^2.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
     }
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.0"
+    }
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "deploy-assets": [
+      "source /etc/environment && ./scripts/deploy-assets.php"
+    ]
+  }
 }

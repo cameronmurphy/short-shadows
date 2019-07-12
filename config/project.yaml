@@ -1,4 +1,4 @@
-dateModified: 1555032439
+dateModified: 1562899766
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -16,28 +16,29 @@ fieldGroups:
     name: Common
 fields:
   08213a91-513a-488e-ba8d-8eb4187908a0:
-    contentColumnType: 'decimal(12,2)'
-    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    name: Cost
     handle: cost
     instructions: ''
-    name: Cost
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Number
     settings:
       decimals: '2'
       defaultValue: null
       max: null
       min: '0'
       size: null
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Number
-  0fcda009-bf92-4f34-9b70-122791d8211c:
-    contentColumnType: text
     fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: 'decimal(12,2)'
+  0fcda009-bf92-4f34-9b70-122791d8211c:
+    name: 'Venue Name'
     handle: venueName
     instructions: ''
-    name: 'Venue Name'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
     settings:
       charLimit: ''
       code: ''
@@ -45,28 +46,28 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
-  3548494e-7483-4e24-961b-d9eb9d29d042:
-    contentColumnType: string
     fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: text
+  3548494e-7483-4e24-961b-d9eb9d29d042:
+    name: 'Details Link'
     handle: detailsLink
     instructions: ''
-    name: 'Details Link'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Url
     settings:
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: string(255)
   4f8b2d72-a3f9-42bb-8647-961c32aba77c:
-    contentColumnType: text
-    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    name: 'Meta Description'
     handle: metaDescription
     instructions: ''
-    name: 'Meta Description'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
     settings:
       charLimit: ''
       code: ''
@@ -74,57 +75,57 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    contentColumnType: text
   74d8ad49-e492-4aad-a837-a214d39341ef:
-    contentColumnType: string
-    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    name: 'Venue Link'
     handle: venueLink
     instructions: ''
-    name: 'Venue Link'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Url
     settings:
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
-  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
-    contentColumnType: datetime
     fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: string(255)
+  7f94abae-f40f-4b31-aabd-bce7ad2217cf:
+    name: Date
     handle: date
     instructions: ''
-    name: Date
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Date
     settings:
       minuteIncrement: '15'
       showDate: true
       showTime: true
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Date
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: datetime
   7ff23fb3-f048-4304-a224-ca8dc68a9059:
-    contentColumnType: string
-    fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
+    name: 'Menu Link Matrix'
     handle: menuLinkMatrix
     instructions: ''
-    name: 'Menu Link Matrix'
     searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
     settings:
       contentTable: '{{%matrixcontent_menulinkmatrix}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
+    fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
+    contentColumnType: string
   81753f99-58b5-42f4-9c5a-242515fb1005:
-    contentColumnType: text
-    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    name: 'Meta Title'
     handle: metaTitle
     instructions: ''
-    name: 'Meta Title'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\PlainText
     settings:
       charLimit: ''
       code: ''
@@ -132,104 +133,110 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    contentColumnType: text
   9ad7232b-940b-4762-85a7-0d9081a79992:
-    contentColumnType: string
-    fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
+    name: 'Content Matrix'
     handle: contentMatrix
     instructions: ''
-    name: 'Content Matrix'
     searchable: true
+    translationMethod: site
+    translationKeyFormat: null
+    type: craft\fields\Matrix
     settings:
       contentTable: '{{%matrixcontent_contentmatrix}}'
       localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Matrix
+    fieldGroup: dbce0d1c-c316-40e6-8467-548d9479c8d3
+    contentColumnType: string
   bb049cda-6a69-4ac4-b36f-0748ae735133:
-    contentColumnType: boolean
-    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    name: 'No Index'
     handle: noIndex
     instructions: ''
-    name: 'No Index'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Lightswitch
     settings:
       default: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Lightswitch
+    fieldGroup: 713fa806-5df3-45bb-b7c8-6bebe1439715
+    contentColumnType: boolean
   d7275a7b-34e1-407a-854b-397a5f51147a:
-    contentColumnType: string
-    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    name: 'Tickets Link'
     handle: ticketsLink
     instructions: ''
-    name: 'Tickets Link'
     searchable: true
+    translationMethod: none
+    translationKeyFormat: null
+    type: craft\fields\Url
     settings:
       placeholder: ''
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
+    fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+    contentColumnType: string(255)
 globalSets:
   2139ab1e-fe91-45ec-bd0a-1d655c22a775:
+    name: 'Menu Links'
+    handle: menuLinks
     fieldLayouts:
       2f5b4165-800b-4e7d-a7b4-982aef999b46:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               7ff23fb3-f048-4304-a224-ca8dc68a9059:
                 required: false
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
-    handle: menuLinks
-    name: 'Menu Links'
+  411429ce-7d06-49a6-8bdb-fb0f3e6c4da8:
+    name: 'Social Links'
+    handle: socialLinks
 imageTransforms:
   405e1281-59d2-47f9-a809-3e172e2d6304:
-    format: null
-    handle: galleryThumbnail
-    height: '365'
-    interlace: none
-    mode: fit
     name: 'Gallery Thumbnail'
+    handle: galleryThumbnail
+    mode: fit
     position: center-center
-    quality: null
-    width: '365'
-  aac5bda6-6c84-4fde-a522-575d971bc1ff:
+    width: 365
+    height: 365
     format: null
-    handle: albumCover
-    height: '748'
-    interlace: none
-    mode: crop
-    name: 'Album Cover'
-    position: center-center
     quality: null
-    width: '748'
+    interlace: none
+  aac5bda6-6c84-4fde-a522-575d971bc1ff:
+    name: 'Album Cover'
+    handle: albumCover
+    mode: crop
+    position: center-center
+    width: 748
+    height: 748
+    format: null
+    quality: null
+    interlace: none
 matrixBlockTypes:
   14a417e9-341b-47be-afb5-5a57ef17601f:
+    name: 'Gigs Block'
+    handle: gigsBlock
+    sortOrder: 3
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       7e0c7851-8a96-42f3-bf32-83578ce9e432:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               19176f80-a3fe-469e-b87d-9ca004aea297:
                 required: true
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       19176f80-a3fe-469e-b87d-9ca004aea297:
-        contentColumnType: string
-        fieldGroup: null
+        name: Gigs
         handle: gigs
         instructions: ''
-        name: Gigs
         searchable: true
+        translationMethod: site
+        translationKeyFormat: null
+        type: craft\fields\Entries
         settings:
           limit: ''
           localizeRelations: false
@@ -239,18 +246,19 @@ matrixBlockTypes:
             - 'section:8ed8686e-cb63-4d47-90d6-06750b461df7'
           targetSiteId: null
           viewMode: null
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Entries
-    handle: gigsBlock
-    name: 'Gigs Block'
-    sortOrder: 3
+        fieldGroup: null
+        contentColumnType: string
   1f9fb9e4-14d5-4e99-9678-6db10cc835b4:
+    name: 'Heading Block'
+    handle: headingBlock
+    sortOrder: 1
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       ba21b6a2-77e6-4bae-a91e-15a9c3e05b55:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               187285b4-7ec3-4d66-9857-a8f854a73120:
                 required: false
@@ -258,16 +266,15 @@ matrixBlockTypes:
               c10f7170-1f71-4096-936b-b22a683cd855:
                 required: false
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       187285b4-7ec3-4d66-9857-a8f854a73120:
-        contentColumnType: string
-        fieldGroup: null
+        name: Size
         handle: size
         instructions: ''
-        name: Size
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\Dropdown
         settings:
           options:
             -
@@ -294,16 +301,16 @@ matrixBlockTypes:
               default: ''
               label: H6
               value: h6
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\Dropdown
-      c10f7170-1f71-4096-936b-b22a683cd855:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: string
+      c10f7170-1f71-4096-936b-b22a683cd855:
+        name: Text
         handle: text
         instructions: ''
-        name: Text
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -311,18 +318,19 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-    handle: headingBlock
-    name: 'Heading Block'
-    sortOrder: 1
+        fieldGroup: null
+        contentColumnType: text
   5581957b-41f3-4607-abac-7887dfda3f84:
+    name: Link
+    handle: link
+    sortOrder: 1
     field: 7ff23fb3-f048-4304-a224-ca8dc68a9059
     fieldLayouts:
       3b46dc73-6df0-4509-9314-23dd2f59daf1:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               15c0650f-bb55-4417-8cff-1fc858828dd5:
                 required: false
@@ -333,16 +341,15 @@ matrixBlockTypes:
               821fbfea-e5af-4fa8-b6b1-fb5e394dfdfc:
                 required: false
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       15c0650f-bb55-4417-8cff-1fc858828dd5:
-        contentColumnType: text
-        fieldGroup: null
+        name: Href
         handle: href
         instructions: ''
-        name: Href
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -350,16 +357,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      44c7da66-ab2d-4206-b5c0-84dee379f920:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      44c7da66-ab2d-4206-b5c0-84dee379f920:
+        name: Text
         handle: text
         instructions: ''
-        name: Text
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -367,16 +374,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      821fbfea-e5af-4fa8-b6b1-fb5e394dfdfc:
-        contentColumnType: string
         fieldGroup: null
+        contentColumnType: text
+      821fbfea-e5af-4fa8-b6b1-fb5e394dfdfc:
+        name: Page
         handle: page
         instructions: ''
-        name: Page
         searchable: true
+        translationMethod: site
+        translationKeyFormat: null
+        type: craft\fields\Entries
         settings:
           limit: '1'
           localizeRelations: false
@@ -386,18 +393,19 @@ matrixBlockTypes:
             - 'section:49f87acd-c335-4a0e-9893-36a2f495e2aa'
           targetSiteId: null
           viewMode: null
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Entries
-    handle: link
-    name: Link
-    sortOrder: 1
+        fieldGroup: null
+        contentColumnType: string
   73d30c45-191f-4703-ad37-3a801bd2e0b4:
+    name: 'Social Links Block'
+    handle: socialLinksBlock
+    sortOrder: 5
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       42281693-ae51-4b97-8152-64d9f53d0588:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               3dbf953b-dde2-4002-a387-86214d7f904a:
                 required: false
@@ -405,42 +413,42 @@ matrixBlockTypes:
               cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
                 required: false
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       3dbf953b-dde2-4002-a387-86214d7f904a:
-        contentColumnType: string
-        fieldGroup: null
+        name: 'Instagram Link'
         handle: instagramLink
         instructions: ''
-        name: 'Instagram Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\Url
         settings:
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\Url
-      cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
-        contentColumnType: string
         fieldGroup: null
+        contentColumnType: string(255)
+      cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
+        name: 'Facebook Link'
         handle: facebookLink
         instructions: ''
-        name: 'Facebook Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\Url
         settings:
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\Url
-    handle: socialLinksBlock
-    name: 'Social Links Block'
-    sortOrder: 5
+        fieldGroup: null
+        contentColumnType: string(255)
   979f835a-5e5e-4402-aac8-a3a223302243:
+    name: 'Gallery Block'
+    handle: galleryBlock
+    sortOrder: 4
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       89fa6d92-efc7-4e2b-b292-c5bcab9b38c4:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               259116cd-e4bc-4d27-8ad6-0e6709d2022a:
                 required: false
@@ -451,16 +459,15 @@ matrixBlockTypes:
               f9b7402d-9b4b-42fd-9961-429431a4b17a:
                 required: false
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       259116cd-e4bc-4d27-8ad6-0e6709d2022a:
-        contentColumnType: text
-        fieldGroup: null
+        name: 'Photographer Instagram Handle'
         handle: photographerInstagramHandle
         instructions: 'Anyone the photos should be attributed to'
-        name: 'Photographer Instagram Handle'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -468,16 +475,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      57123ace-d906-4162-b4e2-cd7d21a6a9f0:
-        contentColumnType: string
         fieldGroup: null
+        contentColumnType: text
+      57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+        name: Images
         handle: images
         instructions: ''
-        name: Images
         searchable: true
+        translationMethod: site
+        translationKeyFormat: null
+        type: craft\fields\Assets
         settings:
           allowedKinds: null
           defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
@@ -494,16 +501,16 @@ matrixBlockTypes:
           targetSiteId: null
           useSingleFolder: ''
           viewMode: large
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Assets
-      f9b7402d-9b4b-42fd-9961-429431a4b17a:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: string
+      f9b7402d-9b4b-42fd-9961-429431a4b17a:
+        name: Title
         handle: galleryTitle
         instructions: ''
-        name: Title
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -511,32 +518,32 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-    handle: galleryBlock
-    name: 'Gallery Block'
-    sortOrder: 4
+        fieldGroup: null
+        contentColumnType: text
   c4580440-341d-4077-a159-07f3f0fc17dd:
+    name: 'Contact Block'
+    handle: contactBlock
+    sortOrder: 6
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       c28f94c9-fd60-493d-a259-df240f357a38:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               70b753c2-54c0-47a5-8aa7-f394154eccf7:
                 required: true
                 sortOrder: 1
-            name: Content
-            sortOrder: 1
     fields:
       70b753c2-54c0-47a5-8aa7-f394154eccf7:
-        contentColumnType: text
-        fieldGroup: null
+        name: Email
         handle: email
         instructions: ''
-        name: Email
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -544,18 +551,19 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-    handle: contactBlock
-    name: 'Contact Block'
-    sortOrder: 6
+        fieldGroup: null
+        contentColumnType: text
   d6f64f53-9dde-4367-8952-d862b3103b93:
+    name: 'Album Block'
+    handle: albumBlock
+    sortOrder: 2
     field: 9ad7232b-940b-4762-85a7-0d9081a79992
     fieldLayouts:
       f25fa2dd-3347-47ed-aceb-28e9513e2cdd:
         tabs:
           -
+            name: Content
+            sortOrder: 1
             fields:
               0121b1dc-5593-429e-b6f7-d244d2ab07f0:
                 required: false
@@ -584,16 +592,15 @@ matrixBlockTypes:
               e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
                 required: false
                 sortOrder: 9
-            name: Content
-            sortOrder: 1
     fields:
       0121b1dc-5593-429e-b6f7-d244d2ab07f0:
-        contentColumnType: text
-        fieldGroup: null
+        name: 'Spotify Link'
         handle: spotifyLink
         instructions: ''
-        name: 'Spotify Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -601,16 +608,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      1fe261a4-9f0c-41f3-b1af-b7c348f1610b:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      1fe261a4-9f0c-41f3-b1af-b7c348f1610b:
+        name: 'YouTube Music Link'
         handle: youTubeMusicLink
         instructions: ''
-        name: 'YouTube Music Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -618,16 +625,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6:
+        name: 'Amazon Music Link'
         handle: amazonMusicLink
         instructions: ''
-        name: 'Amazon Music Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -635,16 +642,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      60bf46a8-2b75-44d5-98f3-c23a7122beed:
-        contentColumnType: string
         fieldGroup: null
+        contentColumnType: text
+      60bf46a8-2b75-44d5-98f3-c23a7122beed:
+        name: Cover
         handle: cover
         instructions: ''
-        name: Cover
         searchable: true
+        translationMethod: site
+        translationKeyFormat: null
+        type: craft\fields\Assets
         settings:
           allowedKinds: null
           defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
@@ -661,16 +668,16 @@ matrixBlockTypes:
           targetSiteId: null
           useSingleFolder: ''
           viewMode: large
-        translationKeyFormat: null
-        translationMethod: site
-        type: craft\fields\Assets
-      a001db04-1e3e-4a40-92bd-b0b10ff2fa85:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: string
+      a001db04-1e3e-4a40-92bd-b0b10ff2fa85:
+        name: 'Tidal Link'
         handle: tidalLink
         instructions: ''
-        name: 'Tidal Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -678,16 +685,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      c29b19f1-f5ee-47cc-a7e1-14b86ae8d930:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      c29b19f1-f5ee-47cc-a7e1-14b86ae8d930:
+        name: 'Google Play Music Link'
         handle: googlePlayMusicLink
         instructions: ''
-        name: 'Google Play Music Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -695,16 +702,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      c7edc1ff-7db0-4ec3-a768-8319cb732621:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      c7edc1ff-7db0-4ec3-a768-8319cb732621:
+        name: 'Apple Music Link'
         handle: appleMusicLink
         instructions: ''
-        name: 'Apple Music Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -712,16 +719,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      d99ba9e3-9ec5-48a3-ba77-850e280c069e:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      d99ba9e3-9ec5-48a3-ba77-850e280c069e:
+        name: Title
         handle: albumTitle
         instructions: ''
-        name: Title
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -729,16 +736,16 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-      e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
+      e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
+        name: 'Deezer Link'
         handle: deezerLink
         instructions: ''
-        name: 'Deezer Link'
         searchable: true
+        translationMethod: none
+        translationKeyFormat: null
+        type: craft\fields\PlainText
         settings:
           charLimit: ''
           code: ''
@@ -746,12 +753,8 @@ matrixBlockTypes:
           initialRows: '4'
           multiline: ''
           placeholder: ''
-        translationKeyFormat: null
-        translationMethod: none
-        type: craft\fields\PlainText
-    handle: albumBlock
-    name: 'Album Block'
-    sortOrder: 2
+        fieldGroup: null
+        contentColumnType: text
 plugins:
   assetrev:
     enabled: true
@@ -769,20 +772,34 @@ plugins:
     schemaVersion: 3.0.0
 sections:
   49f87acd-c335-4a0e-9893-36a2f495e2aa:
+    name: Page
+    handle: page
+    type: structure
     enableVersioning: true
+    structure:
+      uid: 27e1e5d7-2d9f-4bfb-a10d-9521067dd70e
+      maxLevels: null
     entryTypes:
       13ca40cd-6fb9-4e19-a394-9cb05ad37081:
+        name: Page
+        handle: page
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
         fieldLayouts:
           47b3e57d-1333-434c-b657-9822c1ce23d7:
             tabs:
               -
+                name: Content
+                sortOrder: 1
                 fields:
                   9ad7232b-940b-4762-85a7-0d9081a79992:
                     required: false
                     sortOrder: 1
-                name: Content
-                sortOrder: 1
               -
+                name: SEO
+                sortOrder: 2
                 fields:
                   4f8b2d72-a3f9-42bb-8647-961c32aba77c:
                     required: false
@@ -793,35 +810,32 @@ sections:
                   bb049cda-6a69-4ac4-b36f-0748ae735133:
                     required: false
                     sortOrder: 3
-                name: SEO
-                sortOrder: 2
-        handle: page
-        hasTitleField: true
-        name: Page
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Title
-    handle: page
-    name: Page
-    propagateEntries: true
     siteSettings:
       fab58f40-3fab-499a-846e-a1e4e2aa14c5:
         enabledByDefault: true
         hasUrls: true
-        template: _page
         uriFormat: '{slug}'
-    structure:
-      maxLevels: null
-      uid: 27e1e5d7-2d9f-4bfb-a10d-9521067dd70e
-    type: structure
+        template: _page
+    propagationMethod: all
   8ed8686e-cb63-4d47-90d6-06750b461df7:
+    name: Gigs
+    handle: gigs
+    type: channel
     enableVersioning: true
     entryTypes:
       b052ad94-61bc-42c0-a73b-b919524826a7:
+        name: Gigs
+        handle: gigs
+        hasTitleField: true
+        titleLabel: Title
+        titleFormat: ''
+        sortOrder: 1
         fieldLayouts:
           581bd25c-b8c0-43c1-9ce6-7ff8342c1925:
             tabs:
               -
+                name: Main
+                sortOrder: 1
                 fields:
                   08213a91-513a-488e-ba8d-8eb4187908a0:
                     required: true
@@ -841,54 +855,39 @@ sections:
                   d7275a7b-34e1-407a-854b-397a5f51147a:
                     required: false
                     sortOrder: 6
-                name: Main
-                sortOrder: 1
-        handle: gigs
-        hasTitleField: true
-        name: Gigs
-        sortOrder: 1
-        titleFormat: ''
-        titleLabel: Title
-    handle: gigs
-    name: Gigs
-    propagateEntries: true
     siteSettings:
       fab58f40-3fab-499a-846e-a1e4e2aa14c5:
         enabledByDefault: true
         hasUrls: true
-        template: ''
         uriFormat: 'gigs/{slug}'
-    type: channel
+        template: ''
+    propagationMethod: all
 siteGroups:
   6eb4e5a1-5ee3-4a0c-a804-f76302f14c23:
     name: 'Short Shadows'
 sites:
   fab58f40-3fab-499a-846e-a1e4e2aa14c5:
-    baseUrl: '@web/'
-    handle: default
-    hasUrls: true
-    language: en-AU
     name: 'Short Shadows'
+    handle: default
+    language: en-AU
+    hasUrls: true
+    baseUrl: '@web/'
+    sortOrder: 1
     primary: true
     siteGroup: 6eb4e5a1-5ee3-4a0c-a804-f76302f14c23
-    sortOrder: 1
 system:
   edition: solo
   live: true
   name: 'Short Shadows'
-  schemaVersion: 3.1.26
+  schemaVersion: 3.2.14
   timeZone: Australia/Melbourne
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: ''
-  photoVolumeUid: null
-  requireEmailVerification: true
 volumes:
   6b543568-4def-4735-bc26-59cf01f481c9:
-    handle: images
-    hasUrls: true
     name: Images
+    handle: images
+    type: vaersaagod\dospaces\Volume
+    hasUrls: true
+    url: '@assetBaseUrl'
     settings:
       bucket: '@assetBucket'
       endpoint: '@assetEndpoint'
@@ -898,5 +897,3 @@ volumes:
       secret: '@assetSecretAccessKey'
       subfolder: '@assetSubfolder'
     sortOrder: 1
-    type: vaersaagod\dospaces\Volume
-    url: '@assetBaseUrl'
