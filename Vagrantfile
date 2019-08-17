@@ -28,5 +28,7 @@ Vagrant.configure("2") do |config|
     systemctl restart httpd.service
   SHELL
 
-  config.vm.provision "shell", keep_color: true, privileged: false, inline: "npm install -g npm-check"
+  config.vm.provision "shell", keep_color: true, privileged: false, inline: <<-'SHELL'
+    npm install -g yarn
+  SHELL
 end
