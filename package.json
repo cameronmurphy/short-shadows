@@ -13,12 +13,13 @@
     "slideout": "^1.0.1"
   },
   "scripts": {
+    "build": "encore production --progress",
     "dev": "encore dev",
-    "build": "encore production",
-    "watch": "encore dev --watch --watch-poll",
+    "dev-server": "encore dev-server",
     "lint-js": "eslint .",
     "lint-scss": "sass-lint -v",
-    "sync-database": "scripts/sync-database.sh"
+    "sync-database": "scripts/sync-database.sh",
+    "watch": "encore dev --watch --watch-poll"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,7 @@
   "homepage": "https://gitlab.com/camurphy/short-shadows#README",
   "engines": {
     "node": "10.16.3",
-    "npm": "6.10.3"
+    "yarn": "1.17.3"
   },
   "browserslist": [
     "last 2 versions",
