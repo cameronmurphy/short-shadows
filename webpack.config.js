@@ -1,4 +1,3 @@
-var _ = require('lodash');
 var Encore = require('@symfony/webpack-encore');
 var CompressionPlugin = require('compression-webpack-plugin');
 
@@ -13,17 +12,18 @@ Encore
   .copyFiles({
     from: './node_modules/photoswipe/dist',
     to: 'photoswipe/[path][name].[ext]',
-    pattern: '/.(png|svg)$/',
+    pattern: /.(png|svg)$/,
   })
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
   .enableVersioning()
-  .enableSassLoader(() => {}, {
-    // https://github.com/symfony/webpack-encore/issues/253
-    resolveUrlLoader: false,
-  })
+  .enableSassLoader()
   .enablePostCssLoader()
+  .configureBabel(() => {}, {
+    useBuiltIns: 'usage',
+    corejs: 3
+  })
 ;
 
 if (Encore.isProduction()) {
