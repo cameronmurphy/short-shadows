@@ -16,7 +16,7 @@
     "build": "encore production --progress",
     "dev": "encore dev",
     "dev-server": "encore dev-server",
-    "lint-js": "eslint .",
+    "lint": "eslint .",
     "lint-scss": "sass-lint -v",
     "sync-database": "scripts/sync-database.sh",
     "watch": "encore dev --watch --watch-poll"
