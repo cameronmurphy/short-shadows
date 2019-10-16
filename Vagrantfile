@@ -30,6 +30,5 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell", keep_color: true, privileged: false, inline: <<-'SHELL'
     composer global require sllh/composer-versions-check
-    npm install -g yarn
   SHELL
 end
