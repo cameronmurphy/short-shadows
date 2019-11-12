@@ -24,28 +24,35 @@ To bring up the virtual machine, run `vagrant up`. Once the machine is online ru
 ```bash
 $ vagrant ssh
 $ cd /var/www
+$ composer install --no-plugins
+
+# Remove plugins because of a bug in craft/plugin-installer
+$ rm -rf vendor/clubstudioltd vendor/vaersaagod
+
+# Install plugins again
 $ composer install
+
 $ ./craft setup/security-key
-$ npm install
+$ yarn install
 ```
 
 Code standards
 --------------
 The tools `eslint` and `sass-lint` are used to ensure `*.js` and `*.scss` files meet the code standards. Use the
-commands `npm run lint-js` and `npm run lint-scss` to lint the codebase. 
+commands `yarn lint-js` and `yarn lint-scss` to lint the codebase. 
 
 Database sync
 -------------
 ```bash
 $ cp scripts/.env.sh.example scripts/.env.sh
 # Populate variables in scripts/.env.sh
-$ npm run sync-database
+$ yarn sync-database
 ```
 
 Production asset deployment
 ---------------------------
 This relies on the the `ASSET_*` environment variables being exported in `/etc/environment`.
 ```bash
-$ npm run build
+$ yarn build
 $ composer deploy-assets
 ```
