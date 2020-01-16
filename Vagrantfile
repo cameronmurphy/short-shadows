@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "camurphy/cappuccino"
   config.vm.network "private_network", type: "dhcp"
   config.vm.hostname = "short-shadows.wip"
-  config.vm.synced_folder ".", "/var/www", :mount_options => %w(dmode=777 fmode=777)
+  config.vm.synced_folder ".", "/var/www", type: "nfs"
 
   # Copy across private key for production sync
   config.vm.provision "file", source: "~/.ssh/id_rsa", destination: ".ssh/id_rsa"
