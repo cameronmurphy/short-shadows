@@ -20,10 +20,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "file", source: "~/.ssh/id_rsa", destination: ".ssh/id_rsa"
 
   config.vm.provision "shell", inline: <<-'SHELL'
-    # Craft recommends max execution time of 120 seconds
-    sed -i "s,max_execution_time = [[:digit:]]*,max_execution_time = 120,g" /etc/php.ini
-
-    # Swap from public/ to web/ for hosting
     sed -i "s,/var/www/public,/var/www/web,g" /etc/httpd/conf.d/000-default.conf
     systemctl restart httpd.service
   SHELL
