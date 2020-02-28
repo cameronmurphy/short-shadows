@@ -40,9 +40,9 @@
     "ie >= 11"
   ],
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.28.2",
+    "@symfony/webpack-encore": "^0.28.3",
     "autoprefixer": "^9.7.4",
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "compression-webpack-plugin": "^3.1.0",
     "core-js": "^3.6.4",
     "eslint": "^6.8.0",
