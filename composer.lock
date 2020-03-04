@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.24",
+            "version": "3.133.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "726426e1514be5220d55ecf02eb1f938a3b4a105"
+                "reference": "5ef2118011e39504484d70ed738eb8ede7f69287"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/726426e1514be5220d55ecf02eb1f938a3b4a105",
-                "reference": "726426e1514be5220d55ecf02eb1f938a3b4a105",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ef2118011e39504484d70ed738eb8ede7f69287",
+                "reference": "5ef2118011e39504484d70ed738eb8ede7f69287",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-27T19:13:45+00:00"
+            "time": "2020-03-03T19:11:21+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -453,16 +453,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.8",
+            "version": "3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "eca660ae7dde806bba54cc69d7a67d50e7745a76"
+                "reference": "fa28541499591b458e11f61c21016365da7120f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/eca660ae7dde806bba54cc69d7a67d50e7745a76",
-                "reference": "eca660ae7dde806bba54cc69d7a67d50e7745a76",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/fa28541499591b458e11f61c21016365da7120f5",
+                "reference": "fa28541499591b458e11f61c21016365da7120f5",
                 "shasum": ""
             },
             "require": {
@@ -546,7 +546,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-02-22T01:20:21+00:00"
+            "time": "2020-02-28T19:59:36+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -5123,21 +5123,21 @@
         },
         {
             "name": "yiisoft/yii2-shell",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-shell.git",
-                "reference": "1d9548d56ef45fb82a39cf32b84d137ddd92dc38"
+                "reference": "8439588d187c23d47e0e6fd773f5b544c87f4d56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-shell/zipball/1d9548d56ef45fb82a39cf32b84d137ddd92dc38",
-                "reference": "1d9548d56ef45fb82a39cf32b84d137ddd92dc38",
+                "url": "https://api.github.com/repos/yiisoft/yii2-shell/zipball/8439588d187c23d47e0e6fd773f5b544c87f4d56",
+                "reference": "8439588d187c23d47e0e6fd773f5b544c87f4d56",
                 "shasum": ""
             },
             "require": {
                 "psy/psysh": "~0.9.3",
-                "symfony/var-dumper": "~2.7|~3.0|~4.0",
+                "symfony/var-dumper": "~2.7|~3.0|~4.0|~5.0",
                 "yiisoft/yii2": "~2.0.0"
             },
             "type": "yii2-extension",
@@ -5171,7 +5171,7 @@
                 "shell",
                 "yii2"
             ],
-            "time": "2019-01-07T21:30:35+00:00"
+            "time": "2020-03-03T20:19:36+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
