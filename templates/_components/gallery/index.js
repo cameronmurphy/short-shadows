@@ -38,13 +38,7 @@ function parseGalleryItems($galleryElement) {
  */
 function launchPhotoSwipe($galleryElement, animateFromThumbnail, $clickedGalleryItem) {
   const items = parseGalleryItems($galleryElement);
-  const index = parseInt(
-    $clickedGalleryItem
-      .parent()
-      .find('meta[itemprop="index"]')
-      .attr('content'),
-    10
-  );
+  const index = parseInt($clickedGalleryItem.parent().find('meta[itemprop="index"]').attr('content'), 10);
 
   /**
    * @param {int} galleryItemIndex
@@ -88,7 +82,7 @@ function launchPhotoSwipe($galleryElement, animateFromThumbnail, $clickedGallery
  * @param {boolean} animateFromThumbnail
  */
 function initGallery($galleryElement, animateFromThumbnail) {
-  $(`${GALLERY_ITEM_SELECTOR} a`, $galleryElement).on('click', event => {
+  $(`${GALLERY_ITEM_SELECTOR} a`, $galleryElement).on('click', (event) => {
     const $thumbnailAnchor = $(event.target);
     launchPhotoSwipe($galleryElement, animateFromThumbnail, $thumbnailAnchor.parent());
     return false;
