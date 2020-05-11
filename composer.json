@@ -13,7 +13,7 @@
     "clubstudioltd/craft-asset-rev": "^6.0.0",
     "craftcms/cms": "^3.4.0",
     "vaersaagod/dospaces": "^1.1",
-    "vlucas/phpdotenv": "^4.0.0"
+    "vlucas/phpdotenv": "^3.4.0"
   },
   "autoload": {
     "psr-4": {
