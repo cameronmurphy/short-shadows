@@ -1,4 +1,4 @@
-dateModified: 1589183074
+dateModified: 1589275315
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -144,9 +144,9 @@ fields:
     searchable: true
     settings:
       contentTable: '{{%matrixcontent_contentmatrix}}'
-      localizeBlocks: false
       maxBlocks: ''
       minBlocks: ''
+      propagationMethod: all
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Matrix
@@ -221,7 +221,7 @@ matrixBlockTypes:
           -
             fields:
               19176f80-a3fe-469e-b87d-9ca004aea297:
-                required: true
+                required: false
                 sortOrder: 1
             name: Content
             sortOrder: 1
@@ -241,6 +241,7 @@ matrixBlockTypes:
           sources:
             - 'section:8ed8686e-cb63-4d47-90d6-06750b461df7'
           targetSiteId: null
+          validateRelatedElements: ''
           viewMode: null
         translationKeyFormat: null
         translationMethod: site
@@ -272,31 +273,74 @@ matrixBlockTypes:
         name: Size
         searchable: true
         settings:
+          optgroups: true
           options:
             -
-              default: '1'
-              label: H1
-              value: h1
+              __assoc__:
+                -
+                  - label
+                  - H1
+                -
+                  - value
+                  - h1
+                -
+                  - default
+                  - '1'
             -
-              default: ''
-              label: H2
-              value: h2
+              __assoc__:
+                -
+                  - label
+                  - H2
+                -
+                  - value
+                  - h2
+                -
+                  - default
+                  - ''
             -
-              default: ''
-              label: H3
-              value: h3
+              __assoc__:
+                -
+                  - label
+                  - H3
+                -
+                  - value
+                  - h3
+                -
+                  - default
+                  - ''
             -
-              default: ''
-              label: H4
-              value: h4
+              __assoc__:
+                -
+                  - label
+                  - H4
+                -
+                  - value
+                  - h4
+                -
+                  - default
+                  - ''
             -
-              default: ''
-              label: H5
-              value: h5
+              __assoc__:
+                -
+                  - label
+                  - H5
+                -
+                  - value
+                  - h5
+                -
+                  - default
+                  - ''
             -
-              default: ''
-              label: H6
-              value: h6
+              __assoc__:
+                -
+                  - label
+                  - H6
+                -
+                  - value
+                  - h6
+                -
+                  - default
+                  - ''
         translationKeyFormat: null
         translationMethod: none
         type: craft\fields\Dropdown
@@ -308,9 +352,10 @@ matrixBlockTypes:
         name: Text
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -419,6 +464,7 @@ matrixBlockTypes:
         name: 'Instagram Link'
         searchable: true
         settings:
+          maxLength: '255'
           placeholder: ''
         translationKeyFormat: null
         translationMethod: none
@@ -431,6 +477,7 @@ matrixBlockTypes:
         name: 'Facebook Link'
         searchable: true
         settings:
+          maxLength: '255'
           placeholder: ''
         translationKeyFormat: null
         translationMethod: none
@@ -465,9 +512,10 @@ matrixBlockTypes:
         name: 'Photographer Instagram Handle'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -489,13 +537,16 @@ matrixBlockTypes:
           localizeRelations: false
           restrictFiles: ''
           selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: true
           singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
           singleUploadLocationSubpath: ''
           source: null
           sources:
             - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
           targetSiteId: null
-          useSingleFolder: ''
+          useSingleFolder: false
+          validateRelatedElements: ''
           viewMode: large
         translationKeyFormat: null
         translationMethod: site
@@ -508,9 +559,10 @@ matrixBlockTypes:
         name: Title
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -541,9 +593,10 @@ matrixBlockTypes:
         name: Email
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -598,9 +651,10 @@ matrixBlockTypes:
         name: 'Spotify Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -615,9 +669,10 @@ matrixBlockTypes:
         name: 'YouTube Music Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -632,9 +687,10 @@ matrixBlockTypes:
         name: 'Amazon Music Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -656,13 +712,16 @@ matrixBlockTypes:
           localizeRelations: false
           restrictFiles: ''
           selectionLabel: ''
+          showUnpermittedFiles: false
+          showUnpermittedVolumes: true
           singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
           singleUploadLocationSubpath: ''
           source: null
           sources:
             - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
           targetSiteId: null
-          useSingleFolder: ''
+          useSingleFolder: false
+          validateRelatedElements: ''
           viewMode: large
         translationKeyFormat: null
         translationMethod: site
@@ -675,9 +734,10 @@ matrixBlockTypes:
         name: 'Tidal Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -692,9 +752,10 @@ matrixBlockTypes:
         name: 'Google Play Music Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -709,9 +770,10 @@ matrixBlockTypes:
         name: 'Apple Music Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -726,9 +788,10 @@ matrixBlockTypes:
         name: Title
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''
@@ -743,9 +806,10 @@ matrixBlockTypes:
         name: 'Deezer Link'
         searchable: true
         settings:
-          charLimit: ''
+          byteLimit: null
+          charLimit: null
           code: ''
-          columnType: text
+          columnType: null
           initialRows: '4'
           multiline: ''
           placeholder: ''

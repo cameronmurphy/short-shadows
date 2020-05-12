@@ -26,6 +26,10 @@
     display: flex;
   }
 
+  .no-gigs-col {
+    text-align: center;
+  }
+
   .links-col {
     a {
       &:not(:first-of-type) {
