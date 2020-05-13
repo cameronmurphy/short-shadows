@@ -1,0 +1,53 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '../../_styles/variables';
+
+.release-block {
+  @include media-breakpoint-up(md) {
+    margin-bottom: 1rem;
+  }
+
+  margin-bottom: 3rem;
+
+  img {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .image-col {
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  .info-col {
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //text-align: center;
+  }
+
+  .link-row {
+    justify-content: center;
+    margin-bottom: -1rem;
+
+    .link-col {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .ditto-link-col {
+    img {
+      width: auto;
+    }
+  }
+}

@@ -1,11 +1,25 @@
-<div class="container-fluid album-block">
+<div class="container-fluid release-block">
   <div class="row">
-    <div class="col-12 col-md-6 image-col">
-      <img src="{{ props.cover.one.getUrl('albumCover') }}" alt="{{ props.albumTitle }} cover art" />
+    <div class="col-12 col-md-6 image-col{{ props.imagePosition.value == 'right' ? ' order-md-2' : '' }}">
+      {% if props.dittoMusicLink %}
+      <a href="{{ props.dittoMusicLink }}" target="_blank">
+      {% endif %}
+        <img src="{{ props.cover.one.getUrl('releaseCover') }}" alt="{{ props.releaseTitle }} cover art" />
+      {% if props.dittoMusicLink %}
+      </a>
+      {% endif %}
     </div>
-    <div class="col-12 col-md-6 track-listing-col">
-      <h2 class="h3 album-title">{{ props.albumTitle }}</h2>
+    <div class="col-12 col-md-6 info-col{{ props.dittoMusicLink ? ' ditto-link' : null }}">
+      <h2 class="h3 title">{{ props.releaseTitle }}</h2>
       <div class="row link-row">
+        {% if props.dittoMusicLink %}
+          <div class="col-6 link-col" title="Listen on Ditto Music">
+            <a href="{{ props.dittoMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-ditto-music.png') }}" alt="Listen on Ditto Music" />
+            </a>
+          </div>
+        {% endif %}
+
         {% if props.spotifyLink %}
           <div class="col-6 link-col" title="Listen on Spotify">
             <a href="{{ props.spotifyLink }}" target="_blank">
