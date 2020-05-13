@@ -1,11 +1,11 @@
 <div class="container-fluid release-block">
   <div class="row">
     <div class="col-12 col-md-6 image-col{{ props.imagePosition.value == 'right' ? ' order-md-2' : '' }}">
-      {% if props.dittoMusicLink %}
-      <a href="{{ props.dittoMusicLink }}" target="_blank">
+      {% if props.imageLink %}
+      <a href="{{ props.imageLink }}" target="_blank">
       {% endif %}
         <img src="{{ props.cover.one.getUrl('releaseCover') }}" alt="{{ props.releaseTitle }} cover art" />
-      {% if props.dittoMusicLink %}
+      {% if props.imageLink %}
       </a>
       {% endif %}
     </div>
