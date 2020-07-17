@@ -69,8 +69,9 @@ function launchPhotoSwipe($galleryElement, animateFromThumbnail, $clickedGallery
     getThumbBoundsFn,
     closeOnScroll: false,
     fullscreenEl: false,
-    shareEl: false,
+    shareEl: true,
     history: false,
+    shareButtons: [{ id: 'download', label: 'Download image', url: '{{raw_image_url}}', download: true }],
   };
 
   const gallery = new PhotoSwipe($('.pswp').get(0), PhotoSwipeUIDefault, items, options);
