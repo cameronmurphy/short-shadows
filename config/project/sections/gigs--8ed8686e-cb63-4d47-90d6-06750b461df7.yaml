@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: gigs
+name: Gigs
+propagationMethod: all
+siteSettings:
+  fab58f40-3fab-499a-846e-a1e4e2aa14c5:
+    enabledByDefault: true
+    hasUrls: true
+    template: ''
+    uriFormat: 'gigs/{slug}'
+type: channel

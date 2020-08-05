@@ -1,0 +1,86 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  89fa6d92-efc7-4e2b-b292-c5bcab9b38c4:
+    tabs:
+      -
+        fields:
+          259116cd-e4bc-4d27-8ad6-0e6709d2022a:
+            required: false
+            sortOrder: 3
+          57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+            required: true
+            sortOrder: 2
+          f9b7402d-9b4b-42fd-9961-429431a4b17a:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  259116cd-e4bc-4d27-8ad6-0e6709d2022a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: photographerInstagramHandle
+    instructions: 'Anyone the photos should be attributed to'
+    name: 'Photographer Instagram Handle'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: images
+    instructions: ''
+    name: Images
+    searchable: true
+    settings:
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: ''
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  f9b7402d-9b4b-42fd-9961-429431a4b17a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: galleryTitle
+    instructions: ''
+    name: Title
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: galleryBlock
+name: 'Gallery Block'
+sortOrder: 4

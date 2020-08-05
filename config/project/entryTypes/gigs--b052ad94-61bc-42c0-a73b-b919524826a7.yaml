@@ -1,0 +1,41 @@
+fieldLayouts:
+  581bd25c-b8c0-43c1-9ce6-7ff8342c1925:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 7f94abae-f40f-4b31-aabd-bce7ad2217cf
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0fcda009-bf92-4f34-9b70-122791d8211c
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 74d8ad49-e492-4aad-a837-a214d39341ef
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 08213a91-513a-488e-ba8d-8eb4187908a0
+            required: true
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3548494e-7483-4e24-961b-d9eb9d29d042
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d7275a7b-34e1-407a-854b-397a5f51147a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Main
+        sortOrder: 1
+handle: gigs
+hasTitleField: true
+name: Gigs
+section: 8ed8686e-cb63-4d47-90d6-06750b461df7
+sortOrder: 1
+titleFormat: ''

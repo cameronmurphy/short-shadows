@@ -1,0 +1,15 @@
+contentColumnType: 'decimal(12,2)'
+fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+handle: cost
+instructions: ''
+name: Cost
+searchable: true
+settings:
+  decimals: '2'
+  defaultValue: null
+  max: null
+  min: '0'
+  size: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

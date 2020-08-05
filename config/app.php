@@ -18,6 +18,7 @@
  */
 
 return [
+    'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules' => [
         'my-module' => \modules\Module::class,
     ],

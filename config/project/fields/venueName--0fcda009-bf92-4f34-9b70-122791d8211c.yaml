@@ -1,0 +1,16 @@
+contentColumnType: text
+fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+handle: venueName
+instructions: ''
+name: 'Venue Name'
+searchable: true
+settings:
+  charLimit: ''
+  code: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,12 @@
+fieldLayouts:
+  2f5b4165-800b-4e7d-a7b4-982aef999b46:
+    tabs:
+      -
+        fields:
+          7ff23fb3-f048-4304-a224-ca8dc68a9059:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+handle: menuLinks
+name: 'Menu Links'

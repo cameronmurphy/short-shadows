@@ -1,0 +1,11 @@
+contentColumnType: string(255)
+fieldGroup: b661e58a-b224-46d6-99e7-b360a11b551c
+handle: detailsLink
+instructions: ''
+name: 'Details Link'
+searchable: true
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,115 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  ba21b6a2-77e6-4bae-a91e-15a9c3e05b55:
+    tabs:
+      -
+        fields:
+          187285b4-7ec3-4d66-9857-a8f854a73120:
+            required: false
+            sortOrder: 2
+          c10f7170-1f71-4096-936b-b22a683cd855:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  187285b4-7ec3-4d66-9857-a8f854a73120:
+    contentColumnType: string
+    fieldGroup: null
+    handle: size
+    instructions: ''
+    name: Size
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - label
+              - H1
+            -
+              - value
+              - h1
+            -
+              - default
+              - '1'
+        -
+          __assoc__:
+            -
+              - label
+              - H2
+            -
+              - value
+              - h2
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H3
+            -
+              - value
+              - h3
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H4
+            -
+              - value
+              - h4
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H5
+            -
+              - value
+              - h5
+            -
+              - default
+              - ''
+        -
+          __assoc__:
+            -
+              - label
+              - H6
+            -
+              - value
+              - h6
+            -
+              - default
+              - ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  c10f7170-1f71-4096-936b-b22a683cd855:
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: headingBlock
+name: 'Heading Block'
+sortOrder: 1

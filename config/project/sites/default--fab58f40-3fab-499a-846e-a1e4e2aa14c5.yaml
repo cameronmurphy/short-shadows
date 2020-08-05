@@ -1,0 +1,8 @@
+baseUrl: '@web/'
+handle: default
+hasUrls: true
+language: en-AU
+name: 'Short Shadows'
+primary: true
+siteGroup: 6eb4e5a1-5ee3-4a0c-a804-f76302f14c23
+sortOrder: 1

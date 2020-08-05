@@ -1,0 +1,33 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  c28f94c9-fd60-493d-a259-df240f357a38:
+    tabs:
+      -
+        fields:
+          70b753c2-54c0-47a5-8aa7-f394154eccf7:
+            required: true
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  70b753c2-54c0-47a5-8aa7-f394154eccf7:
+    contentColumnType: text
+    fieldGroup: null
+    handle: email
+    instructions: ''
+    name: Email
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: contactBlock
+name: 'Contact Block'
+sortOrder: 6

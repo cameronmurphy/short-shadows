@@ -1,0 +1,32 @@
+dateModified: 1596668863
+email:
+  fromEmail: camurphy@gmail.com
+  fromName: 'Short Shadows'
+  template: null
+  transportSettings: null
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  assetrev:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  dospaces:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  logs:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Short Shadows'
+  schemaVersion: 3.5.12
+  timeZone: Australia/Melbourne

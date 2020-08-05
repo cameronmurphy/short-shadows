@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 144fa778-58f8-4c3e-8e6b-44568f8edc88
+handle: menuLinkMatrix
+instructions: ''
+name: 'Menu Link Matrix'
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_menulinkmatrix}}'
+  localizeBlocks: false
+  maxBlocks: ''
+  minBlocks: ''
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,44 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  42281693-ae51-4b97-8152-64d9f53d0588:
+    tabs:
+      -
+        fields:
+          3dbf953b-dde2-4002-a387-86214d7f904a:
+            required: false
+            sortOrder: 2
+          cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  3dbf953b-dde2-4002-a387-86214d7f904a:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: instagramLink
+    instructions: ''
+    name: 'Instagram Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: facebookLink
+    instructions: ''
+    name: 'Facebook Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: socialLinksBlock
+name: 'Social Links Block'
+sortOrder: 5
