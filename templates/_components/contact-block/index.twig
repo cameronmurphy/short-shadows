@@ -1,4 +1,12 @@
 <div class="container-fluid contact-block">
+  {% if props.label %}
+    <div class="row label-row">
+      <div class="col h3">
+        {{ props.label }}
+      </div>
+    </div>
+  {% endif %}
+
   <div class="row">
     <div class="col h2">
       <a href="mailto:{{ props.email }}" title="Email Short Shadows">{{ props.email }}</a>
