@@ -1,0 +1,90 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  3b8e30f3-ff49-4c82-affc-f2d264e77708:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2929c7ed-6892-4cd6-bbf2-84f6106a8b5e
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fd06999b-5c74-4b06-af8c-227fc75d9951
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2929c7ed-6892-4cd6-bbf2-84f6106a8b5e:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageLeft
+    instructions: ''
+    name: 'Image Left'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fd06999b-5c74-4b06-af8c-227fc75d9951:
+    contentColumnType: string
+    fieldGroup: null
+    handle: imageRight
+    instructions: ''
+    name: 'Image Right'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: dualImageBlock
+name: 'Dual Image Block'
+sortOrder: 7

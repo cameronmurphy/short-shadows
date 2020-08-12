@@ -3,16 +3,34 @@ fieldLayouts:
   89fa6d92-efc7-4e2b-b292-c5bcab9b38c4:
     tabs:
       -
-        fields:
-          259116cd-e4bc-4d27-8ad6-0e6709d2022a:
+        elements:
+          -
+            fieldUid: f9b7402d-9b4b-42fd-9961-429431a4b17a
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 57123ace-d906-4162-b4e2-cd7d21a6a9f0
+            instructions: null
+            label: null
             required: true
-            sortOrder: 2
-          f9b7402d-9b4b-42fd-9961-429431a4b17a:
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 259116cd-e4bc-4d27-8ad6-0e6709d2022a
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -31,6 +49,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
@@ -42,6 +61,7 @@ fields:
     name: Images
     searchable: true
     settings:
+      allowSelfRelations: false
       allowedKinds: null
       defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
       defaultUploadLocationSubpath: ''
@@ -49,6 +69,7 @@ fields:
       localizeRelations: false
       restrictFiles: ''
       selectionLabel: ''
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
       singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
@@ -58,7 +79,7 @@ fields:
         - 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
       targetSiteId: null
       useSingleFolder: false
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
     translationMethod: site
@@ -78,6 +99,7 @@ fields:
       initialRows: '4'
       multiline: ''
       placeholder: ''
+      uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText

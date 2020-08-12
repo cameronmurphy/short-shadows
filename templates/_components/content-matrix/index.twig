@@ -1,6 +1,8 @@
 {% for block in props.matrix.all %}
   {% if block.status == 'enabled' %}
     {% switch block.type %}
+      {% case 'dualImageBlock' %}
+        {% include '_components/dual-image-block' with { props: block } only %}
       {% case 'releaseBlock' %}
         {% include '_components/release-block' with { props: block } only %}
       {% case 'contactBlock' %}

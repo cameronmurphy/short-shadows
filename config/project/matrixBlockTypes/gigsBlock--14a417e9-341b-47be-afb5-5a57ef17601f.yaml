@@ -3,10 +3,16 @@ fieldLayouts:
   7e0c7851-8a96-42f3-bf32-83578ce9e432:
     tabs:
       -
-        fields:
-          19176f80-a3fe-469e-b87d-9ca004aea297:
+        elements:
+          -
+            fieldUid: 19176f80-a3fe-469e-b87d-9ca004aea297
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -18,14 +24,16 @@ fields:
     name: Gigs
     searchable: true
     settings:
+      allowSelfRelations: false
       limit: ''
       localizeRelations: false
       selectionLabel: ''
+      showSiteMenu: true
       source: null
       sources:
         - 'section:8ed8686e-cb63-4d47-90d6-06750b461df7'
       targetSiteId: null
-      validateRelatedElements: ''
+      validateRelatedElements: false
       viewMode: null
     translationKeyFormat: null
     translationMethod: site

@@ -3,6 +3,7 @@ import '../_styles/main.scss';
 import '../_components/header';
 import '../_components/mobile-menu';
 
+import '../_components/dual-image-block';
 import '../_components/release-block';
 import '../_components/contact-block';
 import '../_components/gallery-block';
