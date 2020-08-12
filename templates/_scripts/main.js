@@ -10,3 +10,4 @@ import '../_components/gallery-block';
 import '../_components/gigs-block';
 import '../_components/heading-block';
 import '../_components/social-links-block';
+import '../_components/youtube-block';

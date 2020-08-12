@@ -1,0 +1,34 @@
+field: 9ad7232b-940b-4762-85a7-0d9081a79992
+fieldLayouts:
+  6f07a078-a55c-491c-8b2c-fa72b1707432:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: ae3095ab-f869-423c-96b0-e292502c86f9
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  ae3095ab-f869-423c-96b0-e292502c86f9:
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: videoUrl
+    instructions: ''
+    name: 'Video URL'
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: youtubeBlock
+name: 'YouTube Block'
+sortOrder: 8
