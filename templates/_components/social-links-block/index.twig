@@ -13,6 +13,10 @@
         {% if props.youtubeLink %}
           {% include '_components/social-links-block/social-link.twig' with { props: { type: 'youtube', href: props.youtubeLink } } %}
         {% endif %}
+
+        {% if props.soundcloudLink %}
+          {% include '_components/social-links-block/social-link.twig' with { props: { type: 'soundcloud', href: props.soundcloudLink } } %}
+        {% endif %}
       </ul>
     </div>
   </div>
