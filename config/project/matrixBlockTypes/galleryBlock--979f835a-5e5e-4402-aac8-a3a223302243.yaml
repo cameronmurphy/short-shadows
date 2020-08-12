@@ -105,4 +105,4 @@ fields:
     type: craft\fields\PlainText
 handle: galleryBlock
 name: 'Gallery Block'
-sortOrder: 4
+sortOrder: 5

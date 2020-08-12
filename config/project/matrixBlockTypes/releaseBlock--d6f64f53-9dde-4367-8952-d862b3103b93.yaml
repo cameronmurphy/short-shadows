@@ -318,4 +318,4 @@ fields:
     type: craft\fields\RadioButtons
 handle: releaseBlock
 name: 'Release Block'
-sortOrder: 2
+sortOrder: 6

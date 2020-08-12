@@ -87,4 +87,4 @@ fields:
     type: craft\fields\Assets
 handle: dualImageBlock
 name: 'Dual Image Block'
-sortOrder: 7
+sortOrder: 2

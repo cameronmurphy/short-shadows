@@ -1,0 +1,21 @@
+@import '~bootstrap/scss/mixins/breakpoints';
+@import '../../_styles/variables';
+
+.text-block {
+  p {
+    font-size: 20px;
+    text-align: center;
+
+    @include media-breakpoint-up(xs) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 36px;
+    }
+  }
+}

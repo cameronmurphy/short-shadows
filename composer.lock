@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83d326da1cbbd69efbe1d0b5dbeac5fa",
+    "content-hash": "dcf0fe52b94d53cca31211d3c05c7016",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -742,6 +742,54 @@
                 "plugin"
             ],
             "time": "2020-04-17T23:11:17+00:00"
+        },
+        {
+            "name": "craftcms/redactor",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/redactor.git",
+                "reference": "068c75549bbf23d148cf0172ee4fbb3355096e7c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/068c75549bbf23d148cf0172ee4fbb3355096e7c",
+                "reference": "068c75549bbf23d148cf0172ee4fbb3355096e7c",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.5.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redactor",
+                "handle": "redactor",
+                "documentationUrl": "https://github.com/craftcms/redactor/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\redactor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
+            "keywords": [
+                "Redactor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "time": "2020-08-09T13:55:21+00:00"
         },
         {
             "name": "craftcms/server-check",

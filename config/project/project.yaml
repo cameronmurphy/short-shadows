@@ -1,4 +1,4 @@
-dateModified: 1597232839
+dateModified: 1597234438
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -24,6 +24,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
 system:
   edition: solo
   live: true

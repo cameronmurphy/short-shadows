@@ -125,4 +125,4 @@ fields:
     type: craft\fields\PlainText
 handle: headingBlock
 name: 'Heading Block'
-sortOrder: 1
+sortOrder: 3

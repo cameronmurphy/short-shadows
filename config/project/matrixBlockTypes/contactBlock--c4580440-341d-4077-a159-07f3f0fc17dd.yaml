@@ -65,4 +65,4 @@ fields:
     type: craft\fields\PlainText
 handle: contactBlock
 name: 'Contact Block'
-sortOrder: 6
+sortOrder: 1

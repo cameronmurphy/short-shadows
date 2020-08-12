@@ -12,6 +12,7 @@
   "require": {
     "clubstudioltd/craft-asset-rev": "^6.0.0",
     "craftcms/cms": "^3.4.25",
+    "craftcms/redactor": "^2.7",
     "vaersaagod/dospaces": "^1.1",
     "vlucas/phpdotenv": "^3.4.0"
   },

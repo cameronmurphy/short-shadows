@@ -40,4 +40,4 @@ fields:
     type: craft\fields\Entries
 handle: gigsBlock
 name: 'Gigs Block'
-sortOrder: 3
+sortOrder: 4

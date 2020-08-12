@@ -97,4 +97,4 @@ fields:
     type: craft\fields\Url
 handle: socialLinksBlock
 name: 'Social Links Block'
-sortOrder: 5
+sortOrder: 7

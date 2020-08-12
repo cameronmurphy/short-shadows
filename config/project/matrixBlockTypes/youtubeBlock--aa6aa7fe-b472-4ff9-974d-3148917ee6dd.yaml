@@ -31,4 +31,4 @@ fields:
     type: craft\fields\Url
 handle: youtubeBlock
 name: 'YouTube Block'
-sortOrder: 8
+sortOrder: 9
