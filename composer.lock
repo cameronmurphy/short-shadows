@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.148.2",
+            "version": "3.149.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bd3c122ee16faa2b45a4221523fac0c618ffb432"
+                "reference": "0ab4ac60f94d53d55f2c7374deb75d9a58961970"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bd3c122ee16faa2b45a4221523fac0c618ffb432",
-                "reference": "bd3c122ee16faa2b45a4221523fac0c618ffb432",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0ab4ac60f94d53d55f2c7374deb75d9a58961970",
+                "reference": "0ab4ac60f94d53d55f2c7374deb75d9a58961970",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-08-11T18:17:23+00:00"
+            "time": "2020-08-13T18:10:50+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -553,16 +553,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "b43974522c8a29f2e6406e8c7dde999c037df39b"
+                "reference": "97d7c8184c17f99f0e001fef90a416ded16a5acd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b43974522c8a29f2e6406e8c7dde999c037df39b",
-                "reference": "b43974522c8a29f2e6406e8c7dde999c037df39b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/97d7c8184c17f99f0e001fef90a416ded16a5acd",
+                "reference": "97d7c8184c17f99f0e001fef90a416ded16a5acd",
                 "shasum": ""
             },
             "require": {
@@ -646,7 +646,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-08-11T23:21:59+00:00"
+            "time": "2020-08-13T20:24:36+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2979,16 +2979,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1"
+                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
-                "reference": "ff2aa5420bfbc296cf6a0bc785fa5b35736de7c1",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/3d5eb71705adfa34bd34b993400622932b2f62fd",
+                "reference": "3d5eb71705adfa34bd34b993400622932b2f62fd",
                 "shasum": ""
             },
             "require": {
@@ -3034,7 +3034,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-04-30T19:05:18+00:00"
+            "time": "2020-08-13T09:07:59+00:00"
         },
         {
             "name": "seld/phar-utils",
