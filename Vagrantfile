@@ -23,8 +23,4 @@ Vagrant.configure("2") do |config|
     sed -i "s,/var/www/public,/var/www/web,g" /etc/httpd/conf.d/000-default.conf
     systemctl restart httpd.service
   SHELL
-
-  config.vm.provision "shell", keep_color: true, privileged: false, inline: <<-'SHELL'
-    composer global require sllh/composer-versions-check
-  SHELL
 end
