@@ -5,7 +5,8 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
   Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
 }
 
-Encore.setOutputPath('web/static/assets')
+Encore
+  .setOutputPath('web/static/assets')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
   .copyFiles({
@@ -22,10 +23,13 @@ Encore.setOutputPath('web/static/assets')
     resolveUrlLoader: false,
   })
   .enablePostCssLoader()
-  .configureBabel(() => {}, {
-    useBuiltIns: 'usage',
-    corejs: 3,
-  });
+  .configureBabel((config) => {
+      config.plugins.push('@babel/plugin-proposal-class-properties');
+  })
+  .configureBabelPresetEnv((config) => {
+    config.useBuiltIns = 'usage';
+    config.corejs = 3;
+  })
 
 if (Encore.isProduction()) {
   Encore.addPlugin(
