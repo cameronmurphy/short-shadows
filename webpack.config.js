@@ -6,7 +6,7 @@ if (!Encore.isRuntimeEnvironmentConfigured()) {
 }
 
 Encore
-  .setOutputPath('web/static/assets')
+  .setOutputPath('web/static/assets/')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
   .copyFiles({
