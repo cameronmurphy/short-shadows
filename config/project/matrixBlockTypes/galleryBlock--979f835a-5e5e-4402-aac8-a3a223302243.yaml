@@ -62,11 +62,13 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
       defaultUploadLocationSubpath: ''
       limit: ''
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -105,4 +107,4 @@ fields:
     type: craft\fields\PlainText
 handle: galleryBlock
 name: 'Gallery Block'
-sortOrder: 5
+sortOrder: 4

@@ -28,18 +28,18 @@
           </div>
         {% endif %}
 
-        {% if props.googlePlayMusicLink %}
-          <div class="col-6 link-col" title="Listen on Google Play Music">
-            <a href="{{ props.googlePlayMusicLink }}" target="_blank">
-              <img src="{{ rev('/static/img/listen-on-google-play-music-logo.png') }}" alt="Listen on Google Play Music" />
-            </a>
-          </div>
-        {% endif %}
-
         {% if props.appleMusicLink %}
           <div class="col-6 link-col" title="Listen on Apple Music">
             <a href="{{ props.appleMusicLink }}" target="_blank">
               <img src="{{ rev('/static/img/listen-on-apple-music-logo.png') }}" alt="Listen on Apple Music" />
+            </a>
+          </div>
+        {% endif %}
+
+        {% if props.youTubeMusicLink %}
+          <div class="col-6 link-col" title="Listen on YouTube Music">
+            <a href="{{ props.youTubeMusicLink }}" target="_blank">
+              <img src="{{ rev('/static/img/listen-on-youtube-music-logo.png') }}" alt="Listen on YouTube Music" />
             </a>
           </div>
         {% endif %}
@@ -64,14 +64,6 @@
           <div class="col-6 link-col" title="Listen on Deezer">
             <a href="{{ props.deezerLink }}" target="_blank">
               <img src="{{ rev('/static/img/listen-on-deezer-logo.png') }}" alt="Listen on Deezer" />
-            </a>
-          </div>
-        {% endif %}
-
-        {% if props.youTubeMusicLink %}
-          <div class="col-6 link-col" title="Listen on YouTube Music">
-            <a href="{{ props.youTubeMusicLink }}" target="_blank">
-              <img src="{{ rev('/static/img/listen-on-youtube-logo.png') }}" alt="Listen on YouTube Music" />
             </a>
           </div>
         {% endif %}

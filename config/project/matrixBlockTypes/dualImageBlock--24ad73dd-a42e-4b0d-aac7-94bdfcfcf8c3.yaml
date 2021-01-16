@@ -34,11 +34,13 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -64,11 +66,13 @@ fields:
     searchable: false
     settings:
       allowSelfRelations: false
+      allowUploads: true
       allowedKinds: null
       defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
+      previewMode: full
       restrictFiles: ''
       selectionLabel: ''
       showSiteMenu: true
@@ -87,4 +91,4 @@ fields:
     type: craft\fields\Assets
 handle: dualImageBlock
 name: 'Dual Image Block'
-sortOrder: 7
+sortOrder: 6
