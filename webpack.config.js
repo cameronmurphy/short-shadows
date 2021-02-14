@@ -9,11 +9,6 @@ Encore
   .setOutputPath('web/static/assets/')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
-  .copyFiles({
-    from: './node_modules/photoswipe/dist',
-    to: 'photoswipe/[path][name].[ext]',
-    pattern: /.(gif|png|svg)$/,
-  })
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())

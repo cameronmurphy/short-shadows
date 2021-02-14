@@ -1,4 +1,4 @@
-$pswp__assets-path: '../../../web/static/assets/photoswipe/default-skin/'; // sass-lint:disable-line variable-name-format
+$pswp__assets-path: '../../../node_modules/photoswipe/dist/default-skin/'; // sass-lint:disable-line variable-name-format
 
 @import '~photoswipe/src/css/main';
 @import '~photoswipe/src/css/default-skin/default-skin';
