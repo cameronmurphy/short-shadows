@@ -12,7 +12,7 @@ Encore
   .copyFiles({
     from: './node_modules/photoswipe/dist',
     to: 'photoswipe/[path][name].[ext]',
-    pattern: /.(png|svg)$/,
+    pattern: /.(gif|png|svg)$/,
   })
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()

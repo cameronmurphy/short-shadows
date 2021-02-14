@@ -57,7 +57,7 @@
     "lodash": "^4.17.20",
     "node-sass": "^4.0.0",
     "postcss": "^8.0.0",
-    "postcss-loader": "^3.0.0",
+    "postcss-loader": "^5.0.0",
     "prettier": "^2.2.1",
     "regenerator-runtime": "^0.13.2",
     "sass-lint": "^1.13.1",
