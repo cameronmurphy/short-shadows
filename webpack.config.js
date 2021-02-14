@@ -30,7 +30,7 @@ if (Encore.isProduction()) {
   Encore.addPlugin(
     new CompressionPlugin({
       filename: '[path][query]',
-      exclude: /\.svg$/,
+      exclude: /\.json|\.svg$/,
     })
   );
 }
