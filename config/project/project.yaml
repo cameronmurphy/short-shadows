@@ -1,4 +1,4 @@
-dateModified: 1611969796
+dateModified: 1615335749
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -32,5 +32,5 @@ system:
   edition: solo
   live: true
   name: 'Short Shadows'
-  schemaVersion: 3.6.1
+  schemaVersion: 3.6.6
   timeZone: Australia/Melbourne
