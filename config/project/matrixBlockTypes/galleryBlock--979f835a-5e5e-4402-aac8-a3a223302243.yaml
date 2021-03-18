@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   89fa6d92-efc7-4e2b-b292-c5bcab9b38c4:
     tabs:
       -
         elements:
           -
-            fieldUid: f9b7402d-9b4b-42fd-9961-429431a4b17a
+            fieldUid: f9b7402d-9b4b-42fd-9961-429431a4b17a # Title
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 57123ace-d906-4162-b4e2-cd7d21a6a9f0
+            fieldUid: 57123ace-d906-4162-b4e2-cd7d21a6a9f0 # Images
             instructions: null
             label: null
             required: true
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 259116cd-e4bc-4d27-8ad6-0e6709d2022a
+            fieldUid: 259116cd-e4bc-4d27-8ad6-0e6709d2022a # Photographer Instagram Handle
             instructions: null
             label: null
             required: false
@@ -34,7 +34,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  259116cd-e4bc-4d27-8ad6-0e6709d2022a:
+  259116cd-e4bc-4d27-8ad6-0e6709d2022a: # Photographer Instagram Handle
     contentColumnType: text
     fieldGroup: null
     handle: photographerInstagramHandle
@@ -48,12 +48,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  57123ace-d906-4162-b4e2-cd7d21a6a9f0:
+  57123ace-d906-4162-b4e2-cd7d21a6a9f0: # Images
     contentColumnType: string
     fieldGroup: null
     handle: images
@@ -86,7 +86,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  f9b7402d-9b4b-42fd-9961-429431a4b17a:
+  f9b7402d-9b4b-42fd-9961-429431a4b17a: # Title
     contentColumnType: text
     fieldGroup: null
     handle: galleryTitle
@@ -100,7 +100,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

@@ -1,0 +1,18 @@
+fieldLayouts:
+  84c8a99e-d5e4-4697-ad74-95e76b372841:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: f50691f9-e800-4ba8-af7e-db93570714f5 # Asset
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Logo
+        sortOrder: 1
+handle: logo
+name: Logo

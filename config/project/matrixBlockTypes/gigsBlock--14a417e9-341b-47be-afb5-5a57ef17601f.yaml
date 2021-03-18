@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   7e0c7851-8a96-42f3-bf32-83578ce9e432:
     tabs:
       -
         elements:
           -
-            fieldUid: 19176f80-a3fe-469e-b87d-9ca004aea297
+            fieldUid: 19176f80-a3fe-469e-b87d-9ca004aea297 # Gigs
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  19176f80-a3fe-469e-b87d-9ca004aea297:
+  19176f80-a3fe-469e-b87d-9ca004aea297: # Gigs
     contentColumnType: string
     fieldGroup: null
     handle: gigs

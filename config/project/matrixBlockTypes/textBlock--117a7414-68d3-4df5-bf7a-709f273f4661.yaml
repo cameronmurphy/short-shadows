@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   48e3561c-cac4-43df-94c9-ce27a33442a0:
     tabs:
       -
         elements:
           -
-            fieldUid: e5d85094-e996-4468-9e60-f67f4474a8e1
+            fieldUid: e5d85094-e996-4468-9e60-f67f4474a8e1 # Text
             instructions: null
             label: null
             required: false
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  e5d85094-e996-4468-9e60-f67f4474a8e1:
+  e5d85094-e996-4468-9e60-f67f4474a8e1: # Text
     contentColumnType: text
     fieldGroup: null
     handle: text

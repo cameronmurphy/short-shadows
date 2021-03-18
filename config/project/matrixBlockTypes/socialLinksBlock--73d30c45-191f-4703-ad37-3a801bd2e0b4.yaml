@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   42281693-ae51-4b97-8152-64d9f53d0588:
     tabs:
       -
         elements:
           -
-            fieldUid: cdd449d3-8b4f-4b0a-8a60-6337a8aca928
+            fieldUid: cdd449d3-8b4f-4b0a-8a60-6337a8aca928 # Facebook Link
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3dbf953b-dde2-4002-a387-86214d7f904a
+            fieldUid: 3dbf953b-dde2-4002-a387-86214d7f904a # Instagram Link
             instructions: null
             label: null
             required: false
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: feb5915d-2c03-4248-96fa-2d32226b23f1
+            fieldUid: feb5915d-2c03-4248-96fa-2d32226b23f1 # SoundCloud Link
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 88c46a63-e398-41c8-bb47-226756a3bfbc
+            fieldUid: 88c46a63-e398-41c8-bb47-226756a3bfbc # YouTube Link
             instructions: null
             label: null
             required: false
@@ -43,7 +43,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  3dbf953b-dde2-4002-a387-86214d7f904a:
+  3dbf953b-dde2-4002-a387-86214d7f904a: # Instagram Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: instagramLink
@@ -52,11 +52,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  88c46a63-e398-41c8-bb47-226756a3bfbc:
+  88c46a63-e398-41c8-bb47-226756a3bfbc: # YouTube Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: youtubeLink
@@ -65,11 +67,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  cdd449d3-8b4f-4b0a-8a60-6337a8aca928:
+  cdd449d3-8b4f-4b0a-8a60-6337a8aca928: # Facebook Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: facebookLink
@@ -78,11 +82,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  feb5915d-2c03-4248-96fa-2d32226b23f1:
+  feb5915d-2c03-4248-96fa-2d32226b23f1: # SoundCloud Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: soundcloudLink
@@ -91,7 +97,9 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url

@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   c28f94c9-fd60-493d-a259-df240f357a38:
     tabs:
       -
         elements:
           -
-            fieldUid: 8b2bae03-08dc-4c61-a255-dadc67cbc137
+            fieldUid: 8b2bae03-08dc-4c61-a255-dadc67cbc137 # Label
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 70b753c2-54c0-47a5-8aa7-f394154eccf7
+            fieldUid: 70b753c2-54c0-47a5-8aa7-f394154eccf7 # Email
             instructions: null
             label: null
             required: true
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  70b753c2-54c0-47a5-8aa7-f394154eccf7:
+  70b753c2-54c0-47a5-8aa7-f394154eccf7: # Email
     contentColumnType: text
     fieldGroup: null
     handle: email
@@ -39,12 +39,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  8b2bae03-08dc-4c61-a255-dadc67cbc137:
+  8b2bae03-08dc-4c61-a255-dadc67cbc137: # Label
     contentColumnType: text
     fieldGroup: null
     handle: label
@@ -58,7 +58,7 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none

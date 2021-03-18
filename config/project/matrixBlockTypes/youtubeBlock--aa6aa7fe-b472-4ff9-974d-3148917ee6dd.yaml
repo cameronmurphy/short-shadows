@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   6f07a078-a55c-491c-8b2c-fa72b1707432:
     tabs:
       -
         elements:
           -
-            fieldUid: ae3095ab-f869-423c-96b0-e292502c86f9
+            fieldUid: ae3095ab-f869-423c-96b0-e292502c86f9 # Video URL
             instructions: null
             label: null
             required: true
@@ -16,7 +16,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  ae3095ab-f869-423c-96b0-e292502c86f9:
+  ae3095ab-f869-423c-96b0-e292502c86f9: # Video URL
     contentColumnType: string(255)
     fieldGroup: null
     handle: videoUrl
@@ -25,7 +25,9 @@ fields:
     searchable: false
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url

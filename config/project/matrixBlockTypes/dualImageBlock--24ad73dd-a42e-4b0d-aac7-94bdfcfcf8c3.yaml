@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   c37f415e-fb83-44b2-b232-23bb21d36f6a:
     tabs:
       -
         elements:
           -
-            fieldUid: 98aaca2e-1c0f-4ccd-af4b-9b73eed2d996
+            fieldUid: 98aaca2e-1c0f-4ccd-af4b-9b73eed2d996 # Image Left
             instructions: null
             label: null
             required: false
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7fe4323d-68da-4635-ade2-4f4a83cf1a4e
+            fieldUid: 7fe4323d-68da-4635-ade2-4f4a83cf1a4e # Image Right
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  7fe4323d-68da-4635-ade2-4f4a83cf1a4e:
+  7fe4323d-68da-4635-ade2-4f4a83cf1a4e: # Image Right
     contentColumnType: string
     fieldGroup: null
     handle: imageRight
@@ -57,7 +57,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  98aaca2e-1c0f-4ccd-af4b-9b73eed2d996:
+  98aaca2e-1c0f-4ccd-af4b-9b73eed2d996: # Image Left
     contentColumnType: string
     fieldGroup: null
     handle: imageLeft

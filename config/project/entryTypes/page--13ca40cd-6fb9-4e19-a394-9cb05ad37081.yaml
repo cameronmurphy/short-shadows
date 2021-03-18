@@ -8,7 +8,7 @@ fieldLayouts:
             label: Title
             type: craft\fieldlayoutelements\EntryTitleField
           -
-            fieldUid: 9ad7232b-940b-4762-85a7-0d9081a79992
+            fieldUid: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
             required: false
             type: craft\fieldlayoutelements\CustomField
         name: Content

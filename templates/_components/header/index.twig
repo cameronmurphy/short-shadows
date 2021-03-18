@@ -1,10 +1,17 @@
 {% set hasMenuItems = menuLinks.menuLinkMatrix.all|length > 0 %}
 {% set hasOnlyOneItem = menuLinks.menuLinkMatrix.all|length == 1 %}
+{% set hasLogo = logo.asset.all|length > 0 %}
 
 <div class="container-fluid header">
   <div class="row">
     <div class="col{{ hasMenuItems ? ' has-menu-items' : '' }}{{ hasOnlyOneItem ? ' has-only-one-item' : '' }}">
-      <a href="/" class="brand h3">Short Shadows</a>
+      <a href="/" class="brand h3">
+        {% if hasLogo %}
+          <img src="{{ logo.asset.one.getUrl }}" alt="Short Shadows logo" />
+        {% else %}
+          Short Shadows
+        {% endif %}
+      </a>
       {% if hasMenuItems %}
         <div class="right">
           <ul class="menu d-none d-lg-flex">

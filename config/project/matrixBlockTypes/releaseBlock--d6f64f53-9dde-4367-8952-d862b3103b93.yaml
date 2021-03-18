@@ -1,11 +1,11 @@
-field: 9ad7232b-940b-4762-85a7-0d9081a79992
+field: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
 fieldLayouts:
   f25fa2dd-3347-47ed-aceb-28e9513e2cdd:
     tabs:
       -
         elements:
           -
-            fieldUid: d99ba9e3-9ec5-48a3-ba77-850e280c069e
+            fieldUid: d99ba9e3-9ec5-48a3-ba77-850e280c069e # Title
             instructions: null
             label: null
             required: true
@@ -14,7 +14,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 60bf46a8-2b75-44d5-98f3-c23a7122beed
+            fieldUid: 60bf46a8-2b75-44d5-98f3-c23a7122beed # Cover
             instructions: null
             label: null
             required: true
@@ -23,7 +23,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ebcee218-3931-484a-adbd-cfa3274dcfec
+            fieldUid: ebcee218-3931-484a-adbd-cfa3274dcfec # Image Position
             instructions: null
             label: null
             required: false
@@ -32,7 +32,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 2fe46c32-a515-49c3-8f9f-a79cbbeaa344
+            fieldUid: 2fe46c32-a515-49c3-8f9f-a79cbbeaa344 # Image Link
             instructions: null
             label: null
             required: false
@@ -41,7 +41,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0121b1dc-5593-429e-b6f7-d244d2ab07f0
+            fieldUid: 0121b1dc-5593-429e-b6f7-d244d2ab07f0 # Spotify Link
             instructions: null
             label: null
             required: false
@@ -50,7 +50,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 1fe261a4-9f0c-41f3-b1af-b7c348f1610b
+            fieldUid: 1fe261a4-9f0c-41f3-b1af-b7c348f1610b # YouTube Music Link
             instructions: null
             label: null
             required: false
@@ -59,7 +59,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c7edc1ff-7db0-4ec3-a768-8319cb732621
+            fieldUid: c7edc1ff-7db0-4ec3-a768-8319cb732621 # Apple Music Link
             instructions: null
             label: null
             required: false
@@ -68,7 +68,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a001db04-1e3e-4a40-92bd-b0b10ff2fa85
+            fieldUid: 4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6 # Amazon Music Link
             instructions: null
             label: null
             required: false
@@ -77,7 +77,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6
+            fieldUid: a001db04-1e3e-4a40-92bd-b0b10ff2fa85 # Tidal Link
             instructions: null
             label: null
             required: false
@@ -86,7 +86,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e076b39a-e660-4c2b-ab0a-07d908b8f7d9
+            fieldUid: e076b39a-e660-4c2b-ab0a-07d908b8f7d9 # Deezer Link
             instructions: null
             label: null
             required: false
@@ -95,7 +95,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 7ef0c08c-6fb3-4120-bed8-0b4d110d2eae
+            fieldUid: 7ef0c08c-6fb3-4120-bed8-0b4d110d2eae # Ditto Music Link
             instructions: null
             label: null
             required: false
@@ -106,7 +106,7 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  0121b1dc-5593-429e-b6f7-d244d2ab07f0:
+  0121b1dc-5593-429e-b6f7-d244d2ab07f0: # Spotify Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: spotifyLink
@@ -115,11 +115,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  1fe261a4-9f0c-41f3-b1af-b7c348f1610b:
+  1fe261a4-9f0c-41f3-b1af-b7c348f1610b: # YouTube Music Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: youTubeMusicLink
@@ -128,11 +130,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  2fe46c32-a515-49c3-8f9f-a79cbbeaa344:
+  2fe46c32-a515-49c3-8f9f-a79cbbeaa344: # Image Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: imageLink
@@ -141,11 +145,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6:
+  4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6: # Amazon Music Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: amazonMusicLink
@@ -154,11 +160,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  60bf46a8-2b75-44d5-98f3-c23a7122beed:
+  60bf46a8-2b75-44d5-98f3-c23a7122beed: # Cover
     contentColumnType: string
     fieldGroup: null
     handle: cover
@@ -191,7 +199,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  7ef0c08c-6fb3-4120-bed8-0b4d110d2eae:
+  7ef0c08c-6fb3-4120-bed8-0b4d110d2eae: # Ditto Music Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: dittoMusicLink
@@ -200,11 +208,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  a001db04-1e3e-4a40-92bd-b0b10ff2fa85:
+  a001db04-1e3e-4a40-92bd-b0b10ff2fa85: # Tidal Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: tidalLink
@@ -213,11 +223,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  c7edc1ff-7db0-4ec3-a768-8319cb732621:
+  c7edc1ff-7db0-4ec3-a768-8319cb732621: # Apple Music Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: appleMusicLink
@@ -226,11 +238,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  d99ba9e3-9ec5-48a3-ba77-850e280c069e:
+  d99ba9e3-9ec5-48a3-ba77-850e280c069e: # Title
     contentColumnType: text
     fieldGroup: null
     handle: releaseTitle
@@ -244,12 +258,12 @@ fields:
       columnType: null
       initialRows: '4'
       multiline: ''
-      placeholder: ''
+      placeholder: null
       uiMode: normal
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  e076b39a-e660-4c2b-ab0a-07d908b8f7d9:
+  e076b39a-e660-4c2b-ab0a-07d908b8f7d9: # Deezer Link
     contentColumnType: string(255)
     fieldGroup: null
     handle: deezerLink
@@ -258,11 +272,13 @@ fields:
     searchable: true
     settings:
       maxLength: '255'
-      placeholder: ''
+      placeholder: null
+      types:
+        - url
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
-  ebcee218-3931-484a-adbd-cfa3274dcfec:
+  ebcee218-3931-484a-adbd-cfa3274dcfec: # Image Position
     contentColumnType: string
     fieldGroup: null
     handle: imagePosition
