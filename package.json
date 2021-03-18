@@ -19,7 +19,7 @@
     "lint": "eslint .",
     "lint-scss": "sass-lint -v",
     "sync-database": "scripts/sync-database.sh",
-    "watch": "encore dev --watch --watch-poll"
+    "watch": "encore dev --watch"
   },
   "repository": {
     "type": "git",
