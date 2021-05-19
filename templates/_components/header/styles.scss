@@ -17,8 +17,6 @@
     text-transform: uppercase;
 
     img {
-      max-width: 300px;
-
       @include media-breakpoint-up(xl) {
         max-width: 350px;
       }
@@ -26,6 +24,8 @@
       @include media-breakpoint-up(xxl) {
         max-width: 400px;
       }
+
+      max-width: 300px;
     }
 
     &:hover {
