@@ -106,21 +106,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  0121b1dc-5593-429e-b6f7-d244d2ab07f0: # Spotify Link
-    contentColumnType: string(255)
-    fieldGroup: null
-    handle: spotifyLink
-    instructions: ''
-    name: 'Spotify Link'
-    searchable: true
-    settings:
-      maxLength: '255'
-      placeholder: null
-      types:
-        - url
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\Url
   1fe261a4-9f0c-41f3-b1af-b7c348f1610b: # YouTube Music Link
     contentColumnType: string(255)
     fieldGroup: null
@@ -166,6 +151,21 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Url
+  7ef0c08c-6fb3-4120-bed8-0b4d110d2eae: # Ditto Music Link
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: dittoMusicLink
+    instructions: ''
+    name: 'Ditto Music Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   60bf46a8-2b75-44d5-98f3-c23a7122beed: # Cover
     contentColumnType: string
     fieldGroup: null
@@ -199,12 +199,12 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  7ef0c08c-6fb3-4120-bed8-0b4d110d2eae: # Ditto Music Link
+  0121b1dc-5593-429e-b6f7-d244d2ab07f0: # Spotify Link
     contentColumnType: string(255)
     fieldGroup: null
-    handle: dittoMusicLink
+    handle: spotifyLink
     instructions: ''
-    name: 'Ditto Music Link'
+    name: 'Spotify Link'
     searchable: true
     settings:
       maxLength: '255'

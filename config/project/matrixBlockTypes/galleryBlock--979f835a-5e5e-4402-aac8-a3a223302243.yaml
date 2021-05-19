@@ -34,25 +34,6 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  259116cd-e4bc-4d27-8ad6-0e6709d2022a: # Photographer Instagram Handle
-    contentColumnType: text
-    fieldGroup: null
-    handle: photographerInstagramHandle
-    instructions: 'Anyone the photos should be attributed to'
-    name: 'Photographer Instagram Handle'
-    searchable: true
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
   57123ace-d906-4162-b4e2-cd7d21a6a9f0: # Images
     contentColumnType: string
     fieldGroup: null
@@ -86,6 +67,25 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  259116cd-e4bc-4d27-8ad6-0e6709d2022a: # Photographer Instagram Handle
+    contentColumnType: text
+    fieldGroup: null
+    handle: photographerInstagramHandle
+    instructions: 'Anyone the photos should be attributed to'
+    name: 'Photographer Instagram Handle'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
   f9b7402d-9b4b-42fd-9961-429431a4b17a: # Title
     contentColumnType: text
     fieldGroup: null

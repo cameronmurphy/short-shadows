@@ -25,13 +25,13 @@ fieldLayouts:
         name: Content
         sortOrder: 1
 fields:
-  70b753c2-54c0-47a5-8aa7-f394154eccf7: # Email
+  8b2bae03-08dc-4c61-a255-dadc67cbc137: # Label
     contentColumnType: text
     fieldGroup: null
-    handle: email
+    handle: label
     instructions: ''
-    name: Email
-    searchable: true
+    name: Label
+    searchable: false
     settings:
       byteLimit: null
       charLimit: null
@@ -44,13 +44,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  8b2bae03-08dc-4c61-a255-dadc67cbc137: # Label
+  70b753c2-54c0-47a5-8aa7-f394154eccf7: # Email
     contentColumnType: text
     fieldGroup: null
-    handle: label
+    handle: email
     instructions: ''
-    name: Label
-    searchable: false
+    name: Email
+    searchable: true
     settings:
       byteLimit: null
       charLimit: null
