@@ -18,7 +18,6 @@
     "dev-server": "encore dev-server",
     "lint": "eslint .",
     "lint-scss": "sass-lint -v",
-    "sync-database": "scripts/sync-database.sh",
     "watch": "encore dev --watch"
   },
   "repository": {

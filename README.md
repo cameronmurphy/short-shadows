@@ -6,47 +6,44 @@ This is a Craft 3 website.
 
 Requirements
 ------------
-To run this website locally you will need [Vagrant](https://vagrantup.com) and [VirtualBox](https://virtualbox.org).
-You can install them on macOS using [Homebrew](https://brew.sh).
+To run this website locally you will need [Docker](https://www.docker.com/products/docker-desktop). You can install them on macOS using
+[Homebrew](https://brew.sh).
 ```bash
-$ brew cask install virtualbox vagrant
+$ brew install docker --cask
+```
+You will also need PHP, NVM and Yarn.
+```bash
+$ brew install php nvm
+$ nvm install
+$ npm install -g yarn
 ```
 
 Getting started
 ---------------
-Before running the virtual machine you will need to create environment files. The defaults in the example files should
-suffice.
+Before running the virtual machine you will need to create environment files. The defaults in the example files should suffice.
 ```bash
 $ cp .env.example .env
 ```
-
-To bring up the virtual machine, run `vagrant up`. Once the machine is online run these commands.
+Optionally you can configure values for `FORWARD_APP_PORT` and `FORWARD_DB_PORT` if you do not with to use the standard ports.
+To run the application:
 ```bash
-$ vagrant ssh
-$ cd /var/www
-$ composer install --no-plugins
-
-# Remove plugins because of a bug in craft/plugin-installer
-$ rm -rf vendor/clubstudioltd vendor/vaersaagod
-
-# Install plugins again
+$ docker-compose up
 $ composer install
-
-$ ./craft setup/security-key
+$ composer craft setup/security-key
 $ yarn install
 ```
 
 Code standards
 --------------
-The tools `eslint` and `sass-lint` are used to ensure `*.js` and `*.scss` files meet the code standards. Use the
-commands `yarn lint-js` and `yarn lint-scss` to lint the codebase. 
+The tools `eslint` and `sass-lint` are used to ensure `*.js` and `*.scss` files meet the code standards. Use the commands `yarn lint-js` and
+`yarn lint-scss` to lint the codebase. 
 
 Database sync
 -------------
 ```bash
 $ cp scripts/.env.sh.example scripts/.env.sh
 # Populate variables in scripts/.env.sh
-$ yarn sync-database
+$ composer sync-database
 ```
 
 Production asset deployment

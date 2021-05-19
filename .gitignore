@@ -1,7 +1,6 @@
 .DS_Store
 /.env
 /scripts/.env.sh
-/.vagrant
 /vendor
 /node_modules
 /web/cpresources

@@ -32,11 +32,13 @@
     }
   },
   "scripts": {
+    "craft": "docker-compose exec web ./craft",
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "deploy-assets": [
       "source /etc/environment && ./scripts/deploy-assets.php"
-    ]
+    ],
+    "sync-database": "docker-compose exec web ./scripts/sync-database.sh"
   }
 }
