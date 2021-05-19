@@ -24,13 +24,16 @@ Before running the virtual machine you will need to create environment files. Th
 ```bash
 $ cp .env.example .env
 ```
-Optionally you can configure values for `FORWARD_APP_PORT` and `FORWARD_DB_PORT` if you do not with to use the standard ports.
-To run the application:
+Optionally you can configure values for `FORWARD_APP_PORT` and `FORWARD_DB_PORT` if you do not with to use the standard ports. By default,
+the application will be available at [http://127.0.0.1:8080]() and the database at [127.0.0.1:5432](). To run the application:
 ```bash
-$ docker-compose up
 $ composer install
-$ composer craft setup/security-key
+$ ./craft setup/security-key
 $ yarn install
+$ docker-compose up
+
+# Optionally you can pull down the production database
+$ composer sync-database
 ```
 
 Code standards
