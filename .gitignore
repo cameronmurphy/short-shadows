@@ -5,3 +5,10 @@
 /node_modules
 /web/cpresources
 /web/static/assets
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

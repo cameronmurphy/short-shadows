@@ -29,8 +29,9 @@ Encore
 if (Encore.isProduction()) {
   Encore.addPlugin(
     new CompressionPlugin({
-      filename: '[path][query]',
+      deleteOriginalAssets: true,
       exclude: /\.json|\.svg$/,
+      filename: '[path][base]',
     })
   );
 }
