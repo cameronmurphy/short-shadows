@@ -38,9 +38,9 @@
     "ie >= 11"
   ],
   "devDependencies": {
+    "@babel/eslint-parser": "^7.0.0",
     "@symfony/webpack-encore": "^1.7.0",
     "autoprefixer": "^9.0.0",
-    "babel-eslint": "^10.1.0",
     "compression-webpack-plugin": "^9.2.0",
     "core-js": "^3.0.0",
     "eslint": "^8.6.0",
