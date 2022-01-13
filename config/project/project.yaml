@@ -1,4 +1,4 @@
-dateModified: 1621326494
+dateModified: 1642050433
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
@@ -9,6 +9,48 @@ graphql:
   publicToken:
     enabled: false
     expiryDate: null
+meta:
+  __names__:
+    1f9fb9e4-14d5-4e99-9678-6db10cc835b4: 'Heading Block' # Heading Block
+    1fe261a4-9f0c-41f3-b1af-b7c348f1610b: 'YouTube Music Link' # YouTube Music Link
+    2fe46c32-a515-49c3-8f9f-a79cbbeaa344: 'Image Link' # Image Link
+    3dbf953b-dde2-4002-a387-86214d7f904a: 'Instagram Link' # Instagram Link
+    4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6: 'Amazon Music Link' # Amazon Music Link
+    7ef0c08c-6fb3-4120-bed8-0b4d110d2eae: 'Ditto Music Link' # Ditto Music Link
+    7fe4323d-68da-4635-ade2-4f4a83cf1a4e: 'Image Right' # Image Right
+    8b2bae03-08dc-4c61-a255-dadc67cbc137: Label # Label
+    9ad7232b-940b-4762-85a7-0d9081a79992: 'Content Matrix' # Content Matrix
+    14a417e9-341b-47be-afb5-5a57ef17601f: 'Gigs Block' # Gigs Block
+    24ad73dd-a42e-4b0d-aac7-94bdfcfcf8c3: 'Dual Image Block' # Dual Image Block
+    60bf46a8-2b75-44d5-98f3-c23a7122beed: Cover # Cover
+    70b753c2-54c0-47a5-8aa7-f394154eccf7: Email # Email
+    73d30c45-191f-4703-ad37-3a801bd2e0b4: 'Social Links Block' # Social Links Block
+    88c46a63-e398-41c8-bb47-226756a3bfbc: 'YouTube Link' # YouTube Link
+    98aaca2e-1c0f-4ccd-af4b-9b73eed2d996: 'Image Left' # Image Left
+    117a7414-68d3-4df5-bf7a-709f273f4661: 'Text Block' # Text Block
+    0121b1dc-5593-429e-b6f7-d244d2ab07f0: 'Spotify Link' # Spotify Link
+    979f835a-5e5e-4402-aac8-a3a223302243: 'Gallery Block' # Gallery Block
+    2139ab1e-fe91-45ec-bd0a-1d655c22a775: 'Menu Links' # Menu Links
+    19176f80-a3fe-469e-b87d-9ca004aea297: Gigs # Gigs
+    57123ace-d906-4162-b4e2-cd7d21a6a9f0: Images # Images
+    187285b4-7ec3-4d66-9857-a8f854a73120: Size # Size
+    259116cd-e4bc-4d27-8ad6-0e6709d2022a: 'Photographer Instagram Handle' # Photographer Instagram Handle
+    411429ce-7d06-49a6-8bdb-fb0f3e6c4da8: Logo # Logo
+    a001db04-1e3e-4a40-92bd-b0b10ff2fa85: 'Tidal Link' # Tidal Link
+    aa6aa7fe-b472-4ff9-974d-3148917ee6dd: 'YouTube Block' # YouTube Block
+    ae3095ab-f869-423c-96b0-e292502c86f9: 'Video URL' # Video URL
+    c7edc1ff-7db0-4ec3-a768-8319cb732621: 'Apple Music Link' # Apple Music Link
+    c10f7170-1f71-4096-936b-b22a683cd855: Text # Text
+    c4580440-341d-4077-a159-07f3f0fc17dd: 'Contact Block' # Contact Block
+    cdd449d3-8b4f-4b0a-8a60-6337a8aca928: 'Facebook Link' # Facebook Link
+    d6f64f53-9dde-4367-8952-d862b3103b93: 'Release Block' # Release Block
+    d99ba9e3-9ec5-48a3-ba77-850e280c069e: Title # Title
+    e076b39a-e660-4c2b-ab0a-07d908b8f7d9: 'Deezer Link' # Deezer Link
+    e5d85094-e996-4468-9e60-f67f4474a8e1: Text # Text
+    ebcee218-3931-484a-adbd-cfa3274dcfec: 'Image Position' # Image Position
+    f9b7402d-9b4b-42fd-9961-429431a4b17a: Title # Title
+    f50691f9-e800-4ba8-af7e-db93570714f5: Asset # Asset
+    feb5915d-2c03-4248-96fa-2d32226b23f1: 'SoundCloud Link' # SoundCloud Link
 plugins:
   assetrev:
     enabled: true
@@ -32,5 +74,5 @@ system:
   edition: solo
   live: true
   name: 'Short Shadows'
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.8
   timeZone: Australia/Melbourne

@@ -10,59 +10,38 @@
 
 use craft\helpers\App;
 
+$isDev = App::env('ENVIRONMENT') === 'dev';
+$isProd = App::env('ENVIRONMENT') === 'production';
+
 return [
-    // Global settings
-    '*' => [
-        // Default Week Start Day (0 = Sunday, 1 = Monday...)
-        'defaultWeekStartDay' => 1,
+    // Default Week Start Day (0 = Sunday, 1 = Monday...)
+    'defaultWeekStartDay' => 1,
 
-        // Whether generated URLs should omit "index.php"
-        'omitScriptNameInUrls' => true,
+    // Whether generated URLs should omit "index.php"
+    'omitScriptNameInUrls' => true,
 
-        // Control panel trigger word
-        'cpTrigger' => 'admin',
+    // The URI segment that tells Craft to load the control panel
+    'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 
-        // The secure key Craft will use for hashing and encrypting data
-        'securityKey' => App::env('SECURITY_KEY'),
+    // The secure key Craft will use for hashing and encrypting data
+    'securityKey' => App::env('SECURITY_KEY'),
 
-        'aliases' => [
-            '@assetBaseUrl' => getenv('ASSET_BASE_URL'),
-            '@assetAccessKeyId' => getenv('ASSET_ACCESS_KEY_ID'),
-            '@assetSecretAccessKey' => getenv('ASSET_SECRET_ACCESS_KEY'),
-            '@assetEndpoint' => getenv('ASSET_ENDPOINT'),
-            '@assetRegion' => getenv('ASSET_REGION'),
-            '@assetBucket' => getenv('ASSET_BUCKET'),
-            '@assetSubfolder' => getenv('ASSET_SUBFOLDER'),
-        ],
-    ],
+    // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
+    'devMode' => $isDev,
 
-    // Dev environment settings
-    'dev' => [
-        // Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-        'devMode' => true,
+    // Whether administrative changes should be allowed
+    'allowAdminChanges' => $isDev,
 
-        // Prevent crawlers from indexing pages and following links
-        'disallowRobots' => true,
-    ],
+    // Whether crawlers should be allowed to index pages and following links
+    'disallowRobots' => !$isProd,
 
-    // Staging environment settings
-    'staging' => [
-        // Set this to `false` to prevent administrative changes from being made on Staging
-        'allowAdminChanges' => true,
-
-        // Don’t allow updates on Staging
-        'allowUpdates' => false,
-
-        // Prevent crawlers from indexing pages and following links
-        'disallowRobots' => true,
-    ],
-
-    // Production environment settings
-    'production' => [
-        // Set this to `false` to prevent administrative changes from being made on Production
-        'allowAdminChanges' => true,
-
-        // Don’t allow updates on Production
-        'allowUpdates' => false,
+    'aliases' => [
+        '@assetBaseUrl' => getenv('ASSET_BASE_URL'),
+        '@assetAccessKeyId' => getenv('ASSET_ACCESS_KEY_ID'),
+        '@assetSecretAccessKey' => getenv('ASSET_SECRET_ACCESS_KEY'),
+        '@assetEndpoint' => getenv('ASSET_ENDPOINT'),
+        '@assetRegion' => getenv('ASSET_REGION'),
+        '@assetBucket' => getenv('ASSET_BUCKET'),
+        '@assetSubfolder' => getenv('ASSET_SUBFOLDER'),
     ],
 ];

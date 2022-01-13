@@ -9,7 +9,7 @@ Requirements
 To run this website locally you will need [Docker](https://www.docker.com/products/docker-desktop). You can install them on macOS using
 [Homebrew](https://brew.sh).
 ```bash
-$ brew install docker --cask
+$ brew install docker-desktop
 ```
 You will also need PHP, NVM and Yarn.
 ```bash

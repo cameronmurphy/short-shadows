@@ -10,3 +10,4 @@ fieldLayouts:
         sortOrder: 1
 handle: menuLinks
 name: 'Menu Links'
+sortOrder: 2
