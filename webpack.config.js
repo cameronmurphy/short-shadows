@@ -9,7 +9,6 @@ Encore
   .setOutputPath('web/static/assets/')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
-  .splitEntryChunks()
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
