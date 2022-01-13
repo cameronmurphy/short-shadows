@@ -1,5 +1,5 @@
-var Encore = require('@symfony/webpack-encore');
-var CompressionPlugin = require('compression-webpack-plugin');
+const Encore = require('@symfony/webpack-encore');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 if (!Encore.isRuntimeEnvironmentConfigured()) {
   Encore.configureRuntimeEnvironment(process.env.NODE_ENV || 'dev');
@@ -9,22 +9,26 @@ Encore
   .setOutputPath('web/static/assets/')
   .setPublicPath('/static/assets')
   .addEntry('main', './templates/_scripts/main.js')
+  .splitEntryChunks()
   .enableSingleRuntimeChunk()
   .cleanupOutputBeforeBuild()
   .enableSourceMaps(!Encore.isProduction())
   .enableVersioning()
-  .enableSassLoader(() => {}, {
-    // https://github.com/symfony/webpack-encore/issues/253
-    resolveUrlLoader: false,
-  })
   .enablePostCssLoader()
   .configureBabel((config) => {
       config.plugins.push('@babel/plugin-proposal-class-properties');
+  })
+  .configureManifestPlugin((config) => {
+    config.removeKeyHash = /([a-f0-9]{8}\.?)/gi;
   })
   .configureBabelPresetEnv((config) => {
     config.useBuiltIns = 'usage';
     config.corejs = 3;
   })
+  .enableSassLoader(() => {}, {
+    // https://github.com/symfony/webpack-encore/issues/253
+    resolveUrlLoader: false,
+  });
 
 if (Encore.isProduction()) {
   Encore.addPlugin(
