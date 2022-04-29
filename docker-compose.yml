@@ -12,7 +12,7 @@ services:
     depends_on:
       - pgsql
     secrets:
-      - id_rsa
+      - identity
   pgsql:
     image: postgres:13
     ports:
@@ -35,5 +35,5 @@ volumes:
   db:
     driver: local
 secrets:
-  id_rsa:
-    file: ~/.ssh/id_rsa
+  identity:
+    file: ~/.ssh/id_ed25519_short_shadows
