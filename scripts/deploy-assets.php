@@ -10,9 +10,7 @@ if (getenv('ENVIRONMENT') == 'dev') {
 }
 
 use Aws\S3\S3Client;
-use League\Flysystem\AdapterInterface;
-use League\Flysystem\AwsS3v3\AwsS3Adapter;
-use League\Flysystem\FileNotFoundException;
+use League\Flysystem\AwsS3V3\AwsS3V3Adapter;
 use League\Flysystem\Filesystem;
 
 $client = new S3Client([
@@ -25,16 +23,21 @@ $client = new S3Client([
     'endpoint' => getenv('ASSET_ENDPOINT'),
 ]);
 
-$adapter = new AwsS3Adapter($client, getenv('ASSET_BUCKET'), 'static');
-$remoteFs = new Filesystem($adapter, [
-  'visibility' => AdapterInterface::VISIBILITY_PUBLIC
-]);
+$adapter = new AwsS3V3Adapter(
+    $client,
+    getenv('ASSET_BUCKET'),
+    'static',
+    new League\Flysystem\AwsS3V3\PortableVisibilityConverter(
+        League\Flysystem\Visibility::PUBLIC
+    )
+);
+
+$remoteFs = new Filesystem($adapter);
 
 /**
  * @param Filesystem $remoteFs
  * @param string $baseDir
  * @param string|null $relativePath
- * @throws \League\Flysystem\FileNotFoundException
  */
 function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relativePath = null) {
     $absolutePath = $relativePath ? join('/', [$baseDir, $relativePath]) : $baseDir;
@@ -51,11 +54,6 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
         if (is_dir($entryAbsolutePath)) {
             recursiveUpload($remoteFs, $baseDir, $entryRelativePath);
         } else {
-            if ($remoteFs->has($entryRelativePath)) {
-                echo sprintf("Removing %s on remote FS\n", $entryRelativePath);
-                $remoteFs->delete($entryRelativePath);
-            }
-
             $config = [];
 
             if (preg_match('/\.(css|js)$/', $entry, $matches)) {
@@ -68,13 +66,9 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
             }
 
             echo sprintf("Writing %s to remote FS\n", $entryRelativePath);
-            $remoteFs->put($entryRelativePath, file_get_contents($entryAbsolutePath), $config);
+            $remoteFs->write($entryRelativePath, file_get_contents($entryAbsolutePath), $config);
         }
     }
 }
 
-try {
-    recursiveUpload($remoteFs, __DIR__ . '/../web/static');
-} catch (FileNotFoundException $e) {
-    die($e->getMessage());
-}
+recursiveUpload($remoteFs, __DIR__ . '/../web/static');
