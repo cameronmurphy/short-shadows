@@ -23,15 +23,7 @@ $client = new S3Client([
     'endpoint' => getenv('ASSET_ENDPOINT'),
 ]);
 
-$adapter = new AwsS3V3Adapter(
-    $client,
-    getenv('ASSET_BUCKET'),
-    'static',
-    new League\Flysystem\AwsS3V3\PortableVisibilityConverter(
-        League\Flysystem\Visibility::PUBLIC
-    )
-);
-
+$adapter = new AwsS3V3Adapter($client, getenv('ASSET_BUCKET'), 'static');
 $remoteFs = new Filesystem($adapter);
 
 /**
@@ -54,7 +46,7 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
         if (is_dir($entryAbsolutePath)) {
             recursiveUpload($remoteFs, $baseDir, $entryRelativePath);
         } else {
-            $config = [];
+            $config = ['visibility' => 'public'];
 
             if (preg_match('/\.(css|js)$/', $entry, $matches)) {
                 $config['ContentEncoding'] = 'gzip';
