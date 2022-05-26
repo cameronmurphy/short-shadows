@@ -16,18 +16,18 @@ services:
   pgsql:
     image: postgres:13
     ports:
-      - '${FORWARD_DB_PORT:-5433}:5432'
+      - '${FORWARD_CRAFT_DB_PORT:-5433}:5432'
     environment:
-      PGPASSWORD: '${DB_PASSWORD:-secret}'
-      POSTGRES_DB: '${DB_DATABASE}'
-      POSTGRES_USER: '${DB_USER}'
-      POSTGRES_PASSWORD: '${DB_PASSWORD:-secret}'
+      PGPASSWORD: '${CRAFT_DB_PASSWORD:-secret}'
+      POSTGRES_DB: '${CRAFT_DB_DATABASE}'
+      POSTGRES_USER: '${CRAFT_DB_USER}'
+      POSTGRES_PASSWORD: '${CRAFT_DB_PASSWORD:-secret}'
     volumes:
       - 'db:/var/lib/postgresql/data'
     networks:
       - craft
     healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "${DB_DATABASE}", "-U", "${DB_USER}"]
+      test: ["CMD", "pg_isready", "-q", "-d", "${CRAFT_DB_DATABASE}", "-U", "${CRAFT_DB_USER}"]
 networks:
   craft:
     driver: bridge

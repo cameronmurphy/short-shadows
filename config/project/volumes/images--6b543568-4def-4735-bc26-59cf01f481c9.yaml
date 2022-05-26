@@ -1,14 +1,6 @@
+fs: images
 handle: images
 hasUrls: true
 name: Images
-settings:
-  bucket: '@assetBucket'
-  endpoint: '@assetEndpoint'
-  expires: ''
-  keyId: '@assetAccessKeyId'
-  region: '@assetRegion'
-  secret: '@assetSecretAccessKey'
-  subfolder: '@assetSubfolder'
 sortOrder: 1
-type: vaersaagod\dospaces\Volume
 url: '@assetBaseUrl'

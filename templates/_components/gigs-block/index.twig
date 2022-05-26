@@ -1,11 +1,4 @@
 <div class="container-fluid gigs-block">
-  {% if props.gigs is empty %}
-    <div class="row">
-      <div class="col no-gigs-col">
-        <h3>No upcoming gigs at the moment, check back soon!</h3>
-      </div>
-    </div>
-  {% endif %}
   {% for gig in props.gigs.all %}
   <div class="row">
     <div class="col-12 col-md-3 h2 date-col">{{ gig.date|date('F j') }}</div>
@@ -35,5 +28,11 @@
       {%- endif -%}
     </div>
   </div>
+  {% else %}
+    <div class="row">
+      <div class="col no-gigs-col">
+        <h3>No upcoming gigs at the moment, check back soon!</h3>
+      </div>
+    </div>
   {% endfor %}
 </div>

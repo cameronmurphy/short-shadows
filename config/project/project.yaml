@@ -1,10 +1,25 @@
-dateModified: 1651217748
+dateModified: 1653524015
 email:
   fromEmail: camurphy@gmail.com
   fromName: 'Short Shadows'
   template: null
   transportSettings: null
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      bucket: '@assetBucket'
+      contentDisposition: ''
+      endpoint: '@assetEndpoint'
+      expires: ''
+      keyId: '@assetAccessKeyId'
+      region: '@assetRegion'
+      secret: '@assetSecretAccessKey'
+      subfolder: '@assetSubfolder'
+    type: vaersaagod\dospaces\Fs
+    url: '@assetBaseUrl'
 graphql:
   publicToken:
     enabled: false
@@ -16,6 +31,7 @@ meta:
     2fe46c32-a515-49c3-8f9f-a79cbbeaa344: 'Image Link' # Image Link
     3dbf953b-dde2-4002-a387-86214d7f904a: 'Instagram Link' # Instagram Link
     4e6e5d5c-d370-4a50-8d03-cc89ee8b47f6: 'Amazon Music Link' # Amazon Music Link
+    6b543568-4def-4735-bc26-59cf01f481c9: Images # Images
     7ef0c08c-6fb3-4120-bed8-0b4d110d2eae: 'Ditto Music Link' # Ditto Music Link
     7fe4323d-68da-4635-ade2-4f4a83cf1a4e: 'Image Right' # Image Right
     8b2bae03-08dc-4c61-a255-dadc67cbc137: Label # Label
@@ -60,7 +76,7 @@ plugins:
   dospaces:
     enabled: true
     licenseKey: null
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
     settings: null
   logs:
     edition: standard
@@ -74,5 +90,5 @@ system:
   edition: solo
   live: true
   name: 'Short Shadows'
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.9
   timeZone: Australia/Melbourne

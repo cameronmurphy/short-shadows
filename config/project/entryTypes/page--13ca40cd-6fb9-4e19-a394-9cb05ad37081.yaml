@@ -6,7 +6,7 @@ fieldLayouts:
           -
             instructions: null
             label: Title
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
           -
             fieldUid: 9ad7232b-940b-4762-85a7-0d9081a79992 # Content Matrix
             required: false

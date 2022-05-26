@@ -36,7 +36,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9' # Images
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -46,7 +46,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'
@@ -68,7 +68,7 @@ fields:
       allowSelfRelations: false
       allowUploads: true
       allowedKinds: null
-      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      defaultUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9' # Images
       defaultUploadLocationSubpath: ''
       limit: '1'
       localizeRelations: false
@@ -78,7 +78,7 @@ fields:
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9'
+      singleUploadLocationSource: 'volume:6b543568-4def-4735-bc26-59cf01f481c9' # Images
       singleUploadLocationSubpath: ''
       source: null
       sources: '*'
