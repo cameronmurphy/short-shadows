@@ -1,6 +1,6 @@
 Short Shadows
 ===========
-[![Codeship Status for cameronmurphy/short-shadows](https://app.codeship.com/projects/184d8d20-2c1c-0137-ed32-62ec0ec7f787/status?branch=master)](https://app.codeship.com/projects/331257)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/34vMYXApuzs6spAruM7wQy/XJUYmpS259qnjU8ZtHAxPN/tree/main.svg?style=svg&circle-token=CCIPRJ_17ckPKwNL1pVQNGQvQkjni_9f69ef0f98e633c1f87da8672b63071d2f5f669e)](https://dl.circleci.com/status-badge/redirect/circleci/34vMYXApuzs6spAruM7wQy/XJUYmpS259qnjU8ZtHAxPN/tree/main)
 
 This is a Craft 3 website.
 
