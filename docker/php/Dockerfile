@@ -3,10 +3,6 @@ FROM php:8.2-fpm
 
 RUN apt-get update
 
-RUN apt-get update
-RUN apt-get install -y vim
-RUN echo "source /usr/share/vim/vim90/defaults.vim\nset mouse=" > ~/.vimrc
-
 # Database syncing
 RUN apt-get install -y openssh-client postgresql-client
 

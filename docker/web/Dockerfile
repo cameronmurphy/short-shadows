@@ -1,10 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM httpd:2.4
 
-RUN apt-get update
-RUN apt-get install -y vim
-RUN echo "source /usr/share/vim/vim90/defaults.vim\nset mouse=" > ~/.vimrc
-
 RUN sed -i 's|#LoadModule rewrite_module|LoadModule rewrite_module|' /usr/local/apache2/conf/httpd.conf
 RUN sed -i 's|#LoadModule proxy_module|LoadModule proxy_module|' /usr/local/apache2/conf/httpd.conf
 RUN sed -i 's|#LoadModule proxy_fcgi_module|LoadModule proxy_fcgi_module|' /usr/local/apache2/conf/httpd.conf
