@@ -15,6 +15,9 @@ jobs:
           cache-key: 'composer.json'
       - node/install:
           node-version: '20.11.1'
+      - run:
+          name: Enable Corepack
+          command: corepack enable
       - node/install-packages:
           pkg-manager: yarn
       - run:
