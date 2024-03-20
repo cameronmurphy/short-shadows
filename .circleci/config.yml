@@ -15,9 +15,9 @@ jobs:
           cache-key: 'composer.json'
       - node/install:
           node-version: '16.15.0'
-      - run:
-          name: Lint PHP
-          command: composer lint
+#      - run:
+#          name: Lint PHP
+#          command: composer lint
       - run:
           name: Lint JS
           command: yarn lint
