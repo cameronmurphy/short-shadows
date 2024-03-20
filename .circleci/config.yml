@@ -14,8 +14,7 @@ jobs:
       - php/install-packages:
           cache-key: 'composer.json'
       - node/install:
-          node-version: '16.15.0'
-          install-yarn: true
+          node-version: '20.11.1'
       - node/install-packages:
           pkg-manager: yarn
       - run:
