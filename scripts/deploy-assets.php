@@ -5,8 +5,8 @@
 // Load shared bootstrap
 require dirname(__DIR__) . '/bootstrap.php';
 
-if (getenv('ENVIRONMENT') == 'dev') {
-    die("This is probably a mistake, don't run this in dev\n");
+if ('dev' == getenv('ENVIRONMENT')) {
+    exit("This is probably a mistake, don't run this in dev\n");
 }
 
 use Aws\S3\S3Client;
@@ -26,12 +26,8 @@ $client = new S3Client([
 $adapter = new AwsS3V3Adapter($client, getenv('ASSET_BUCKET'), 'static');
 $remoteFs = new Filesystem($adapter);
 
-/**
- * @param Filesystem $remoteFs
- * @param string $baseDir
- * @param string|null $relativePath
- */
-function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relativePath = null) {
+function recursiveUpload(Filesystem $remoteFs, string $baseDir, ?string $relativePath = null)
+{
     $absolutePath = $relativePath ? join('/', [$baseDir, $relativePath]) : $baseDir;
 
     foreach (scandir($absolutePath) as $entry) {
@@ -51,7 +47,7 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, string $relative
             if (preg_match('/\.(css|js)$/', $entry, $matches)) {
                 $config['ContentEncoding'] = 'gzip';
 
-                $contentType = $matches[1] === 'js' ? 'javascript' : $matches[1];
+                $contentType = 'js' === $matches[1] ? 'javascript' : $matches[1];
                 $config['ContentType'] = 'text/' . $contentType;
             } elseif (preg_match('/\.svg$/', $entry, $matches)) {
                 $config['ContentType'] = 'image/svg+xml';

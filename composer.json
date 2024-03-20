@@ -1,48 +1,57 @@
 {
-  "name": "short-shadows/website",
-  "description": "Craft 3 website for Short Shadows",
-  "license": "proprietary",
-  "keywords": [
-    "craft",
-    "cms",
-    "short",
-    "shadows"
-  ],
-  "type": "project",
-  "require": {
-    "clubstudioltd/craft-asset-rev": "^7.0.0",
-    "craftcms/cms": "^4.0.0.1",
-    "craftcms/redactor": "^3.0",
-    "vaersaagod/dospaces": "^2.0",
-    "vlucas/phpdotenv": "^5.4.0"
-  },
-  "require-dev": {
-    "yiisoft/yii2-shell": "^2.0.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "modules\\": "modules/"
-    }
-  },
-  "config": {
-    "allow-plugins": {
-      "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+    "name": "short-shadows/website",
+    "description": "Craft 3 website for Short Shadows",
+    "license": "proprietary",
+    "keywords": [
+        "craft",
+        "cms",
+        "short",
+        "shadows"
+    ],
+    "type": "project",
+    "require": {
+        "clubstudioltd/craft-asset-rev": "^7.0.0",
+        "craftcms/cms": "4.8.4",
+        "craftcms/redactor": "3.0.4",
+        "nystudio107/craft-vite": "^4.0",
+        "vaersaagod/dospaces": "^2.0",
+        "vlucas/phpdotenv": "^5.4.0"
     },
-    "sort-packages": true,
-    "optimize-autoloader": true,
-    "platform": {
-      "php": "8.0.2"
+    "require-dev": {
+      "craftcms/generator": "^1.3.0",
+      "friendsofphp/php-cs-fixer": "^3.0",
+      "squizlabs/php_codesniffer": "^3.0",
+      "yiisoft/yii2-shell": "^2.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "modules\\": "modules/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "yiisoft/yii2-composer": true
+        },
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.0.2"
+        }
+    },
+    "scripts": {
+        "craft": "docker compose exec php ./craft",
+        "fix": "php-cs-fixer fix --ansi",
+        "lint": [
+            "phpcs",
+            "php-cs-fixer fix --dry-run --diff --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "deploy-assets": [
+            "source /etc/environment && ./scripts/deploy-assets.php"
+        ],
+        "sync-database": "docker compose exec php ./scripts/sync-database.sh"
     }
-  },
-  "scripts": {
-    "craft": "docker-compose exec web ./craft",
-    "post-root-package-install": [
-      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-    ],
-    "deploy-assets": [
-      "source /etc/environment && ./scripts/deploy-assets.php"
-    ],
-    "sync-database": "docker-compose exec web ./scripts/sync-database.sh"
-  }
 }

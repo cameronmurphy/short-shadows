@@ -1,6 +1,6 @@
-import PhotoSwipe from 'photoswipe/dist/photoswipe.min';
-import PhotoSwipeUIDefault from 'photoswipe/dist/photoswipe-ui-default.min';
 import $ from 'jquery';
+import PhotoSwipeUIDefault from 'photoswipe/dist/photoswipe-ui-default.min';
+import PhotoSwipe from 'photoswipe/dist/photoswipe.min';
 
 import './styles.scss';
 

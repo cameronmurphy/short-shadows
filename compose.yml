@@ -1,20 +1,25 @@
-version: '3.9'
 services:
   web:
-    build: .
+    build: docker/web
     volumes:
-      - .:/app
+      - .:/var/www
     ports:
-      - '${FORWARD_APP_PORT:-8080}:8080'
-    env_file: .env
+      - '${FORWARD_APP_PORT:-8080}:80'
     networks:
       - craft
     depends_on:
       - pgsql
-    secrets:
-      - identity
+  php:
+    build: docker/php
+    environment:
+      - SSH_AUTH_SOCK=${SSH_AUTH_SOCK}
+    volumes:
+      - .:/var/www
+      - ${SSH_AUTH_SOCK}:${SSH_AUTH_SOCK}
+    networks:
+      - craft
   pgsql:
-    image: postgres:13
+    image: postgres:15
     ports:
       - '${FORWARD_CRAFT_DB_PORT:-5433}:5432'
     environment:
@@ -27,13 +32,10 @@ services:
     networks:
       - craft
     healthcheck:
-      test: ["CMD", "pg_isready", "-q", "-d", "${CRAFT_DB_DATABASE}", "-U", "${CRAFT_DB_USER}"]
+      test: ['CMD', 'pg_isready', '-q', '-d', '${CRAFT_DB_DATABASE}', '-U', '${CRAFT_DB_USER}']
 networks:
   craft:
     driver: bridge
 volumes:
   db:
     driver: local
-secrets:
-  identity:
-    file: ~/.ssh/id_ed25519_short_shadows

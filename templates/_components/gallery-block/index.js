@@ -1,4 +1,5 @@
 import $ from 'jquery';
+
 import initGallery from '../gallery';
 
 import './styles.scss';
