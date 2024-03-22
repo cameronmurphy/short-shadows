@@ -6,7 +6,7 @@ export default ({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
     emptyOutDir: true,
-    manifest: true,
+    manifest: 'manifest.json',
     outDir: './web/dist/',
     rollupOptions: {
       input: {

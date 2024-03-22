@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 body,
 html {
   font-family: 'Sierra Nevada Road', serif;
@@ -16,7 +18,7 @@ body {
 }
 
 .container-fluid {
-  max-width: map-get($container-max-widths, xxxl);
+  max-width: map.get($container-max-widths, xxxl);
   padding: 0;
 }
 

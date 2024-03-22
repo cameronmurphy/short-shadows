@@ -16,23 +16,21 @@
 
     a {
       flex: 1;
-    }
-  }
 
-  a {
-    @include media-breakpoint-up(sm) {
-      font-size: 2.5rem;
-    }
+      @include media-breakpoint-up(sm) {
+        font-size: 2.5rem;
+      }
 
-    @include media-breakpoint-up(md) {
-      font-size: 2rem;
-    }
+      @include media-breakpoint-up(md) {
+        font-size: 2rem;
+      }
 
-    color: $color-white;
-    font-size: 3rem;
+      color: $color-white;
+      font-size: 3rem;
 
-    &:hover {
-      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

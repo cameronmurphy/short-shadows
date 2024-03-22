@@ -36,7 +36,7 @@ Install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install
 In Ubuntu:
 ```shell
 $ git clone <repo-url>
-$ cd vanish
+$ cd short-shadows
 ```
 [VSCode](https://code.visualstudio.com) makes [developing in WSL](https://code.visualstudio.com/docs/remote/wsl) quite easy.
 
@@ -49,6 +49,10 @@ $ cp .env.example .env
 Optionally you can configure values for `FORWARD_APP_PORT` and `FORWARD_DB_PORT` if you do not with to use the standard ports. By default,
 the application will be available at [http://127.0.0.1:8080]() and the database at [127.0.0.1:5432](). To run the application:
 ```bash
+$ asdf plugin add php
+$ asdf plugin add nodejs
+$ asdf install
+$ corepack enable && asdf reshim nodejs
 $ composer install
 $ ./craft setup/security-key
 $ yarn install
@@ -60,8 +64,12 @@ $ composer sync-database
 
 Code standards
 --------------
-The tools `eslint` and `sass-lint` are used to ensure `*.js` and `*.scss` files meet the code standards. Use the commands `yarn lint-js` and
-`yarn lint-scss` to lint the codebase. 
+Run the following commands to lint the codebase:
+```shell
+$ composer lint
+$ yarn lint
+$ yarn lint-styles
+```
 
 Database sync
 -------------

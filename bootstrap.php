@@ -1,6 +1,6 @@
 <?php
 /**
- * Shared bootstrap file
+ * Shared bootstrap file.
  */
 
 // Define path constants

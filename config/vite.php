@@ -30,7 +30,7 @@ return [
     'useDevServer' => 'dev' === App::env('ENVIRONMENT') || 'dev' === App::env('CRAFT_ENVIRONMENT'),
 
     // @var string File system path (or URL) to the Vite-built manifest.json
-    'manifestPath' => '@webroot/dist/.vite/manifest.json',
+    'manifestPath' => '@webroot/dist/manifest.json',
 
     // @var string The public URL to the dev server (what appears in `<script src="">` tags
     'devServerPublic' => 'http://localhost:3000/',

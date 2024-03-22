@@ -1,8 +1,6 @@
 #!/usr/bin/env php
-
 <?php
 
-// Load shared bootstrap
 require dirname(__DIR__) . '/bootstrap.php';
 
 if ('dev' == getenv('ENVIRONMENT')) {
@@ -23,10 +21,10 @@ $client = new S3Client([
     'endpoint' => getenv('ASSET_ENDPOINT'),
 ]);
 
-$adapter = new AwsS3V3Adapter($client, getenv('ASSET_BUCKET'), 'static');
+$adapter = new AwsS3V3Adapter($client, getenv('ASSET_BUCKET'), 'dist');
 $remoteFs = new Filesystem($adapter);
 
-function recursiveUpload(Filesystem $remoteFs, string $baseDir, ?string $relativePath = null)
+function recursiveUpload(Filesystem $remoteFs, string $baseDir, ?string $relativePath = null): void
 {
     $absolutePath = $relativePath ? join('/', [$baseDir, $relativePath]) : $baseDir;
 
@@ -59,4 +57,4 @@ function recursiveUpload(Filesystem $remoteFs, string $baseDir, ?string $relativ
     }
 }
 
-recursiveUpload($remoteFs, __DIR__ . '/../web/static');
+recursiveUpload($remoteFs, __DIR__ . '/../web/dist');

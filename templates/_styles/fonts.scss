@@ -1,9 +1,11 @@
 @font-face {
   font-display: auto;
-  font-family: 'Stormfaze';
+  font-family: Stormfaze;
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/stormfaze.woff2') format('woff2'), url('fonts/stormfaze.woff') format('woff');
+  src:
+    url('fonts/stormfaze.woff2') format('woff2'),
+    url('fonts/stormfaze.woff') format('woff');
 }
 
 @font-face {
@@ -11,5 +13,7 @@
   font-family: 'Sierra Nevada Road';
   font-style: normal;
   font-weight: normal;
-  src: url('fonts/sierra-nevada-road.woff2') format('woff2'), url('fonts/sierra-nevada-road.woff') format('woff');
+  src:
+    url('fonts/sierra-nevada-road.woff2') format('woff2'),
+    url('fonts/sierra-nevada-road.woff') format('woff');
 }

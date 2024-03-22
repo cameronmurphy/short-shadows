@@ -1,4 +1,5 @@
-$pswp__assets-path: '../../../node_modules/photoswipe/dist/default-skin/'; // sass-lint:disable-line variable-name-format
+// stylelint-disable-next-line scss/dollar-variable-pattern
+$pswp__assets-path: '../../../node_modules/photoswipe/dist/default-skin/';
 
 @import '~photoswipe/src/css/main';
 @import '~photoswipe/src/css/default-skin/default-skin';
