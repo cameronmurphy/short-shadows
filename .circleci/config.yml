@@ -26,8 +26,8 @@ jobs:
           name: Lint JS
           command: yarn lint
       - run:
-          name: Lint SCSS
-          command: yarn lint-scss
+          name: Lint styles
+          command: yarn lint-styles
 workflows:
   lint:
     jobs:
